@@ -1,59 +1,41 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-void swap(int *arr, int d);
-
 int main(void) {
-    int m, n, cnt = 0, tmp;
-    int element, elements[10000][3];
+    int m, n, cnt = 0, total = 0;
+    int elements[100][100];
+
 
     scanf("%d %d", &m, &n);
-    for (int i = 0; i < m; i++) {
-        for (int j = 0; j < n; j++) {
-            scanf("%d", &element);
-            if (element != 0) {
-                elements[cnt][0] = i;
-                elements[cnt][1] = j;
-                elements[cnt][2] = element;
-                cnt++;
-            }
+    while (scanf("%d", &elements[total/n][total%n]) != EOF) {
+        if (elements[total/n][total%n] != 0) {
+            cnt++;
         }
+        total++;
+    }
+
+    if(total != m*n) {
+        printf("Input matrix has wrong size. Please input again.");
+        return 0;
     }
 
     printf("Sparse matrix by triplet form:\n%d %d %d\n", m, n, cnt);
-    for (int i = 0; i < cnt; i++) {
-        printf("%d %d %d\n", elements[i][0], elements[i][1], elements[i][2]);
-        tmp = elements[i][0];
-        elements[i][0] = elements[i][1];
-        elements[i][1] = tmp;
-    }
-
-    for (int i = 0; i < cnt; i++) {
-        for (int j = cnt-1; j > i; j--) {
-            if (elements[i][0] > elements[j][0]) {
-                swap(&elements[i][0], j-i);
-            }
-            if (elements[i][0] == elements[j][0]) {
-                if (elements[i][1] > elements[j][1]) {
-                    swap(&elements[i][0], j-i);
-                }
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
+            if (elements[i][j] != 0) {
+                printf("%d %d %d\n", i, j, elements[i][j]);
             }
         }
     }
 
     printf("Transpose of the sparse matrix:\n%d %d %d\n", m, n, cnt);
-    for (int i = 0; i < cnt; i++) {
-        printf("%d %d %d\n", elements[i][0], elements[i][1], elements[i][2]);
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            if (elements[j][i] != 0) {
+                printf("%d %d %d\n", i, j, elements[j][i]);
+            }
+        }
     }
 
     return 0;
 }
-
-void swap(int *arr, int d) {
-    int tmp;
-    for (int i = 0; i < 3; i++) {
-        tmp = *(arr+i);
-        *(arr+i) = *(arr+d*3+i);
-        *(arr+d*3+i) = tmp;
-    }
-};
