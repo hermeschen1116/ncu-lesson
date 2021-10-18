@@ -13,7 +13,7 @@ int main(void) {
     toPostfix(infix, postfix);
     sum = calPostfix(postfix);
 
-    printf("%s\n%d\n", postfix, sum);
+    printf("> %s\n> %d\n", postfix, sum);
 
     return 0;
 }

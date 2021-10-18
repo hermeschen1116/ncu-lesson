@@ -28,7 +28,7 @@ int main(void) {
         }
     }
 
-    printf("Transpose of the sparse matrix:\n%d %d %d\n", m, n, cnt);
+    printf("Transpose of the sparse matrix:\n%d %d %d\n", n, m, cnt);
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
             if (elements[j][i] != 0) {
