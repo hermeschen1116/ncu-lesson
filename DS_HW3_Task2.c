@@ -9,8 +9,8 @@ typedef struct binary_search_tree_node {
 
 node *newNode(int val);
 node *insert(node *root, int val);
-void preorderTraversal(node *root);
-void postorderTraversal(node *root);
+void preorderTraversal(node *ptr);
+void postorderTraversal(node *ptr);
 void clear(node *root);
 
 int main(void) {
@@ -20,12 +20,11 @@ int main(void) {
     scanf("%d", &num);
     for (int i = 0; i < num; i++) {
         scanf("%d", &value);
-        insert(root, value);
+        root = insert(root, value);
     }
     printf("> Preorder:");
     preorderTraversal(root);
-    printf("\n");
-    printf("> Postorder:");
+    printf("\n> Postorder:");
     postorderTraversal(root);
     printf("\n");
 
@@ -43,7 +42,7 @@ node *newNode(int val) {
     new_node->right = NULL;
 
     return new_node;
-};
+}
 
 node *insert(node *root, int val) {
     node *input = newNode(val);
@@ -54,7 +53,7 @@ node *insert(node *root, int val) {
     } else {
         cur = root;
         while (cur != NULL) {
-            cur = parent;
+            parent = cur;
             if (val < cur->data) {
                 cur = cur->left;
             } else {
@@ -69,31 +68,28 @@ node *insert(node *root, int val) {
     }
 
     return root;
-};
+}
 
-void preorderTraversal(node *root) {
-    node *cur = root;
-    if (cur != NULL) {
-        printf(" %d", cur->data);
-        preorderTraversal(cur->left);
-        preorderTraversal(cur->right);
+void preorderTraversal(node *ptr) {
+    if (ptr != NULL) {
+        printf(" %d", ptr->data);
+        preorderTraversal(ptr->left);
+        preorderTraversal(ptr->right);
     }
-};
+}
 
-void postorderTraversal(node *root) {
-    node *cur = root;
-    if (cur != NULL) {
-        postorderTraversal(cur->left);
-        postorderTraversal(cur->right);
-        printf(" %d", cur->data);
+void postorderTraversal(node *ptr) {
+    if (ptr != NULL) {
+        postorderTraversal(ptr->left);
+        postorderTraversal(ptr->right);
+        printf(" %d", ptr->data);
     }
-};
+}
 
 void clear(node *root) {
-    node *cur = root;
-    if (cur != NULL) {
-        clear(cur->left);
-        free(cur);
-        clear(cur->right);
+    if (root != NULL) {
+        clear(root->left);
+        clear(root->right);
+        free(root);
     }
-};
+}

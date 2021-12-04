@@ -1,117 +1,95 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-typedef struct node {
+typedef struct binary_search_tree_node {
     int data;
-    struct node *next;
+    struct binary_search_tree_node *left;
+    struct binary_search_tree_node *right;
 } node;
 
 node *newNode(int val);
-node *append(node *head, int *total, int val);
-void traversal(node *head, int total, int start);
-node *inverse(node *head);
-void clear(node *head);
+node *insert(node *root, int val);
+void preorderTraversal(node *ptr);
+void postorderTraversal(node *ptr);
+void clear(node *root);
 
 int main(void) {
-    int val, total = 0, mid;
-    node *head = NULL;
+    int num, value;
+    node *root = NULL;
 
-    while (scanf("%d", &val) != EOF) {
-        head = append(head, &total, val);
+    scanf("%d", &num);
+    for (int i = 0; i < num; i++) {
+        scanf("%d", &value);
+        root = insert(root, value);
     }
+    printf("> Preorder:");
+    preorderTraversal(root);
+    printf("\n> Postorder:");
+    postorderTraversal(root);
+    printf("\n");
 
-    mid = total / 2;
-    printf("> ");
-    traversal(head, total, mid);
-    printf("\n> ");
-    head = inverse(head);
-    traversal(head, total, 0);
-
-    clear(head);
+    clear(root);
 
     return 0;
 }
 
-node *newNode(int val){
-    node *_node_;
+node *newNode(int val) {
+    node *new_node;
 
-    _node_ = (node*)malloc(sizeof(node));
-    if(_node_ == NULL)
-    {
-        printf("out of memory\n");
-        exit(1);
-    }
+    new_node = (node *) malloc(sizeof(node));
+    new_node->data = val;
+    new_node->left = NULL;
+    new_node->right = NULL;
 
-    _node_->data = val;
-    _node_->next = NULL;
+    return new_node;
+}
 
-    return _node_;
-};
+node *insert(node *root, int val) {
+    node *input = newNode(val);
+    node *cur, *parent;
 
-node *append(node *head, int *total, int val){
-    node *cur = head, *input = newNode(val);
-
-    if (head == NULL) {
-        head = input;
+    if (root == NULL) {
+        root = input;
     } else {
-        while(cur->next != NULL) {
-            cur = cur->next;
-        }
-        cur->next = input;
-    }
-    ++*total;
-
-    return head;
-};
-
-void traversal(node *head, int total, int start){
-    node *cur = head;
-    int i = 0;
-
-    if (head == NULL) {
-        printf("List is empty\n");
-    } else {
-        while (cur->next != NULL) {
-            if (cur->next == NULL) {
-                break;
-            }
-            if (i >= start) {
-                printf("%d ", cur->data);
-            }
-            cur = cur->next;
-            i++;
-        }
-        printf("%d", cur->data);
-    }
-};
-
-node *inverse(node *head){
-    node *cur = head, *tmp, *newHead = NULL;
-
-    if (head == NULL) {
-        printf("List is empty\n");
-    } else {
+        cur = root;
         while (cur != NULL) {
-            tmp = newNode(cur->data);
-            if (newHead == NULL) {
-                newHead = tmp;
+            parent = cur;
+            if (val < cur->data) {
+                cur = cur->left;
             } else {
-                tmp->next = newHead;
-                newHead = tmp;
+                cur = cur->right;
             }
-            cur = cur->next;
+        }
+        if (val < parent->data) {
+            parent->left = input;
+        } else {
+            parent->right = input;
         }
     }
 
-    return newHead;
-};
+    return root;
+}
 
-void clear(node *head) {
-    node *cur = head;
-
-    while (cur != NULL) {
-        head = head->next;
-        free(cur);
-        cur = head;
+void preorderTraversal(node *ptr) {
+    if (ptr != NULL) {
+        printf(" %d", ptr->data);
+        preorderTraversal(ptr->left);
+        preorderTraversal(ptr->right);
     }
-};
+}
+
+void postorderTraversal(node *ptr) {
+    if (ptr != NULL) {
+        postorderTraversal(ptr->left);
+        postorderTraversal(ptr->right);
+        printf(" %d", ptr->data);
+    }
+}
+
+void clear(node *root) {
+    if (root != NULL) {
+        clear(root->left);
+        clear(root->right);
+        free(root);
+    }
+}
