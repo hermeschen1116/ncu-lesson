@@ -29,6 +29,8 @@ int main(void) {
     postorderTraversal(root);
     printf("\n");
 
+    clear(root);
+
     return 0;
 }
 
@@ -44,11 +46,11 @@ node *newNode(int val) {
 };
 
 node *insert(node *root, int val) {
-    node *newNode = newNode(val);
+    node *input = newNode(val);
     node *cur, *parent;
 
     if (root == NULL) {
-        root = newNode;
+        root = input;
     } else {
         cur = root;
         while (cur != NULL) {
@@ -60,9 +62,9 @@ node *insert(node *root, int val) {
             }
         }
         if (val < parent->data) {
-            parent->left = newNode;
+            parent->left = input;
         } else {
-            parent->right = newNode;
+            parent->right = input;
         }
     }
 
@@ -73,16 +75,16 @@ void preorderTraversal(node *root) {
     node *cur = root;
     if (cur != NULL) {
         printf(" %d", cur->data);
-        preorder(cur->left);
-        preorder(cur->right);
+        preorderTraversal(cur->left);
+        preorderTraversal(cur->right);
     }
 };
 
 void postorderTraversal(node *root) {
     node *cur = root;
     if (cur != NULL) {
-        preorder(cur->left);
-        preorder(cur->right);
+        postorderTraversal(cur->left);
+        postorderTraversal(cur->right);
         printf(" %d", cur->data);
     }
 };
@@ -90,8 +92,8 @@ void postorderTraversal(node *root) {
 void clear(node *root) {
     node *cur = root;
     if (cur != NULL) {
-        preorder(cur->left);
+        clear(cur->left);
         free(cur);
-        preorder(cur->right);
+        clear(cur->right);
     }
 };
