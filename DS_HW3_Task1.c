@@ -19,28 +19,24 @@ node *buildLetterFrequencyList(char source[]);
 node *combineNode(node *left, node *right);
 node *copyList2Tree(node *source);
 node *buildHuffmanTree(node *head);
+void getHuffmanCode(node *huffmanTree, char temp[], int depth, node *head, int *sum);
 void encodeString(char source[], char destination[], node *head);
-void getHuffmanCode(node *huffmanTree, char temp[], int depth, node *head);
-int calculateMinWeight(node *head);
 void clearList(node *head);
 void clearTree(node *root);
-void traverseList(node *head);
-void traverseTree(node *root);
 
 int main(void) {
-    char src[128], dst[128] = "", temp[128] = "";
-    int depth = 0;
+    char src[256], dst[256] = "", temp[256] = "";
+    int depth = 0, sum = 0;
     node *frequency_list = NULL, *huffman_tree = NULL;
 
     scanf("%s", src);
     frequency_list = buildLetterFrequencyList(src);
     huffman_tree = buildHuffmanTree(frequency_list);
-    getHuffmanCode(huffman_tree, temp, depth, frequency_list);
+    getHuffmanCode(huffman_tree, temp, depth, frequency_list, &sum);
     encodeString(src, dst, frequency_list);
     printf("> %s\n", dst);
-    printf("> %d\n", calculateMinWeight(frequency_list));
-    //traverseList(frequency_list);
-    //traverseTree(huffman_tree);
+    printf("> %d\n", sum);
+
     clearList(frequency_list);
     clearTree(huffman_tree);
 
@@ -179,14 +175,14 @@ node *buildHuffmanTree(node *head) {
     return huffmanTree;
 }
 
-void getHuffmanCode(node *huffmanTree, char temp[], int depth, node *head) {
+void getHuffmanCode(node *huffmanTree, char temp[], int depth, node *head, int *sum) {
     if (huffmanTree->left) {
         temp[depth] = '0';
-        getHuffmanCode(huffmanTree->left, temp, depth+1, head);
+        getHuffmanCode(huffmanTree->left, temp, depth+1, head, sum);
     }
     if (huffmanTree->right) {
         temp[depth] = '1';
-        getHuffmanCode(huffmanTree->right, temp, depth+1, head);
+        getHuffmanCode(huffmanTree->right, temp, depth+1, head, sum);
     }
     if (!(huffmanTree->left) && !(huffmanTree->right)) {
         node *cur = head;
@@ -196,6 +192,7 @@ void getHuffmanCode(node *huffmanTree, char temp[], int depth, node *head) {
             }
             cur = cur->next;
         }
+        *sum += depth * huffmanTree->frequency;
         --depth;
     }
 }
@@ -216,18 +213,6 @@ void encodeString(char source[], char destination[], node *head) {
     }
 }
 
-int calculateMinWeight(node *head) {
-    node *cur = head;
-    int sum = 0;
-
-    while (cur != NULL) {
-        sum += cur->frequency * strlen(cur->huffmanCode);
-        cur = cur->next;
-    }
-
-    return sum;
-}
-
 void clearList(node *head) {
     node *cur = head->next;
 
@@ -243,22 +228,5 @@ void clearTree(node *root) {
         clearTree(root->left);
         clearTree(root->right);
         free(root);
-    }
-}
-
-void traverseList(node *head) {
-    node *cur = head;
-
-    while (cur != NULL) {
-        printf("%s: %s\n", cur->letters, cur->huffmanCode);
-        cur = cur->next;
-    }
-}
-
-void traverseTree(node *root) {
-    if (root != NULL) {
-        traverseTree(root->left);
-        traverseTree(root->right);
-        printf("(%s, %d)\n", root->letters, root->frequency);
     }
 }
