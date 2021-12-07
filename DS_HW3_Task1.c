@@ -3,184 +3,239 @@
 #include<string.h>
 
 typedef struct huffman_tree_node {
-    char letter[32];
+    char letters[32];
     int frequency;
+    char huffmanCode[16];
     struct huffman_tree_node *left;
-    struct huffman_tree_node *queueLink;
     struct huffman_tree_node *right;
+    struct huffman_tree_node *next;
 } node;
 
-void swap(char *s1, char *s2);
-void sortString(char source[], char dest[]);
-node *newNode(char letter[], int letterFrequency);
-node *createFrequencyQueue(node *frequencyQueue, node *input);
-node *countFrequency(char source[], node *frequencyQueue);
-node *createHuffmanTree(node *frequencyQueue);
-//node *huffmanEncode(char letter[], node *huffmanTree);
+void swap(char *character_1, char *character_2);
+void sortString(char destination[], char source[]);
+node *newNode(char letters[], int frequency);
+node *insertNodeAndSort(node *head, node *new_node);
+node *buildLetterFrequencyList(char source[]);
+node *combineNode(node *left, node *right);
+node *copyList2Tree(node *source);
+node *buildHuffmanTree(node *head);
+void encodeString(char source[], char destination[], node *head);
+void getHuffmanCode(node *huffmanTree, char temp[], int depth, node *head);
+int calculateMinWeight(node *head);
+void clearList(node *head);
 void clearTree(node *root);
-void traversal(node *root) {
-    if (root->left) {
-        printf("0");
-    }
-    traversal(root->left);
-    if (root->right) {
-        printf("1");
-    }
-    traversal(root->right);
-    if (!root->left && !root->right) {
-        printf(" %s\n", root->letter);
-    }
-};
+void traverseList(node *head);
+void traverseTree(node *root);
 
 int main(void) {
-    char src[128], letter[26] = "";
-    node *frequency = NULL, *huffmanTree = NULL, *codeTable = NULL;
+    char src[128], dst[128] = "", temp[128] = "";
+    int depth = 0;
+    node *frequency_list = NULL, *huffman_tree = NULL;
 
     scanf("%s", src);
-    frequency = countFrequency(src, frequency);
-    huffmanTree = createHuffmanTree(frequency);
-    //traversal(huffmanTree);
-    /*printf("> ");
-    codeTable = huffmanEncode(letter, huffmanTree);
-    printf("\n> ");*/
+    frequency_list = buildLetterFrequencyList(src);
+    huffman_tree = buildHuffmanTree(frequency_list);
+    getHuffmanCode(huffman_tree, temp, depth, frequency_list);
+    encodeString(src, dst, frequency_list);
+    printf("> %s\n", dst);
+    printf("> %d\n", calculateMinWeight(frequency_list));
+    //traverseList(frequency_list);
+    //traverseTree(huffman_tree);
+    clearList(frequency_list);
+    clearTree(huffman_tree);
 
     return 0;
 }
 
-void swap(char *s1, char *s2) {
+void swap(char *character_1, char *character_2) {
     char temp;
-    temp = *s1;
-    *s1 = *s2;
-    *s2 = temp;
+    temp = *character_1;
+    *character_1 = *character_2;
+    *character_2 = temp;
 }
 
-void sortString(char source[], char dest[]) {
+void sortString(char destination[], char source[]) {
     int length = strlen(source);
 
-    strcpy(dest, source);
+    strcpy(destination, source);
     for (int i = length; i > 1; i--) {
         for (int j = 0; j < i - 1; j++) {
-            if (dest[j + 1] < dest[j]) {
-                swap(&dest[j + 1], &dest[j]);
+            if (destination[j + 1] < destination[j]) {
+                swap(&destination[j + 1], &destination[j]);
             }
         }
     }
 }
 
-node *newNode(char letter[], int letterFrequency) {
+node *newNode(char letters[], int frequency) {
     node *new_node;
 
     new_node = (node *) malloc(sizeof(node));
-    strcpy(new_node->letter, letter);
-    new_node->frequency = letterFrequency;
+    strcpy(new_node->letters, letters);
+    new_node->frequency = frequency;
+    strcpy(new_node->huffmanCode, "");
     new_node->left = NULL;
     new_node->right = NULL;
+    new_node->next = NULL;
 
     return new_node;
 }
 
-node *createFrequencyQueue(node *frequencyQueue, node *input) {
+node *insertNodeAndSort(node *head, node *new_node) {
     node *cur, *prev;
 
-    if (frequencyQueue == NULL) {
-        frequencyQueue = input;
+    if (head == NULL) {
+        head = new_node;
     } else {
-        prev = frequencyQueue;
+        prev = head;
         cur = prev;
         while (cur != NULL) {
-            if (cur->frequency > input->frequency) {
+            if (cur->frequency > new_node->frequency) {
                 break;
             }
-            if (cur->frequency == input->frequency && strcmp(cur->letter, input->letter) > 0) {
+            if (cur->frequency == new_node->frequency && strcmp(cur->letters, new_node->letters) > 0) {
                 break;
             }
             prev = cur;
-            cur = cur->queueLink;
+            cur = cur->next;
         }
         if (cur == prev) {
-            input->queueLink = cur;
-            frequencyQueue = input;
-        } else if (cur == prev->queueLink) {
-            prev->queueLink = input;
-            input->queueLink = cur;
+            new_node->next = cur;
+            head = new_node;
+        } else if (cur == prev->next) {
+            prev->next = new_node;
+            new_node->next = cur;
         } else {
-            prev->queueLink = input;
+            prev->next = new_node;
         }
     }
 
-    return frequencyQueue;
+    return head;
 }
 
-node *countFrequency(char source[], node *frequencyQueue) {
+node *buildLetterFrequencyList(char source[]) {
     int length = strlen(source), count = 0;
-    char target[32], dest[length];
+    char destination[length], target_letter;
+    node *letter_frequency_list = NULL;
 
-    sortString(source, dest);
-    target[0] = dest[0];
+    sortString(destination, source);
+    target_letter = destination[0];
     for (int i = 0; i < length; i++) {
-        if (dest[i] == target[0]) {
+        if (destination[i] == target_letter) {
             ++count;
-        }
-        if (dest[i] != target[0]) {
-            frequencyQueue = createFrequencyQueue(frequencyQueue, newNode(target, count));
+        } else {
+            letter_frequency_list = insertNodeAndSort(letter_frequency_list, newNode(&target_letter, count));
             count = 1;
-            strncpy(target, &dest[i], 1);
+            target_letter = destination[i];
         }
     }
     if (count != 0) {
-        frequencyQueue = createFrequencyQueue(frequencyQueue, newNode(target, count));
+        letter_frequency_list = insertNodeAndSort(letter_frequency_list, newNode(&target_letter, count));
     }
 
-    return frequencyQueue;
+    return letter_frequency_list;
 }
 
-node *huffmanCombination(node *left, node *right) {
+node *copyList2Tree(node *source) {
+    node *curList = source->next, *cur, *destination = newNode(source->letters, source->frequency);
+
+    cur = destination;
+    while (curList != NULL) {
+        cur->next = newNode(curList->letters, curList->frequency);
+        cur = cur->next;
+        curList = curList->next;
+    }
+
+    return destination;
+}
+
+node *combineNode(node *left, node *right) {
     node *combination;
     char newLetter[32];
 
-    strcpy(newLetter, left->letter);
-    combination = newNode(strcat(newLetter, right->letter), left->frequency + right->frequency);
-    left->queueLink = NULL;
+    strcpy(newLetter, left->letters);
+    strcat(newLetter, right->letters);\
+    combination = newNode(newLetter, left->frequency + right->frequency);
+    left->next = NULL;
+    right->next = NULL;
     combination->left = left;
-    right->queueLink = NULL;
     combination->right = right;
 
     return combination;
 }
 
-node *createHuffmanTree(node *frequencyQueue) {
-    node *comb, *cur, *next;
+node *buildHuffmanTree(node *head) {
+    node *huffmanTree = copyList2Tree(head);
+    node *combination, *cur, *next;
 
-    while (frequencyQueue->queueLink != NULL) {
-        cur = frequencyQueue;
-        next = frequencyQueue->queueLink;
-        frequencyQueue = next->queueLink;
-        comb = huffmanCombination(cur, next);
-        frequencyQueue = createFrequencyQueue(frequencyQueue, comb);
+    while (huffmanTree->next != NULL) {
+        cur = huffmanTree;
+        next = huffmanTree->next;
+        huffmanTree = next->next;
+        combination = combineNode(cur, next);
+        huffmanTree = insertNodeAndSort(huffmanTree, combination);
     }
 
-    return frequencyQueue;
+    return huffmanTree;
 }
 
+void getHuffmanCode(node *huffmanTree, char temp[], int depth, node *head) {
+    if (huffmanTree->left) {
+        temp[depth] = '0';
+        getHuffmanCode(huffmanTree->left, temp, depth+1, head);
+    }
+    if (huffmanTree->right) {
+        temp[depth] = '1';
+        getHuffmanCode(huffmanTree->right, temp, depth+1, head);
+    }
+    if (!(huffmanTree->left) && !(huffmanTree->right)) {
+        node *cur = head;
+        while (cur != NULL) {
+            if (strcmp(cur->letters, huffmanTree->letters) == 0) {
+                strcpy(cur->huffmanCode, temp);
+            }
+            cur = cur->next;
+        }
+        --depth;
+    }
+}
 
-node *huffmanEncode(char letter[], node *huffmanTree) {
-    int length = strlen(letter);
-    node *cur, *code = NULL;
+void encodeString(char source[], char destination[], node *head) {
+    int length = strlen(source);
+    node *cur;
 
     for (int i = 0; i < length; i++) {
-        cur = huffmanTree;
-        while (strcmp(&letter[i], cur->letter) != 0) {
-            if (strstr(cur->left->letter, &letter[i]) != NULL) {
-                printf("0");
-                cur = cur->left;
-            } else {
-                printf("1");
-                cur = cur->right;
+        cur = head;
+        while (cur != NULL) {
+            if (cur->letters[0] == source[i]) {
+                strcat(destination, cur->huffmanCode);
+                break;
             }
+            cur = cur->next;
         }
     }
+}
 
-    return code;
+int calculateMinWeight(node *head) {
+    node *cur = head;
+    int sum = 0;
+
+    while (cur != NULL) {
+        sum += cur->frequency * strlen(cur->huffmanCode);
+        cur = cur->next;
+    }
+
+    return sum;
+}
+
+void clearList(node *head) {
+    node *cur = head->next;
+
+    while (cur != NULL) {
+        free(head);
+        head = cur;
+        cur = cur->next;
+    }
 }
 
 void clearTree(node *root) {
@@ -188,5 +243,22 @@ void clearTree(node *root) {
         clearTree(root->left);
         clearTree(root->right);
         free(root);
+    }
+}
+
+void traverseList(node *head) {
+    node *cur = head;
+
+    while (cur != NULL) {
+        printf("%s: %s\n", cur->letters, cur->huffmanCode);
+        cur = cur->next;
+    }
+}
+
+void traverseTree(node *root) {
+    if (root != NULL) {
+        traverseTree(root->left);
+        traverseTree(root->right);
+        printf("(%s, %d)\n", root->letters, root->frequency);
     }
 }
