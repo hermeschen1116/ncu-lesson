@@ -3,9 +3,9 @@
 #include<string.h>
 
 typedef struct huffman_tree_node {
-    char letters[32];
+    char letters[256];
     int frequency;
-    char huffmanCode[16];
+    char huffmanCode[256];
     struct huffman_tree_node *left;
     struct huffman_tree_node *right;
     struct huffman_tree_node *next;
@@ -191,7 +191,7 @@ void getHuffmanCodeAndWeight(node *huffmanTree, char temp[], int depth, node *he
             cur = cur->next;
         }
         *sum += depth * huffmanTree->frequency;
-        --depth;
+        //--depth;
     }
 }
 
