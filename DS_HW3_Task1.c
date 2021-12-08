@@ -107,20 +107,20 @@ node *insertNodeAndSort(node *head, node *new_node) {
         prev = head;
         cur = prev;
         while (cur != NULL) {
-            if (strlen(cur->letters) == strlen(new_node->letters)) {
-                if (cur->frequency > new_node->frequency) {
-                    break;
-                }
-                if (cur->frequency == new_node->frequency && strcmp(cur->letters, new_node->letters) > 0) {
-                    break;
-                }
-            } else {
+            if (strlen(cur->letters) == 1 || strlen(new_node->letters) == 1) {
                 if (cur->frequency > new_node->frequency) {
                     break;
                 }
                 if (cur->frequency == new_node->frequency && strlen(new_node->letters) != 1) {
                     prev = cur;
                     cur = cur->next;
+                    break;
+                }
+            } else {
+                if (cur->frequency > new_node->frequency) {
+                    break;
+                }
+                if (cur->frequency == new_node->frequency && strcmp(cur->letters, new_node->letters) > 0) {
                     break;
                 }
             }
