@@ -3,14 +3,15 @@
 #include<string.h>
 
 typedef struct huffman_tree_node {
-    char letters[256];
+    char letters[512];
     int frequency;
-    char huffmanCode[256];
+    char huffmanCode[512];
     struct huffman_tree_node *left;
     struct huffman_tree_node *right;
     struct huffman_tree_node *next;
 } node;
 
+void getString(char destination[], int length);
 void swap(char *character_1, char *character_2);
 void sortString(char destination[], char source[]);
 node *newNode(char letters[], int frequency);
@@ -35,11 +36,11 @@ void traverse(node *head) {
 }
 
 int main(void) {
-    char src[256], dst[256] = "", temp[256] = "";
+    char src[512], dst[512] = "", temp[512] = "";
     int depth = 0, sum = 0;
     node *frequency_list = NULL, *huffman_tree = NULL;
 
-    gets(src);
+    getString(src, 512);
     frequency_list = buildLetterFrequencyList(src);
     huffman_tree = buildHuffmanTree(frequency_list);
     getHuffmanCodeAndWeight(huffman_tree, temp, depth, frequency_list, &sum);
@@ -52,6 +53,13 @@ int main(void) {
     clearTree(huffman_tree);
 
     return 0;
+}
+
+void getString(char destination[], int length) {
+    fgets(destination, length, stdin);
+    if (destination[strlen(destination)-1] == '\n') {
+        destination[strlen(destination)-1] = '\0';
+    }
 }
 
 void swap(char *character_1, char *character_2) {
@@ -90,7 +98,7 @@ node *newNode(char letters[], int frequency) {
 
 node *insertNodeAndSort(node *head, node *new_node) {
     node *cur, *prev;
-    char temp[256];
+    char temp[512];
 
     strcpy(temp, new_node->letters);
     if (head == NULL) {
