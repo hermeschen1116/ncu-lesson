@@ -19,7 +19,7 @@ node *buildLetterFrequencyList(char source[]);
 node *combineNode(node *left, node *right);
 node *copyList2Tree(node *source);
 node *buildHuffmanTree(node *head);
-void getHuffmanCode(node *huffmanTree, char temp[], int depth, node *head, int *sum);
+void getHuffmanCodeAndWeight(node *huffmanTree, char temp[], int depth, node *head, int *sum);
 void encodeString(char source[], char destination[], node *head);
 void clearList(node *head);
 void clearTree(node *root);
@@ -32,7 +32,7 @@ int main(void) {
     scanf("%s", src);
     frequency_list = buildLetterFrequencyList(src);
     huffman_tree = buildHuffmanTree(frequency_list);
-    getHuffmanCode(huffman_tree, temp, depth, frequency_list, &sum);
+    getHuffmanCodeAndWeight(huffman_tree, temp, depth, frequency_list, &sum);
     encodeString(src, dst, frequency_list);
     printf("> %s\n", dst);
     printf("> %d\n", sum);
@@ -125,9 +125,7 @@ node *buildLetterFrequencyList(char source[]) {
             target_letter = destination[i];
         }
     }
-    if (count != 0) {
-        letter_frequency_list = insertNodeAndSort(letter_frequency_list, newNode(&target_letter, count));
-    }
+    letter_frequency_list = insertNodeAndSort(letter_frequency_list, newNode(&target_letter, count));
 
     return letter_frequency_list;
 }
@@ -175,14 +173,14 @@ node *buildHuffmanTree(node *head) {
     return huffmanTree;
 }
 
-void getHuffmanCode(node *huffmanTree, char temp[], int depth, node *head, int *sum) {
+void getHuffmanCodeAndWeight(node *huffmanTree, char temp[], int depth, node *head, int *sum) {
     if (huffmanTree->left) {
         temp[depth] = '0';
-        getHuffmanCode(huffmanTree->left, temp, depth+1, head, sum);
+        getHuffmanCodeAndWeight(huffmanTree->left, temp, depth + 1, head, sum);
     }
     if (huffmanTree->right) {
         temp[depth] = '1';
-        getHuffmanCode(huffmanTree->right, temp, depth+1, head, sum);
+        getHuffmanCodeAndWeight(huffmanTree->right, temp, depth + 1, head, sum);
     }
     if (!(huffmanTree->left) && !(huffmanTree->right)) {
         node *cur = head;
