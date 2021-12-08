@@ -27,7 +27,9 @@ void traverse(node *head) {
     node *cur = head;
 
     while (cur != NULL) {
-        printf("%s: %s\n", cur->letters, cur->huffmanCode);
+        if (strcmp(cur->letters, "") != 0) {
+            printf("%s: %d, %s\n", cur->letters, cur->frequency, cur->huffmanCode);
+        }
         cur = cur->next;
     }
 }
@@ -37,13 +39,12 @@ int main(void) {
     int depth = 0, sum = 0;
     node *frequency_list = NULL, *huffman_tree = NULL;
 
-    //scanf("%[^\n]", src);
     gets(src);
     frequency_list = buildLetterFrequencyList(src);
     huffman_tree = buildHuffmanTree(frequency_list);
     getHuffmanCodeAndWeight(huffman_tree, temp, depth, frequency_list, &sum);
     encodeString(src, dst, frequency_list);
-    //traverse(frequency_list);
+    traverse(frequency_list);
     printf("> %s\n", dst);
     printf("> %d\n", sum);
 
@@ -98,11 +99,22 @@ node *insertNodeAndSort(node *head, node *new_node) {
         prev = head;
         cur = prev;
         while (cur != NULL) {
-            if (cur->frequency > new_node->frequency) {
-                break;
-            }
-            if (cur->frequency == new_node->frequency && strcmp(cur->letters, new_node->letters) > 0) {
-                break;
+            if (strlen(cur->letters) == strlen(new_node->letters)) {
+                if (cur->frequency > new_node->frequency) {
+                    break;
+                }
+                if (cur->frequency == new_node->frequency && strcmp(cur->letters, new_node->letters) > 0) {
+                    break;
+                }
+            } else {
+                if (cur->frequency > new_node->frequency) {
+                    break;
+                }
+                if (cur->frequency == new_node->frequency && strlen(new_node->letters) != 1) {
+                    prev = cur;
+                    cur = cur->next;
+                    break;
+                }
             }
             prev = cur;
             cur = cur->next;
