@@ -44,7 +44,7 @@ int main(void) {
     huffman_tree = buildHuffmanTree(frequency_list);
     getHuffmanCodeAndWeight(huffman_tree, temp, depth, frequency_list, &sum);
     encodeString(src, dst, frequency_list);
-    traverse(frequency_list);
+    //traverse(frequency_list);
     printf("> %s\n", dst);
     printf("> %d\n", sum);
 
