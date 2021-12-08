@@ -23,17 +23,27 @@ void getHuffmanCodeAndWeight(node *huffmanTree, char temp[], int depth, node *he
 void encodeString(char source[], char destination[], node *head);
 void clearList(node *head);
 void clearTree(node *root);
+void traverse(node *head) {
+    node *cur = head;
+
+    while (cur != NULL) {
+        printf("%s: %s\n", cur->letters, cur->huffmanCode);
+        cur = cur->next;
+    }
+}
 
 int main(void) {
     char src[256], dst[256] = "", temp[256] = "";
     int depth = 0, sum = 0;
     node *frequency_list = NULL, *huffman_tree = NULL;
 
-    scanf("%s", src);
+    //scanf("%[^\n]", src);
+    gets(src);
     frequency_list = buildLetterFrequencyList(src);
     huffman_tree = buildHuffmanTree(frequency_list);
     getHuffmanCodeAndWeight(huffman_tree, temp, depth, frequency_list, &sum);
     encodeString(src, dst, frequency_list);
+    //traverse(frequency_list);
     printf("> %s\n", dst);
     printf("> %d\n", sum);
 
@@ -79,7 +89,9 @@ node *newNode(char letters[], int frequency) {
 
 node *insertNodeAndSort(node *head, node *new_node) {
     node *cur, *prev;
+    char temp[256];
 
+    strcpy(temp, new_node->letters);
     if (head == NULL) {
         head = new_node;
     } else {
@@ -95,6 +107,7 @@ node *insertNodeAndSort(node *head, node *new_node) {
             prev = cur;
             cur = cur->next;
         }
+        strcpy(new_node->letters, temp);
         if (cur == prev) {
             new_node->next = cur;
             head = new_node;
@@ -110,9 +123,9 @@ node *insertNodeAndSort(node *head, node *new_node) {
 }
 
 node *buildLetterFrequencyList(char source[]) {
-    int length = strlen(source), count = 0;
+    int length = strlen(source), count = 0, flag = 0;
     char destination[length], target_letter;
-    node *letter_frequency_list = NULL;
+    node *letter_frequency_list = NULL, *input;
 
     sortString(destination, source);
     target_letter = destination[0];
@@ -120,23 +133,29 @@ node *buildLetterFrequencyList(char source[]) {
         if (destination[i] == target_letter) {
             ++count;
         } else {
-            letter_frequency_list = insertNodeAndSort(letter_frequency_list, newNode(&target_letter, count));
+            flag = 1;
+            input = newNode(&target_letter, count);
+            letter_frequency_list = insertNodeAndSort(letter_frequency_list, input);
             count = 1;
             target_letter = destination[i];
         }
     }
-    letter_frequency_list = insertNodeAndSort(letter_frequency_list, newNode(&target_letter, count));
+    input = newNode(&target_letter, count);
+    letter_frequency_list = insertNodeAndSort(letter_frequency_list, input);
+    if (flag == 0) {
+        target_letter += 1;
+        letter_frequency_list = insertNodeAndSort(letter_frequency_list, newNode(&target_letter, count+1));
+        strcpy(letter_frequency_list->next->letters, "");
+    }
 
     return letter_frequency_list;
 }
 
 node *copyList2Tree(node *source) {
-    node *curList = source->next, *cur, *destination = newNode(source->letters, source->frequency);
+    node *curList = source, *destination = NULL;
 
-    cur = destination;
     while (curList != NULL) {
-        cur->next = newNode(curList->letters, curList->frequency);
-        cur = cur->next;
+        destination = insertNodeAndSort(destination, newNode(curList->letters, curList->frequency));
         curList = curList->next;
     }
 
@@ -148,7 +167,7 @@ node *combineNode(node *left, node *right) {
     char newLetter[32];
 
     strcpy(newLetter, left->letters);
-    strcat(newLetter, right->letters);\
+    strcat(newLetter, right->letters);
     combination = newNode(newLetter, left->frequency + right->frequency);
     left->next = NULL;
     right->next = NULL;
@@ -185,13 +204,12 @@ void getHuffmanCodeAndWeight(node *huffmanTree, char temp[], int depth, node *he
     if (!(huffmanTree->left) && !(huffmanTree->right)) {
         node *cur = head;
         while (cur != NULL) {
-            if (strcmp(cur->letters, huffmanTree->letters) == 0) {
+            if (strcmp(cur->letters, huffmanTree->letters) == 0 && strcmp(cur->letters, "") != 0) {
                 strcpy(cur->huffmanCode, temp);
+                *sum += depth * huffmanTree->frequency;
             }
             cur = cur->next;
         }
-        *sum += depth * huffmanTree->frequency;
-        //--depth;
     }
 }
 
