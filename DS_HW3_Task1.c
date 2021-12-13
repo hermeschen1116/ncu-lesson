@@ -29,10 +29,15 @@ void traverse(node *head) {
 
     while (cur != NULL) {
         if (strcmp(cur->letters, "") != 0) {
-            printf("%s: %d, %s\n", cur->letters, cur->frequency, cur->huffmanCode);
+            if (strcmp(cur->huffmanCode, "") == 0) {
+                printf("%s: %d, none\n", cur->letters, cur->frequency);
+            } else {
+                printf("%s: %d, %s\n", cur->letters, cur->frequency, cur->huffmanCode);
+            }
         }
         cur = cur->next;
     }
+    printf("-----\n");
 }
 
 int main(void) {
@@ -45,7 +50,6 @@ int main(void) {
     huffman_tree = buildHuffmanTree(frequency_list);
     getHuffmanCodeAndWeight(huffman_tree, temp, depth, frequency_list, &sum);
     encodeString(src, dst, frequency_list);
-    //traverse(frequency_list);
     printf("> %s\n", dst);
     printf("> %d\n", sum);
 
@@ -98,9 +102,7 @@ node *newNode(char letters[], int frequency) {
 
 node *insertNodeAndSort(node *head, node *new_node) {
     node *cur, *prev;
-    char temp[512];
 
-    strcpy(temp, new_node->letters);
     if (head == NULL) {
         head = new_node;
     } else {
@@ -124,18 +126,30 @@ node *insertNodeAndSort(node *head, node *new_node) {
                     break;
                 }
             }
+
+            /*if (new_node->frequency < cur->frequency) {
+                break;
+            } else {
+                if (strlen(cur->letters) < strlen(new_node->letters)) {
+                    prev = cur;
+                    cur = cur->next;
+                    break;
+                }
+                if (strcmp(cur->letters, new_node->letters) > 0) {
+                    break;
+                }
+            }*/
             prev = cur;
             cur = cur->next;
         }
-        strcpy(new_node->letters, temp);
-        if (cur == prev) {
+        if (cur == head) {
             new_node->next = cur;
             head = new_node;
-        } else if (cur == prev->next) {
+        } else if (cur == NULL) {
             prev->next = new_node;
-            new_node->next = cur;
         } else {
             prev->next = new_node;
+            new_node->next = cur;
         }
     }
 
@@ -143,7 +157,7 @@ node *insertNodeAndSort(node *head, node *new_node) {
 }
 
 node *buildLetterFrequencyList(char source[]) {
-    int length = strlen(source), count = 0, flag = 0;
+    int length = strlen(source), count = 0;
     char destination[length], target_letter;
     node *letter_frequency_list = NULL, *input;
 
@@ -153,7 +167,6 @@ node *buildLetterFrequencyList(char source[]) {
         if (destination[i] == target_letter) {
             ++count;
         } else {
-            flag = 1;
             input = newNode(&target_letter, count);
             letter_frequency_list = insertNodeAndSort(letter_frequency_list, input);
             count = 1;
@@ -162,21 +175,17 @@ node *buildLetterFrequencyList(char source[]) {
     }
     input = newNode(&target_letter, count);
     letter_frequency_list = insertNodeAndSort(letter_frequency_list, input);
-    if (flag == 0) {
-        target_letter += 1;
-        letter_frequency_list = insertNodeAndSort(letter_frequency_list, newNode(&target_letter, count+1));
-        strcpy(letter_frequency_list->next->letters, "");
-    }
 
     return letter_frequency_list;
 }
 
 node *copyList2Tree(node *source) {
-    node *curList = source, *destination = NULL;
+    node *cur = source->next, *destination = newNode(source->letters, source->frequency), *destination_cur = destination;
 
-    while (curList != NULL) {
-        destination = insertNodeAndSort(destination, newNode(curList->letters, curList->frequency));
-        curList = curList->next;
+    while (cur != NULL) {
+        destination_cur->next = newNode(cur->letters, cur->frequency);
+        destination_cur = destination_cur->next;
+        cur = cur->next;
     }
 
     return destination;
