@@ -24,21 +24,6 @@ void getHuffmanCodeAndWeight(node *huffmanTree, char temp[], int depth, node *he
 void encodeString(char source[], char destination[], node *head);
 void clearList(node *head);
 void clearTree(node *root);
-void traverse(node *head) {
-    node *cur = head;
-
-    while (cur != NULL) {
-        if (strcmp(cur->letters, "") != 0) {
-            if (strcmp(cur->huffmanCode, "") == 0) {
-                printf("%s: %d, none\n", cur->letters, cur->frequency);
-            } else {
-                printf("%s: %d, %s\n", cur->letters, cur->frequency, cur->huffmanCode);
-            }
-        }
-        cur = cur->next;
-    }
-    printf("-----\n");
-}
 
 int main(void) {
     char src[512], dst[512] = "", temp[512] = "";
@@ -109,36 +94,30 @@ node *insertNodeAndSort(node *head, node *new_node) {
         prev = head;
         cur = prev;
         while (cur != NULL) {
-            if (strlen(cur->letters) == 1 || strlen(new_node->letters) == 1) {
+            if (strlen(new_node->letters) == 1) {
                 if (cur->frequency > new_node->frequency) {
                     break;
                 }
-                if (cur->frequency == new_node->frequency && strlen(new_node->letters) != 1) {
-                    prev = cur;
-                    cur = cur->next;
-                    break;
+                if (cur->frequency == new_node->frequency) {
+                    if (strcmp(cur->letters, new_node->letters) > 0) {
+                        break;
+                    }
                 }
             } else {
                 if (cur->frequency > new_node->frequency) {
                     break;
                 }
-                if (cur->frequency == new_node->frequency && strcmp(cur->letters, new_node->letters) > 0) {
-                    break;
+                if (cur->frequency == new_node->frequency) {
+                    if (strlen(cur->letters) > strlen(new_node->letters)) {
+                        break;
+                    }
+                    if (strlen(cur->letters) == strlen(new_node->letters)) {
+                        if (strcmp(cur->letters, new_node->letters) > 0) {
+                            break;
+                        }
+                    }
                 }
             }
-
-            /*if (new_node->frequency < cur->frequency) {
-                break;
-            } else {
-                if (strlen(cur->letters) < strlen(new_node->letters)) {
-                    prev = cur;
-                    cur = cur->next;
-                    break;
-                }
-                if (strcmp(cur->letters, new_node->letters) > 0) {
-                    break;
-                }
-            }*/
             prev = cur;
             cur = cur->next;
         }
@@ -234,7 +213,7 @@ void getHuffmanCodeAndWeight(node *huffmanTree, char temp[], int depth, node *he
         node *cur = head;
         while (cur != NULL) {
             if (strcmp(cur->letters, huffmanTree->letters) == 0 && strcmp(cur->letters, "") != 0) {
-                strcpy(cur->huffmanCode, temp);
+                strncpy(cur->huffmanCode, temp, depth);
                 *sum += depth * huffmanTree->frequency;
             }
             cur = cur->next;
