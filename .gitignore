@@ -4,6 +4,7 @@
 
 # git
 !.gitignore
+!README.md
 
 # clion
 !cmake-build-debug/
