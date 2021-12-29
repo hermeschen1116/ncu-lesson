@@ -3,6 +3,7 @@
 int isConnected(int aMatrix[256][256], int size);
 int isAllAppended(int status[256], int size);
 int findMinWeight(int edges[256], int status[256], int size);
+int compareMinWeight(int aMatrix[256][256], int status[256], int size, int eIndex, int sIndex);
 int findParent(int path[256][256], int size, int *cnt, int end);
 int getWeight(int aMatrix[256][256], int size);
 
@@ -78,6 +79,13 @@ int findMinWeight(int edges[256], int status[256], int size) {
     return flag ? min[0] : -1;
 }
 
+int compareMinWeight(int aMatrix[256][256], int status[256], int size, int eIndex, int sIndex) {
+    int eMin = findMinWeight(aMatrix[eIndex], status, size);
+    int sMin = findMinWeight(aMatrix[sIndex], status, size);
+
+    return eMin != -1 && sMin != -1 && aMatrix[eIndex][eMin] < aMatrix[sIndex][sMin] ? 1 : 0;
+}
+
 int findParent(int path[256][256], int size, int *cnt, int end) {
     int parent;
     for (int i = 0; i < size; i++) {
@@ -105,6 +113,10 @@ int getWeight(int aMatrix[256][256], int size) {
         if (flag) {
             nextVertex = findMinWeight(aMatrix[end], status, size);
             if (nextVertex != -1) {
+                if (compareMinWeight(aMatrix, status, size, end, start) == 0) {
+                    flag = 0;
+                    continue;
+                }
                 weight += aMatrix[end][nextVertex];
                 path[end][nextVertex] = eCnt*2+1;
                 ++eCnt;
@@ -116,6 +128,10 @@ int getWeight(int aMatrix[256][256], int size) {
         } else {
             nextVertex = findMinWeight(aMatrix[start], status, size);
             if (nextVertex != -1) {
+                if (compareMinWeight(aMatrix, status, size, end, start) == 1) {
+                    flag = 1;
+                    continue;
+                }
                 weight += aMatrix[start][nextVertex];
                 path[start][nextVertex] = sCnt*2;
                 ++sCnt;
