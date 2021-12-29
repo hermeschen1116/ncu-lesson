@@ -1,14 +1,14 @@
 #include<stdio.h>
 
-int isConnected(int aMatrix[256][256], int size);
-int isAllAppended(int status[256], int size);
-int findMinWeight(int edges[256], int status[256], int size);
-int compareMinWeight(int aMatrix[256][256], int status[256], int size, int eIndex, int sIndex);
-int findParent(int path[256][256], int size, int *cnt, int end);
-int getWeight(int aMatrix[256][256], int size);
+int isConnected(int aMatrix[32][32], int size);
+int isAllAppended(int status[32], int size);
+int findMinWeight(int edges[32], int status[32], int size);
+int compareMinWeight(int aMatrix[32][32], int status[32], int size, int eIndex, int sIndex);
+int findParent(int path[32][32], int size, int *cnt, int end);
+int getWeight(int aMatrix[32][32], int size);
 
 int main(void) {
-    int size, aMatrix[256][256] = {0}, weight;
+    int size, aMatrix[32][32] = {0}, weight;
 
     scanf("%d", &size);
     for (int i = 0; i < size; i++) {
@@ -27,7 +27,7 @@ int main(void) {
     return 0;
 }
 
-int isConnected(int aMatrix[256][256], int size) {
+int isConnected(int aMatrix[32][32], int size) {
     int nonZeroCnt, pairCnt = 0;
 
     for (int i = 1; i < size; i++) {
@@ -47,7 +47,7 @@ int isConnected(int aMatrix[256][256], int size) {
     return 0;
 }
 
-int isAllAppended(int status[256], int size) {
+int isAllAppended(int status[32], int size) {
     for (int i = 0; i < size; i++) {
         if (status[i] == 0) {
             return 0;
@@ -56,7 +56,7 @@ int isAllAppended(int status[256], int size) {
     return 1;
 }
 
-int findMinWeight(int edges[256], int status[256], int size) {
+int findMinWeight(int edges[32], int status[32], int size) {
     int min[2] = {-1, 10001}, flag = 0;
 
     for (int i = 0; i < size; i++) {
@@ -79,14 +79,14 @@ int findMinWeight(int edges[256], int status[256], int size) {
     return flag ? min[0] : -1;
 }
 
-int compareMinWeight(int aMatrix[256][256], int status[256], int size, int eIndex, int sIndex) {
+int compareMinWeight(int aMatrix[32][32], int status[32], int size, int eIndex, int sIndex) {
     int eMin = findMinWeight(aMatrix[eIndex], status, size);
     int sMin = findMinWeight(aMatrix[sIndex], status, size);
 
     return eMin != -1 && sMin != -1 && aMatrix[eIndex][eMin] < aMatrix[sIndex][sMin] ? 1 : 0;
 }
 
-int findParent(int path[256][256], int size, int *cnt, int end) {
+int findParent(int path[32][32], int size, int *cnt, int end) {
     int parent;
     for (int i = 0; i < size; i++) {
         for (int j = 0; j < size; j++) {
@@ -104,8 +104,8 @@ int findParent(int path[256][256], int size, int *cnt, int end) {
     return parent;
 }
 
-int getWeight(int aMatrix[256][256], int size) {
-    int status[256] = {0}, path[256][256] = {0}, sCnt = 0, eCnt = 0;
+int getWeight(int aMatrix[32][32], int size) {
+    int status[32] = {0}, path[32][32] = {0}, sCnt = 0, eCnt = 0;
     int start = 0, end = 0, weight = 0, nextVertex, flag = 1;
 
     status[0] = 1;
