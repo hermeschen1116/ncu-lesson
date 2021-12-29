@@ -110,7 +110,6 @@ int getWeight(int aMatrix[32][32], int size) {
 
     status[0] = 1;
     while (isAllAppended(status, size) == 0) {
-        //printf("s: %d, e: %d --> %d\n", start, end, weight);
         if (flag) {
             nextVertex = findMinWeight(aMatrix[end], status, size);
             if (nextVertex != -1) {
