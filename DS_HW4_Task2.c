@@ -1,11 +1,11 @@
 #include<stdio.h>
 
-int isConnected(int aMatrix[32][32], int size);
+int isConnected(int a_matrix[32][32], int size);
 int isAllAppended(int status[32], int size);
 int findMinWeight(int edges[32], int status[32], int size);
-int compareMinWeight(int aMatrix[32][32], int status[32], int size, int eIndex, int sIndex);
+int compareMinWeight(int a_matrix[32][32], int status[32], int size, int end_index, int start_index);
 int findParent(int path[32][32], int size, int *cnt, int end);
-int getWeight(int aMatrix[32][32], int size);
+int getWeight(int a_matrix[32][32], int size);
 
 int main(void) {
     int size, aMatrix[32][32] = {0}, weight;
@@ -27,21 +27,21 @@ int main(void) {
     return 0;
 }
 
-int isConnected(int aMatrix[32][32], int size) {
-    int nonZeroCnt, pairCnt = 0;
+int isConnected(int a_matrix[32][32], int size) {
+    int nonZero_cnt, pair_cnt = 0;
 
     for (int i = 1; i < size; i++) {
-        nonZeroCnt = 0;
+        nonZero_cnt = 0;
         for (int j = 0; j < i; j++) {
-            if (aMatrix[i][j] != 0) {
-                nonZeroCnt++;
+            if (a_matrix[i][j] != 0) {
+                nonZero_cnt++;
             }
         }
-        if (nonZeroCnt > 0) {
-            pairCnt++;
+        if (nonZero_cnt > 0) {
+            pair_cnt++;
         }
     }
-    if (pairCnt == size-1) {
+    if (pair_cnt == size-1) {
         return 1;
     }
     return 0;
@@ -79,11 +79,11 @@ int findMinWeight(int edges[32], int status[32], int size) {
     return flag ? min[0] : -1;
 }
 
-int compareMinWeight(int aMatrix[32][32], int status[32], int size, int eIndex, int sIndex) {
-    int eMin = findMinWeight(aMatrix[eIndex], status, size);
-    int sMin = findMinWeight(aMatrix[sIndex], status, size);
+int compareMinWeight(int a_matrix[32][32], int status[32], int size, int end_index, int start_index) {
+    int end_min = findMinWeight(a_matrix[end_index], status, size);
+    int start_min = findMinWeight(a_matrix[start_index], status, size);
 
-    return eMin != -1 && sMin != -1 && aMatrix[eIndex][eMin] < aMatrix[sIndex][sMin] ? 1 : 0;
+    return end_min != -1 && start_min != -1 && a_matrix[end_index][end_min] < a_matrix[start_index][start_min] ? 1 : 0;
 }
 
 int findParent(int path[32][32], int size, int *cnt, int end) {
@@ -104,44 +104,44 @@ int findParent(int path[32][32], int size, int *cnt, int end) {
     return parent;
 }
 
-int getWeight(int aMatrix[32][32], int size) {
-    int status[32] = {0}, path[32][32] = {0}, sCnt = 0, eCnt = 0;
-    int start = 0, end = 0, weight = 0, nextVertex, flag = 1;
+int getWeight(int a_matrix[32][32], int size) {
+    int status[32] = {0}, path[32][32] = {0}, start_cnt = 0, end_cnt = 0;
+    int start = 0, end = 0, weight = 0, next_vertex, flag = 1;
 
     status[0] = 1;
     while (isAllAppended(status, size) == 0) {
         if (flag) {
-            nextVertex = findMinWeight(aMatrix[end], status, size);
-            if (nextVertex != -1) {
-                if (eCnt != 0 && compareMinWeight(aMatrix, status, size, end, start) == 0) {
+            next_vertex = findMinWeight(a_matrix[end], status, size);
+            if (next_vertex != -1) {
+                if (end_cnt != 0 && compareMinWeight(a_matrix, status, size, end, start) == 0) {
                     flag = 0;
                     continue;
                 }
-                weight += aMatrix[end][nextVertex];
-                path[end][nextVertex] = eCnt*2+1;
-                ++eCnt;
-                end = nextVertex;
+                weight += a_matrix[end][next_vertex];
+                path[end][next_vertex] = end_cnt*2+1;
+                ++end_cnt;
+                end = next_vertex;
             } else {
-                end = findParent(path, size, &eCnt, 1);
+                end = findParent(path, size, &end_cnt, 1);
                 flag = 0;
             }
         } else {
-            nextVertex = findMinWeight(aMatrix[start], status, size);
-            if (nextVertex != -1) {
-                if (sCnt != 0 && compareMinWeight(aMatrix, status, size, end, start) == 1) {
+            next_vertex = findMinWeight(a_matrix[start], status, size);
+            if (next_vertex != -1) {
+                if (start_cnt != 0 && compareMinWeight(a_matrix, status, size, end, start) == 1) {
                     flag = 1;
                     continue;
                 }
-                weight += aMatrix[start][nextVertex];
-                path[start][nextVertex] = sCnt*2;
-                ++sCnt;
-                start = nextVertex;
+                weight += a_matrix[start][next_vertex];
+                path[start][next_vertex] = start_cnt*2;
+                ++start_cnt;
+                start = next_vertex;
             } else {
-                start = findParent(path, size, &sCnt, 0);
+                start = findParent(path, size, &start_cnt, 0);
                 flag = 1;
             }
         }
-        status[nextVertex] = 1;
+        status[next_vertex] = 1;
     }
 
     return weight;
