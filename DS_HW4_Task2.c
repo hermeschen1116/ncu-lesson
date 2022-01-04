@@ -6,6 +6,12 @@ int findMinWeight(int edges[32], int status[32], int size);
 int compareMinWeight(int a_matrix[32][32], int status[32], int size, int end_index, int start_index);
 int findParent(int path[32][32], int size, int *cnt, int end);
 int getWeight(int a_matrix[32][32], int size);
+void showStatus(int status[32], int size) {
+    printf("%d", status[0]);
+    for (int i = 1; i < size; i++) {
+        printf(" %d", status[i]);
+    }
+}
 
 int main(void) {
     int size, aMatrix[32][32] = {0}, weight;
@@ -146,4 +152,5 @@ int getWeight(int a_matrix[32][32], int size) {
 
     return weight;
 }
+
 
