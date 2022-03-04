@@ -1,1 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/c++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/node@14/lib CMakeFiles/ncu_lesson.dir/DS_HW1_task1.cpp.o -o ncu_lesson 
