@@ -12,4 +12,3 @@ for i in range(n) :
     q = int(input())
     src = list(map(int, input().split(' ')))
     print("Optimal swapping takes {} swaps.".format(swapCount(src, q)))
-    print(src)
