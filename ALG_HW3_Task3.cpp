@@ -21,9 +21,11 @@ int main(void) {
             degree[j][0] = j;
             degree[j][1] = unsorted_degree(src[j], n);
         }
-        cout << endl;
         sort_degree(degree, m);
         print_data(src, degree, m);
+        if (i < q-1) {
+            cout << endl;
+        }
     }
 
     return 0;
@@ -52,6 +54,10 @@ void sort_degree(int _degree_[][2], int _length_) {
     for (int i = 0; i < _length_; i++) {
         for (int j = i; j < _length_; j++) {
             if (_degree_[i][1] > _degree_[j][1]) {
+                swap(_degree_[i][0], _degree_[j][0]);
+                swap(_degree_[i][1], _degree_[j][1]);
+            }
+            if (_degree_[i][1] == _degree_[j][1] && i > j) {
                 swap(_degree_[i][0], _degree_[j][0]);
                 swap(_degree_[i][1], _degree_[j][1]);
             }
