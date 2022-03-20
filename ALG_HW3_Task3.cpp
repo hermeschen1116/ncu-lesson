@@ -20,11 +20,10 @@ int main(void) {
             cin >> src[j];
             degree[j][0] = j;
             degree[j][1] = unsorted_degree(src[j], n);
-            cout << degree[j][1] << endl;
         }
+        cout << endl;
         sort_degree(degree, m);
         print_data(src, degree, m);
-        cout << endl;
     }
 
     return 0;
@@ -64,5 +63,4 @@ void print_data(string _src_[], int _degree_[][2], int _length_) {
     for (int i = 0; i < _length_; i++) {
         cout << _src_[_degree_[i][0]] << endl;
     }
-    cout << endl;
 }

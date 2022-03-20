@@ -19,7 +19,6 @@ def quick_sort(_src_, _lb_, _rb_) :
         return 
     pivot, l, r = _rb_, _lb_, _rb_-1
     while True :
-        print(_lb_, _rb_, l, r, pivot)
         l = find_element(_src_, l, _rb_, pivot, True)
         r = find_element(_src_, _lb_, r, pivot, False)
         if l < r :
