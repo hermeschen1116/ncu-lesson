@@ -57,7 +57,7 @@ void sort_degree(int _degree_[][2], int _length_) {
                 swap(_degree_[i][0], _degree_[j][0]);
                 swap(_degree_[i][1], _degree_[j][1]);
             }
-            if (_degree_[i][1] == _degree_[j][1] && i > j) {
+            if (_degree_[i][1] == _degree_[j][1] && _degree_[i][0] > _degree_[j][0]) {
                 swap(_degree_[i][0], _degree_[j][0]);
                 swap(_degree_[i][1], _degree_[j][1]);
             }
