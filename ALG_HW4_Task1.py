@@ -5,7 +5,7 @@ def minUNext(uglyNumbers, nextUNumber) :
         if cur < minimum :
             minIndex, minimum = i, cur
     return minIndex, minimum
-
+1
 def nthUglyNumber(nth) :
     if nth <= 1 : return 1
     uglyNumbers = [1]
