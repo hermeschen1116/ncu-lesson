@@ -31,7 +31,7 @@ def countFactors(n, primesTable) :
     return nFactors
 
 def findMostFactor(lb, rb) :
-    primesTable = buildPrimesTable(40000)
+    primesTable = buildPrimesTable(65536)
     maximum = [0, 0]
     temp = 0
 
