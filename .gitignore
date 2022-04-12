@@ -10,9 +10,9 @@
 !README.md
 
 # clion
-!cmake-build-debug/
-!.idea/
-!CMakeLists.txt
+cmake-build-debug/
+.idea/
+CMakeLists.txt
 
 # source code
 !*.c
