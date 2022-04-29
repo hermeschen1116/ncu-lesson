@@ -12,6 +12,7 @@ double calculateDistance(pair<int, int> _point1_, pair<int, int> _point2_);
 pair<int, int> getCentralBound(vector< pair<int, int> > _src_, int _lb_, int _rb_, double _dMin_);
 double findClosestDistanceC(vector< pair<int, int> > _src_, int _lb_, int _rb_, double _dMin_);
 double findClosestDistance(vector< pair<int, int> > _src_, int _lb_, int _rb_);
+double findClosestDistance(vector< pair<int, int> > &_src_);
 
 int main() {
     int n, m;
@@ -27,7 +28,7 @@ int main() {
             points.push_back(make_pair(xI, yI));
         }
         sort(points.begin(), points.end(), pointsCompare);
-        printf("%.3lf\n", findClosestDistance(points, 0, points.size()-1));
+        printf("%.3lf\n", findClosestDistance(points));
     }
 
     return 0;
@@ -124,4 +125,9 @@ double findClosestDistance(vector< pair<int, int> > _src_, int _lb_, int _rb_) {
     min = cMin < min ? cMin : min;
 
     return min;
+}
+
+double findClosestDistance(vector< pair<int, int> > &_src_) {
+    sort(_src_.begin(), _src_.end(), pointsCompare);
+    return findClosestDistance(_src_, 0, _src_.size()-1);
 }
