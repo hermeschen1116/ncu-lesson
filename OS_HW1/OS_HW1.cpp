@@ -24,19 +24,21 @@ public:
     void sort();
     void show(int _lb_, int _rb_);
     void show();
-    int size();
-    bool isEmpty();
 };
 
 int main(void) {
     list_t src;
-    int tmp;
+    int input;
 
     for (int i = 0; i < 8; i++) {
-        cin >> tmp;
-        src.add(tmp);
+        cin >> input;
+        src.add(input);
     }
     src.show();
+    cout << "sort range(3, 7)" << endl;
+    src.sort(3, 7);
+    src.show(3, 7);
+    cout << "sort all" << endl;
     src.sort();
     src.show();
 
@@ -121,12 +123,4 @@ void list_t::show(int _lb_, int _rb_) {
 
 void list_t::show() {
     show(0, src.size()-1);
-}
-
-int list_t::size() {
-    return src.size();
-}
-
-bool list_t::isEmpty() {
-    return src.empty();
 }
