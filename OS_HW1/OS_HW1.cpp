@@ -3,15 +3,15 @@
 #include <pthread.h>
 using namespace std;
 
-typedef struct mInput_t {
+typedef struct mParameter_t {
     vector<int> _src_;
     int _lb_;
     int _rb_;
     pthread_mutex_t _rLock_;
-} input;
+} parameter;
 
-input *setInput(vector<int> &_src_, int _lb_, int _rb_);
-bool isSorted(vector<int> _src_);
+parameter *setInput(vector<int> &_src_, int _lb_, int _rb_);
+bool isSorted(vector<int> _src_)
 void swap(int &n1, int &n2);
 void *quickSort(void *_input);
 void print_array(vector<int> _src_) {
@@ -34,21 +34,23 @@ public:
 };
 
 int main(void) {
-    Array src;
+    vector<int> src;
     int tmp;
+    parameter *data;
 
     for (int i = 0; i < 8; i++) {
         cin >> tmp;
-        src.add(tmp);
+        src.push_back(tmp);
     }
-    src.show();
-    src.sort();
-    src.show();
+    data = setInput(src, 0, src.size()-1);
+    quickSort(data);
+    print_array(src);
+
     pthread_exit(NULL);
 }
 
-input *setInput(vector<int> &_src_, int _lb_, int _rb_) {
-    input *newInput = new input;
+parameter *setInput(vector<int> &_src_, int _lb_, int _rb_) {
+    parameter *newInput = new parameter;
     newInput->_src_ = ref(_src_);
     newInput->_lb_ = _lb_;
     newInput->_rb_ = _rb_;
@@ -74,9 +76,9 @@ void swap(int &n1, int &n2) {
 }
 
 void *quickSort(void *_input_) {
-    input *data = (input *)_input_;
+    parameter *data = (parameter *)_input_;
     int pivot, l, r;
-    input *input[2];
+    parameter *input[2];
     pthread_t pool[2];
 
     if (data->_lb_ < data->_rb_ && !isSorted(data->_src_)) {
@@ -110,12 +112,12 @@ void Array::add(int input) {
 }
 
 void Array::sort(int _lb_, int _rb_) {
-    input *_input_ = setInput(ref(src), _lb_, _rb_);
+    parameter *_input_ = setInput(ref(src), _lb_, _rb_);
     quickSort(_input_);
 }
 
 void Array::sort() {
-    input *_input_ = setInput(ref(src), 0, src.size()-1);
+    parameter *_input_ = setInput(ref(src), 0, src.size()-1);
     quickSort(_input_);
 }
 
