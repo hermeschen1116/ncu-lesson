@@ -18,7 +18,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OS_HW1/OS_HW1" beforeDir="false" afterPath="$PROJECT_DIR$/OS_HW1/OS_HW1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OS_HW1/OS_HW1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/OS_HW1/OS_HW1.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OS_HW1/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/OS_HW1/build.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +118,7 @@
       <workItem from="1651025275820" duration="4837000" />
       <workItem from="1651044025492" duration="1545000" />
       <workItem from="1651045924228" duration="55099000" />
-      <workItem from="1651257576216" duration="34477000" />
+      <workItem from="1651257576216" duration="36054000" />
     </task>
     <servers />
   </component>

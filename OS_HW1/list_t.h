@@ -1,0 +1,4 @@
+#ifndef NCU_LESSON_LIST_T_H
+#define NCU_LESSON_LIST_T_H
+
+#endif //NCU_LESSON_LIST_T_H

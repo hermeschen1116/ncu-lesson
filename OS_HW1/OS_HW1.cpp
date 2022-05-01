@@ -14,13 +14,8 @@ parameter *setInput(vector<int> &_src_, int _lb_, int _rb_);
 bool isSorted(vector<int> _src_);
 void swap(int &n1, int &n2);
 void *quickSort(void *_input);
-void print_array(vector<int> _src_) {
-    cout << _src_[0];
-    for (int i = 1; i < _src_.size(); i++) cout << ", " << _src_[i];
-    cout << '#' << endl;
-}
 
-class Array {
+class list_t {
 private :
     vector<int> src;
 public:
@@ -34,7 +29,7 @@ public:
 };
 
 int main(void) {
-    Array src;
+    list_t src;
     int tmp;
 
     for (int i = 0; i < 8; i++) {
@@ -88,11 +83,9 @@ void *quickSort(void *_input_) {
             while (r > data->_lb_ and (*data->_src_)[r] > (*data->_src_)[pivot]) --r;
             if (l >= r) break;
             swap((*data->_src_)[l], (*data->_src_)[r]);
-            if (l != r) print_array(*data->_src_);
         }
         swap((*data->_src_)[pivot], (*data->_src_)[l]);
         swap(pivot, l);
-        if (pivot != l) print_array(*data->_src_);
         pthread_mutex_unlock(&data->_rLock_);
 
         input[0] = setInput(*data->_src_, data->_lb_, pivot-1);
@@ -106,34 +99,34 @@ void *quickSort(void *_input_) {
     return NULL;
 }
 
-void Array::add(int input) {
+void list_t::add(int input) {
     src.push_back(input);
 }
 
-void Array::sort(int _lb_, int _rb_) {
+void list_t::sort(int _lb_, int _rb_) {
     parameter *_input_ = setInput(ref(src), _lb_, _rb_);
     quickSort(_input_);
 }
 
-void Array::sort() {
+void list_t::sort() {
     parameter *_input_ = setInput(ref(src), 0, src.size()-1);
     quickSort(_input_);
 }
 
-void Array::show(int _lb_, int _rb_) {
+void list_t::show(int _lb_, int _rb_) {
     cout << src[_lb_];
     for (int i = _lb_+1; i <= _rb_; i++) cout << ", " << src[i];
     cout << endl;
 }
 
-void Array::show() {
+void list_t::show() {
     show(0, src.size()-1);
 }
 
-int Array::size() {
+int list_t::size() {
     return src.size();
 }
 
-bool Array::isEmpty() {
+bool list_t::isEmpty() {
     return src.empty();
 }
