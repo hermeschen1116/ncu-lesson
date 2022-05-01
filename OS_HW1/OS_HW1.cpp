@@ -73,16 +73,16 @@ void swap(int &n1, int &n2) {
 
 void *quickSort(void *_input_) {
     parameter *data = (parameter *)_input_;
-    int pivot, l, r;
+    int pivot, l, r, lb = data->_lb_, rb = data->_rb_;
     parameter *input[2];
     pthread_t pool[2];
 
-    if (data->_lb_ < data->_rb_ && !isSorted(*data->_src_)) {
+    if (lb < rb && !isSorted(*data->_src_)) {
         pthread_mutex_lock(&data->_rLock_);
-        pivot = data->_rb_, l = data->_lb_, r = data->_rb_-1;
+        pivot = rb, l = lb, r = rb-1;
         while (true) {
-            while (l < data->_rb_ and (*data->_src_)[l] < (*data->_src_)[pivot]) ++l;
-            while (r > data->_lb_ and (*data->_src_)[r] > (*data->_src_)[pivot]) --r;
+            while (l < rb and (*data->_src_)[l] < (*data->_src_)[pivot]) ++l;
+            while (r > lb and (*data->_src_)[r] > (*data->_src_)[pivot]) --r;
             if (l >= r) break;
             swap((*data->_src_)[l], (*data->_src_)[r]);
         }
@@ -90,8 +90,8 @@ void *quickSort(void *_input_) {
         swap(pivot, l);
         pthread_mutex_unlock(&data->_rLock_);
 
-        input[0] = setInput(*data->_src_, data->_lb_, pivot-1);
-        input[1] = setInput(*data->_src_, pivot+1, data->_rb_);
+        input[0] = setInput(*data->_src_, lb, pivot-1);
+        input[1] = setInput(*data->_src_, pivot+1, rb);
         for (int i = 0; i < 2; i++) {
             pthread_create(&pool[i], NULL, quickSort, (void *)input[i]);
             pthread_join(pool[i], NULL);
