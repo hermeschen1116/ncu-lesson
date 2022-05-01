@@ -4,7 +4,7 @@
 using namespace std;
 
 typedef struct mParameter_t {
-    vector<int> _src_;
+    vector<int> *_src_;
     int _lb_;
     int _rb_;
     pthread_mutex_t _rLock_;
@@ -34,24 +34,23 @@ public:
 };
 
 int main(void) {
-    vector<int> src;
+    Array src;
     int tmp;
-    parameter *data;
 
     for (int i = 0; i < 8; i++) {
         cin >> tmp;
-        src.push_back(tmp);
+        src.add(tmp);
     }
-    data = setInput(src, 0, src.size()-1);
-    quickSort(data);
-    print_array(src);
+    src.show();
+    src.sort();
+    src.show();
 
     pthread_exit(NULL);
 }
 
 parameter *setInput(vector<int> &_src_, int _lb_, int _rb_) {
     parameter *newInput = new parameter;
-    newInput->_src_ = ref(_src_);
+    newInput->_src_ = &_src_;
     newInput->_lb_ = _lb_;
     newInput->_rb_ = _rb_;
     pthread_mutex_init(&newInput->_rLock_, NULL);
@@ -81,23 +80,23 @@ void *quickSort(void *_input_) {
     parameter *input[2];
     pthread_t pool[2];
 
-    if (data->_lb_ < data->_rb_ && !isSorted(data->_src_)) {
+    if (data->_lb_ < data->_rb_ && !isSorted(*data->_src_)) {
         pthread_mutex_lock(&data->_rLock_);
         pivot = data->_rb_, l = data->_lb_, r = data->_rb_-1;
         while (true) {
-            while (l < data->_rb_ and data->_src_[l] < data->_src_[pivot]) ++l;
-            while (r > data->_lb_ and data->_src_[r] > data->_src_[pivot]) --r;
+            while (l < data->_rb_ and (*data->_src_)[l] < (*data->_src_)[pivot]) ++l;
+            while (r > data->_lb_ and (*data->_src_)[r] > (*data->_src_)[pivot]) --r;
             if (l >= r) break;
-            swap(data->_src_[l], data->_src_[r]);
-            if (l != r) print_array(data->_src_);
+            swap((*data->_src_)[l], (*data->_src_)[r]);
+            if (l != r) print_array(*data->_src_);
         }
-        swap(data->_src_[pivot], data->_src_[l]);
+        swap((*data->_src_)[pivot], (*data->_src_)[l]);
         swap(pivot, l);
-        if (pivot != l) print_array(data->_src_);
+        if (pivot != l) print_array(*data->_src_);
         pthread_mutex_unlock(&data->_rLock_);
 
-        input[0] = setInput(data->_src_, data->_lb_, pivot-1);
-        input[1] = setInput(data->_src_, pivot+1, data->_rb_);
+        input[0] = setInput(*data->_src_, data->_lb_, pivot-1);
+        input[1] = setInput(*data->_src_, pivot+1, data->_rb_);
         for (int i = 0; i < 2; i++) {
             pthread_create(&pool[i], NULL, quickSort, (void *)input[i]);
             pthread_join(pool[i], NULL);
