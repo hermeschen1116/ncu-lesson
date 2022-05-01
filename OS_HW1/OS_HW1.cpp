@@ -11,7 +11,7 @@ typedef struct mParameter_t {
 } parameter;
 
 parameter *setInput(vector<int> &_src_, int _lb_, int _rb_);
-bool isSorted(vector<int> _src_)
+bool isSorted(vector<int> _src_);
 void swap(int &n1, int &n2);
 void *quickSort(void *_input);
 void print_array(vector<int> _src_) {

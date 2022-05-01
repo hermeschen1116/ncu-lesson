@@ -1,4 +1,1 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /Users/sonodakazuto/Repository/ncu_lesson -B /Users/sonodakazuto/Repository/ncu_lesson/cmake-build-debug
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/sonodakazuto/Repository/ncu_lesson/cmake-build-debug
+CMakeLists.txt not found in /Users/sonodakazuto/Repository/ncu_lesson Select CMakeLists.txt
