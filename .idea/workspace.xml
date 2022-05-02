@@ -15,7 +15,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63430e9c-5bf3-47e6-830c-aabd17b25ea9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/PL_HW6.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OS_HW1/OS_HW1" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,9 +84,9 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="OS_HW1" type="ShConfigurationType" singleton="false">
@@ -118,7 +120,8 @@
       <workItem from="1651045924228" duration="55099000" />
       <workItem from="1651257576216" duration="38701000" />
       <workItem from="1651399082537" duration="439000" />
-      <workItem from="1651400260002" duration="2000" />
+      <workItem from="1651400260002" duration="246000" />
+      <workItem from="1651484698706" duration="1010000" />
     </task>
     <servers />
   </component>
