@@ -1,9 +1,10 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
 
-vector<int> pickUp(int _goal_, vector<int> _items_);
-void getResult(vector<int> _get_);
+vector<int> steal(int _goal_, vector<int> _items_);
+void showResult(vector<int> _pickUp_);
 
 int main() {
     int nData, goal, nItem, buffer;
@@ -17,35 +18,43 @@ int main() {
             cin >> buffer;
             items.push_back(buffer);
         }
-        getResult(pickUp(goal, items));
+        showResult(steal(goal, items));
     }
 
     return 0;
 }
 
-vector<int> pickUp(int _goal_, vector<int> _items_) {
-    int length = _items_.size(), tGoal = 0;
-    int pick[length+1][_goal_+1];
+vector<int> steal(int _goal_, vector<int> _items_) {
+    int length = _items_.size(), tGoal;
     vector<int> get;
 
+    if (length == 0) return get;
     sort(_items_.begin(), _items_.end(), greater<int>());
-    for (int i = 0; i <= _goal_; i++) pick[0][i] = 0;
-    for (int i = 1; i <= length; i++) {
-        for (int j = 0; j <= _goal_; j++) {
-            if (_items_[j] < i)
+    for (int i = 0; i < length; i++) {
+        get.clear();
+        tGoal = 0;
+        if (_items_[i] > _goal_) continue;
+        for (int j = i; j < length; j++) {
+            if (tGoal+_items_[j] <= _goal_) {
+                tGoal += _items_[j];
+                get.push_back(_items_[j]);
+            }
+            if (tGoal == _goal_) break;
         }
+        if (tGoal == _goal_) break;
     }
+    if (tGoal < _goal_) get.clear();
 
     return get;
 }
 
-void getResult(vector<int> _get_) {
-    int length = _get_.size();
+void showResult(vector<int> _pickUp_) {
+    int length = _pickUp_.size();
 
     if (length == 0) cout << "impossible" << endl;
     else {
-        cout << _get_[0];
-        for (int i = 1; i < length; i++) cout << ' ' << _get_[i];
+        cout << _pickUp_[0];
+        for (int i = 1; i < length; i++) cout << ' ' << _pickUp_[i];
         cout << endl;
     }
 }
