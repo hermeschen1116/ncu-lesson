@@ -15,10 +15,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63430e9c-5bf3-47e6-830c-aabd17b25ea9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ALG_HW6_Task2.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG_HW6_Task3.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ALG_HW6_Task1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ALG_HW6_Task2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ALG_HW6_Task2.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +134,7 @@
       <workItem from="1651602260991" duration="182000" />
       <workItem from="1651602517116" duration="1740000" />
       <workItem from="1651633024483" duration="7201000" />
-      <workItem from="1651764786537" duration="1951000" />
+      <workItem from="1651764786537" duration="7125000" />
     </task>
     <servers />
   </component>
