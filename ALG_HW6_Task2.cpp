@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
 using namespace std;
 
 vector<int> steal(int _goal_, vector<int> _items_);
