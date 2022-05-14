@@ -1,7 +1,6 @@
 # clion
 /cmake-build-debug/
 /venv/
-.idea/
 
 # system
 .DS_Store
