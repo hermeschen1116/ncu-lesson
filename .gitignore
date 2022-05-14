@@ -1,5 +1,5 @@
 # clion
-cmake-build-debug/
+/cmake-build-debug/
 venv/
 .idea/
 
