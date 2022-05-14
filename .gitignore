@@ -4,4 +4,4 @@ venv/
 .idea/
 
 # system
-.DS_Stores
+.DS_Store
