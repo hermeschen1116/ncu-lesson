@@ -1,8 +1,7 @@
-# git
-!.gitignore
-!README.md
-
 # clion
 cmake-build-debug/
+venv/
 .idea/
 
+# system
+.DS_Stores

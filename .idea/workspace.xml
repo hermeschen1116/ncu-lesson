@@ -80,7 +80,8 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RunManager" selected="CMake Application.ALG_HW3_Task1">
@@ -245,7 +246,7 @@
       <option name="presentableId" value="Default" />
       <updated>1652291050828</updated>
       <workItem from="1652291053413" duration="1279000" />
-      <workItem from="1652497146674" duration="1004000" />
+      <workItem from="1652497146674" duration="1229000" />
     </task>
     <servers />
   </component>
