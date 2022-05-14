@@ -1,6 +1,6 @@
 # clion
 /cmake-build-debug/
-venv/
+/venv/
 .idea/
 
 # system
