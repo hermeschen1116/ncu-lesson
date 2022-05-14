@@ -7,14 +7,14 @@ int main(void) {
 
 
     scanf("%d %d", &m, &n);
-    while (scanf("%d", &elements[total/n][total%n]) != EOF) {
-        if (elements[total/n][total%n] != 0) {
+    while (scanf("%d", &elements[total / n][total % n]) != EOF) {
+        if (elements[total / n][total % n] != 0) {
             cnt++;
         }
         total++;
     }
 
-    if(total != m*n) {
+    if (total != m * n) {
         printf("Input matrix has wrong size. Please input again.");
         return 0;
     }
