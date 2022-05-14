@@ -91,6 +91,111 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ALG_HW4_Task2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ncu_lesson" TARGET_NAME="ALG_HW4_Task2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ncu_lesson" RUN_TARGET_NAME="ALG_HW4_Task2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ALG_HW5_Task1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ncu_lesson" TARGET_NAME="ALG_HW5_Task1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ncu_lesson" RUN_TARGET_NAME="ALG_HW5_Task1">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ALG_HW5_Task2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ncu_lesson" TARGET_NAME="ALG_HW5_Task2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ncu_lesson" RUN_TARGET_NAME="ALG_HW5_Task2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ALG_HW5_Task3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ncu_lesson" TARGET_NAME="ALG_HW5_Task3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ncu_lesson" RUN_TARGET_NAME="ALG_HW5_Task3">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ALG_HW6_Task1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ncu_lesson" TARGET_NAME="ALG_HW6_Task1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ncu_lesson" RUN_TARGET_NAME="ALG_HW6_Task1">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ALG_HW6_Task2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ncu_lesson" TARGET_NAME="ALG_HW6_Task2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ncu_lesson" RUN_TARGET_NAME="ALG_HW6_Task2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ALG_HW6_Task3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ncu_lesson" TARGET_NAME="ALG_HW6_Task3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ncu_lesson" RUN_TARGET_NAME="ALG_HW6_Task3">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DS_HW1_Task1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ncu_lesson" TARGET_NAME="DS_HW1_Task1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ncu_lesson" RUN_TARGET_NAME="DS_HW1_Task1">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DS_HW1_Task2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ncu_lesson" TARGET_NAME="DS_HW1_Task2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ncu_lesson" RUN_TARGET_NAME="DS_HW1_Task2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DS_HW2_Task1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ncu_lesson" TARGET_NAME="DS_HW2_Task1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ncu_lesson" RUN_TARGET_NAME="DS_HW2_Task1">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DS_HW2_Task2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ncu_lesson" TARGET_NAME="DS_HW2_Task2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ncu_lesson" RUN_TARGET_NAME="DS_HW2_Task2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DS_HW3_Task1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ncu_lesson" TARGET_NAME="DS_HW3_Task1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ncu_lesson" RUN_TARGET_NAME="DS_HW3_Task1">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DS_HW3_Task2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ncu_lesson" TARGET_NAME="DS_HW3_Task2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ncu_lesson" RUN_TARGET_NAME="DS_HW3_Task2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DS_HW4_Task1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ncu_lesson" TARGET_NAME="DS_HW4_Task1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ncu_lesson" RUN_TARGET_NAME="DS_HW4_Task1">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DS_HW4_Task2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ncu_lesson" TARGET_NAME="DS_HW4_Task2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ncu_lesson" RUN_TARGET_NAME="DS_HW4_Task2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DS_HW4_Task2_test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ncu_lesson" TARGET_NAME="DS_HW4_Task2_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ncu_lesson" RUN_TARGET_NAME="DS_HW4_Task2_test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DS_HW4_Task3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ncu_lesson" TARGET_NAME="DS_HW4_Task3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ncu_lesson" RUN_TARGET_NAME="DS_HW4_Task3">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DS_HW4_Task3_test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ncu_lesson" TARGET_NAME="DS_HW4_Task3_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ncu_lesson" RUN_TARGET_NAME="DS_HW4_Task3_test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PL_HW5" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ncu_lesson" TARGET_NAME="PL_HW5" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ncu_lesson" RUN_TARGET_NAME="PL_HW5">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PL_HW6" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ncu_lesson" TARGET_NAME="PL_HW6" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ncu_lesson" RUN_TARGET_NAME="PL_HW6">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PL_HW7" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ncu_lesson" TARGET_NAME="PL_HW7" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ncu_lesson" RUN_TARGET_NAME="PL_HW7">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -100,6 +205,27 @@
       <item itemvalue="CMake Application.ALG_HW3_Task1" />
       <item itemvalue="CMake Application.ALG_HW3_Task2" />
       <item itemvalue="CMake Application.ALG_HW3_Task3" />
+      <item itemvalue="CMake Application.ALG_HW4_Task2" />
+      <item itemvalue="CMake Application.ALG_HW5_Task1" />
+      <item itemvalue="CMake Application.ALG_HW5_Task2" />
+      <item itemvalue="CMake Application.ALG_HW5_Task3" />
+      <item itemvalue="CMake Application.ALG_HW6_Task1" />
+      <item itemvalue="CMake Application.ALG_HW6_Task2" />
+      <item itemvalue="CMake Application.ALG_HW6_Task3" />
+      <item itemvalue="CMake Application.DS_HW1_Task1" />
+      <item itemvalue="CMake Application.DS_HW1_Task2" />
+      <item itemvalue="CMake Application.DS_HW2_Task1" />
+      <item itemvalue="CMake Application.DS_HW2_Task2" />
+      <item itemvalue="CMake Application.DS_HW3_Task1" />
+      <item itemvalue="CMake Application.DS_HW3_Task2" />
+      <item itemvalue="CMake Application.DS_HW4_Task1" />
+      <item itemvalue="CMake Application.DS_HW4_Task2" />
+      <item itemvalue="CMake Application.DS_HW4_Task2_test" />
+      <item itemvalue="CMake Application.DS_HW4_Task3" />
+      <item itemvalue="CMake Application.DS_HW4_Task3_test" />
+      <item itemvalue="CMake Application.PL_HW5" />
+      <item itemvalue="CMake Application.PL_HW6" />
+      <item itemvalue="CMake Application.PL_HW7" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
