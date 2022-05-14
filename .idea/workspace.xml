@@ -37,7 +37,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87fbbceb-4932-4a96-b812-74369741eaa0" name="Changes" comment="" />
+    <list default="true" id="87fbbceb-4932-4a96-b812-74369741eaa0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +86,7 @@
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="CMake Application.ALG_HW3_Task1">
+  <component name="RunManager" selected="CMake Application.ALG_HW6_Task3">
     <configuration name="ALG_HW3_Task1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ncu_lesson" TARGET_NAME="ALG_HW3_Task1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ncu_lesson" RUN_TARGET_NAME="ALG_HW3_Task1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -246,7 +248,7 @@
       <option name="presentableId" value="Default" />
       <updated>1652291050828</updated>
       <workItem from="1652291053413" duration="1279000" />
-      <workItem from="1652497146674" duration="1985000" />
+      <workItem from="1652497146674" duration="2136000" />
     </task>
     <servers />
   </component>
