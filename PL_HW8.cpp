@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include "matrix.h"
+
 #define DIM_ROW 3
 #define DIM_COL 3
 #define arr1 { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} }
@@ -9,8 +10,8 @@
 using namespace std;
 
 template<int m, int n>
-int** init(const int (&arr2d)[m][n]) {
-    int **a = new int*[m];
+int **init(const int (&arr2d)[m][n]) {
+    int **a = new int *[m];
     for (int i = 0; i < m; i++) {
         a[i] = new int[n];
         for (int j = 0; j < n; j++) {
@@ -27,7 +28,7 @@ int main() {
     Mat2D m1(a1, DIM_ROW, DIM_COL);
     Mat2D m2(a2, DIM_ROW, DIM_COL);
 
-    Mat2D res;
+    Mat2D res{};
     // res = m1 + m2
     res = m1.add(m2);
     res.print();
