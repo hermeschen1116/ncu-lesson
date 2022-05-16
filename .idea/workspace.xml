@@ -14,6 +14,7 @@
       <config projectName="ncu_lesson" targetName="ALG_HW5_Task1" />
       <config projectName="ncu_lesson" targetName="PL_HW5" />
       <config projectName="ncu_lesson" targetName="ALG_HW5_Task2" />
+      <config projectName="ncu_lesson" targetName="PL_HW8" />
       <config projectName="ncu_lesson" targetName="ALG_HW5_Task3" />
       <config projectName="ncu_lesson" targetName="PL_HW7" />
       <config projectName="ncu_lesson" targetName="DS_HW4_Task3_test" />
@@ -41,12 +42,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87fbbceb-4932-4a96-b812-74369741eaa0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/PL_HW8.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-120d71ae8c1bee707c8c.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-05-14T03-34-46-0999.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +97,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="CMake Application.ALG_HW3_Task1">
+  <component name="RunManager" selected="CMake Application.PL_HW8">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="ncu_lesson" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -158,15 +156,6 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
-    </configuration>
-    <configuration name="ALG_HW7_Task1" type="Application" factoryName="Application">
-      <option name="ALTERNATIVE_JRE_PATH" value="19" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="ALG_HW7_Task1" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ALG_HW7" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="ALG_HW3_Task1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ncu_lesson" TARGET_NAME="ALG_HW3_Task1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ncu_lesson" RUN_TARGET_NAME="ALG_HW3_Task1">
       <method v="2">
@@ -288,6 +277,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PL_HW8" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ncu_lesson" TARGET_NAME="PL_HW8" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ncu_lesson" RUN_TARGET_NAME="PL_HW8">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -386,6 +380,7 @@
       <item itemvalue="CMake Application.PL_HW5" />
       <item itemvalue="CMake Application.PL_HW6" />
       <item itemvalue="CMake Application.PL_HW7" />
+      <item itemvalue="CMake Application.PL_HW8" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -405,7 +400,7 @@
       <workItem from="1652500057178" duration="86000" />
       <workItem from="1652500255392" duration="193000" />
       <workItem from="1652690602408" duration="35000" />
-      <workItem from="1652691308887" duration="2000" />
+      <workItem from="1652691308887" duration="273000" />
     </task>
     <servers />
   </component>
