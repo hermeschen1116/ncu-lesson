@@ -4,26 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e604ab89-ce5d-43e0-8ebc-9fa0d0022852" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../ALG_HW8/ALG_HW8/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ALG_HW8/ALG_HW8/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ALG_HW8/ALG_HW8/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ALG_HW8/ALG_HW8/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ALG_HW8/ALG_HW8/ALG_HW8.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ALG_HW8/ALG_HW8/src/ALG_HW8_Task1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ALG_HW8/ALG_HW8/src/ALG_HW8_Task2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ALG_HW8/ALG_HW8/src/ALG_HW8_Task3.java" afterDir="false" />
+    <list default="true" id="0494195c-f7bb-45fd-a215-a05ea505148d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ALG_HW7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ALG_HW7/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="CodeInsightWorkspaceSettings">
-    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -35,10 +24,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="6bf1234e-4fdc-43e2-9066-a253a240e7c5" />
+        <option name="url" value="git@github.com:SonodaKazuto/ncu_lesson.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="291n6dOrETDoVZzfpCOnXZl9zM3" />
+  <component name="ProjectId" id="29JlGFLQzwN5h0LXf2otrKO15Fe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -48,61 +45,65 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/sonodakazuto/Repository/ncu_lesson/ALG_HW7",
+    "last_opened_file_path": "/Users/sonodakazuto/Repository/ncu_lesson/ALG_HW8",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ALG_HW7_Task3">
-    <configuration name="ALG_HW7_Task1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ALG_HW7_Task1" />
-      <module name="ALG_HW7" />
+  <component name="RunManager" selected="Application.ALG_HW8_Task2">
+    <configuration name="ALG_HW8_Task1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ALG_HW8_Task1" />
+      <module name="ALG_HW8" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ALG_HW7_Task2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ALG_HW7_Task2" />
-      <module name="ALG_HW7" />
+    <configuration name="ALG_HW8_Task2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ALG_HW8_Task2" />
+      <module name="ALG_HW8" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ALG_HW7_Task3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ALG_HW7_Task3" />
-      <module name="ALG_HW7" />
+    <configuration name="ALG_HW8_Task3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ALG_HW8_Task3" />
+      <module name="ALG_HW8" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ALG_HW7_Task3" />
-        <item itemvalue="Application.ALG_HW7_Task2" />
-        <item itemvalue="Application.ALG_HW7_Task1" />
+        <item itemvalue="Application.ALG_HW8_Task2" />
+        <item itemvalue="Application.ALG_HW8_Task1" />
+        <item itemvalue="Application.ALG_HW8_Task3" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e604ab89-ce5d-43e0-8ebc-9fa0d0022852" name="Changes" comment="" />
-      <created>1652289286747</created>
+      <changelist id="0494195c-f7bb-45fd-a215-a05ea505148d" name="Changes" comment="" />
+      <created>1652838974809</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1652289286747</updated>
-      <workItem from="1652289289968" duration="1450000" />
-      <workItem from="1652291802427" duration="698000" />
-      <workItem from="1652345590239" duration="4847000" />
-      <workItem from="1652499931202" duration="44000" />
-      <workItem from="1652499986719" duration="160000" />
-      <workItem from="1652839169258" duration="610000" />
+      <updated>1652838974809</updated>
+      <workItem from="1652838977568" duration="2119000" />
+      <workItem from="1652841746744" duration="1607000" />
+      <workItem from="1652891881117" duration="3973000" />
+      <workItem from="1652924389868" duration="2657000" />
+      <workItem from="1652927138128" duration="17000" />
     </task>
     <servers />
   </component>
@@ -119,5 +120,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../.." />
+    </ignored-roots>
   </component>
 </project>
