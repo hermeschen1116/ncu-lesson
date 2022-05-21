@@ -1,79 +1,99 @@
 import java.text.CharacterIterator;
 import java.text.StringCharacterIterator;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Scanner;
 
 public class ALG_HW8_Task1 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String plaintext;
-        ArrayList<node> tmp;
-        node root;
 
         plaintext = input.next();
-        tmp = getFrequencyTable(plaintext);
-        //for (ALG_HW8_Task1.node node : tmp) System.out.println(node.toString());
-        root = buildHuffmanTree(tmp);
-        showHuffmanTree(root);
+        getHuffmanCodeTable(plaintext);
     }
 
-    public static ArrayList<node> getFrequencyTable(String _plaintext_) {
-        HashMap<Character, node> countBuffer = new HashMap<>();
-        CharacterIterator letter = new StringCharacterIterator(_plaintext_);
+    public static ArrayList<Node> getFrequencyTable(String plaintext) {
+        HashMap<Character, Node> countBuffer = new HashMap<>();
+        CharacterIterator letter = new StringCharacterIterator(plaintext);
         char current;
-        ArrayList<node> frequencyTable = new ArrayList<>();
+        ArrayList<Node> frequencyTable = new ArrayList<>();
 
         while (letter.current() != CharacterIterator.DONE) {
             current = letter.current();
-            if (countBuffer.containsKey(current))
-                countBuffer.computeIfPresent(current, (k, v) -> new node("" + k, v.getRate() + 1));
-            else countBuffer.putIfAbsent(current, new node("" + current, 1));
+            if (countBuffer.containsKey(current)) {
+                countBuffer.computeIfPresent(current, (k, v) -> new Node("" + k, v.getRate() + 1));
+            } else {
+                countBuffer.putIfAbsent(current, new Node("" + current, 1));
+            }
             letter.next();
         }
 
         countBuffer.forEach((k, v) -> frequencyTable.add(v));
-        frequencyTable.sort(node.compare);
+        frequencyTable.sort(Node.compare);
 
         return frequencyTable;
     }
 
-    public static node buildHuffmanTree(ArrayList<node> _frequencyTable_) {
-        node root;
-        while (_frequencyTable_.size() > 1) {
-            _frequencyTable_.set(0, _frequencyTable_.get(0).merge(_frequencyTable_.get(1)));
-            System.out.print("tree:");
-            showHuffmanTree(_frequencyTable_.get(0));
-            _frequencyTable_.remove(1);
-            _frequencyTable_.sort(node.compare);
+    public static Node buildHuffmanTree(ArrayList<Node> frequencyTable) {
+        ArrayList<Node> buffer = new ArrayList<>(frequencyTable);
+
+        while (buffer.size() > 1) {
+            buffer.set(0, buffer.get(0).merge(buffer.get(1)));
+            buffer.remove(1);
+            buffer.sort(Node.compare);
         }
-        root = _frequencyTable_.get(0);
-        System.out.println("root:"+root.toString());
 
-        return root;
+        return buffer.get(0);
     }
 
-    public static void showHuffmanTree(node _node_) {
-        System.out.println(_node_.toString());
-        if (_node_.getLeft() != null) showHuffmanTree(_node_.getLeft());
-        if (_node_.getRight() != null) showHuffmanTree(_node_.getRight());
+    public static void getHuffmanCode(Node root, ArrayList<Node> table) {
+        if (root.isLeaf()) {
+            for (Node n : table) {
+                if (n.getPlaintext().equals(root.getPlaintext()) && !n.getPlaintext().isEmpty()) {
+                    n.setCiphertext(root.getCiphertext());
+                }
+            }
+        } else {
+            if (root.getLeft() != null) root.getLeft().concatCiphertext(root.getCiphertext());
+            if (root.getRight() != null) root.getRight().concatCiphertext(root.getCiphertext());
+            getHuffmanCode(root.getLeft(), table);
+            getHuffmanCode(root.getRight(), table);
+        }
+    }
+    public static void getHuffmanCodeTable (String plaintext) {
+        ArrayList<Node> table = getFrequencyTable(plaintext);
+        Node root = buildHuffmanTree(table);
+
+        getHuffmanCode(root, table);
+        table.sort(Node.compareCiphertext);
+        for (Node n : table) System.out.println(n.getPlaintext() + ":" + n.getCiphertext());
     }
 
-    static class node {
-        static Comparator<node> compare = (_n1_, _n2_) -> {
-            int rate1 = _n1_.getRate();
-            int rate2 = _n2_.getRate();
+    static class Node {
+        static Comparator<Node> compare = (n1, n2) -> {
+            int rate1 = n1.getRate();
+            int rate2 = n2.getRate();
             if (rate1 != rate2) return rate1 < rate2 ? -1 : 1;
-            else return _n1_.getPlaintext().compareTo(_n2_.getPlaintext());
+            else return n1.getPlaintext().compareTo(n2.getPlaintext());
+        };
+        static Comparator<Node> compareCiphertext = (n1, n2) -> {
+            int ciphertext1 = Integer.parseInt(n1.getCiphertext(), 2);
+            int ciphertext2 = Integer.parseInt(n2.getCiphertext(), 2);
+            if (ciphertext1 == ciphertext2) return 0;
+            return ciphertext1 < ciphertext2 ? -1 : 1;
         };
         private String ciphertext;
         private String plaintext;
         private int rate;
-        private node left;
-        private node right;
+        private Node left;
+        private Node right;
 
-        public node(String _text_, int _rate_) {
-            plaintext = _text_;
+        public Node(String text, int rate) {
+            plaintext = text;
             ciphertext = "";
-            rate = _rate_;
+            this.rate = rate;
             left = null;
             right = null;
         }
@@ -82,59 +102,68 @@ public class ALG_HW8_Task1 {
             return plaintext;
         }
 
-        void setPlaintext(String _plaintext_) {
-            plaintext = _plaintext_;
+        void setPlaintext(String text) {
+            this.plaintext = text;
         }
 
-        void concatPlaintext(String _text_) {
-            setPlaintext(plaintext + _text_);
+        void concatPlaintext(String text) {
+            setPlaintext(plaintext + text);
         }
 
         String getCiphertext() {
             return ciphertext;
         }
-        void setCiphertext (String _ciphertext_) {
-            ciphertext = _ciphertext_;
+
+        void setCiphertext(String text) {
+            ciphertext = text;
         }
-        void concatCiphertext(String _text_) {
-            setCiphertext(ciphertext + _text_);
+
+        void concatCiphertext(String text) {
+            setCiphertext(text + ciphertext);
         }
 
         int getRate() {
             return rate;
         }
 
-        void computeRate(int _rate_) {
-            rate += _rate_;
+        void computeRate(int rate) {
+            this.rate += rate;
         }
 
-        node getLeft() {
+        Node getLeft() {
             return left;
         }
 
-        void setLeft(node _node_) {
-            left = _node_;
+        void setLeft(Node node) {
+            left = node;
+            left.setCiphertext("0");
         }
 
-        node getRight() {
+        Node getRight() {
             return right;
         }
 
-        void setRight(node _node_) {
-            right = _node_;
+        void setRight(Node node) {
+            right = node;
+            right.setCiphertext("1");
         }
+
+        boolean isLeaf() {
+            return left == null && right == null;
+        }
+
         @Override
         public String toString() {
             return "(" + plaintext + ", " + rate + ", " + ciphertext + ")";
         }
 
-        node merge(node _node_) {
-            node merged = new node(plaintext, rate);
+        Node merge(Node node) {
+            Node merged = new Node(plaintext, rate);
 
-            merged.concatPlaintext(_node_.plaintext);
-            merged.computeRate(_node_.getRate());
-            merged.setLeft(new node(plaintext, rate));
-            merged.setRight(new node(_node_.getPlaintext(), _node_.getRate()));
+            merged.concatPlaintext(node.plaintext);
+            merged.computeRate(node.getRate());
+            merged.setLeft(this);
+            merged.setRight(node);
 
             return merged;
         }

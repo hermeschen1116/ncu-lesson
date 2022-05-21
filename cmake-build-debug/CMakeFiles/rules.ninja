@@ -498,7 +498,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/sonodakazuto/Repository/ncu_lesson -B/Users/sonodakazuto/Repository/ncu_lesson/cmake-build-debug
+  command = "/Users/sonodakazuto/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.2270.30/CLion 2022.2 EAP.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S/Users/sonodakazuto/Repository/ncu_lesson -B/Users/sonodakazuto/Repository/ncu_lesson/cmake-build-debug
   description = Re-running CMake...
   generator = 1
 
@@ -507,7 +507,7 @@ rule RERUN_CMAKE
 # Rule for cleaning all built files.
 
 rule CLEAN
-  command = /Applications/CLion.app/Contents/bin/ninja/mac/ninja $FILE_ARG -t clean $TARGETS
+  command = "/Users/sonodakazuto/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.2270.30/CLion 2022.2 EAP.app/Contents/bin/ninja/mac/ninja" $FILE_ARG -t clean $TARGETS
   description = Cleaning all built files...
 
 
@@ -515,6 +515,6 @@ rule CLEAN
 # Rule for printing all primary targets available.
 
 rule HELP
-  command = /Applications/CLion.app/Contents/bin/ninja/mac/ninja -t targets
+  command = "/Users/sonodakazuto/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.2270.30/CLion 2022.2 EAP.app/Contents/bin/ninja/mac/ninja" -t targets
   description = All primary targets available:
 
