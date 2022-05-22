@@ -14,14 +14,10 @@ public class ALG_HW8_Task3 {
         input.nextLine();
         for (int i = 0; i < nInput; i++) {
             buffer = input.nextLine();
-            if (validateStringFormat(buffer, "(\\(\\d+,[LR]*\\) )+\\(\\)")) {
-                nodeInfo = getNodeList(buffer);
-                if (!nodeInfo.isEmpty()) {
-                    if (validateTree(nodeInfo)) treeLevelTraversal(nodeInfo);
-                    else {
-                        System.out.println(errorMsg);
-                    }
-                } else {
+            nodeInfo = getNodeList(buffer);
+            if (!nodeInfo.isEmpty()) {
+                if (validateTree(nodeInfo)) treeLevelTraversal(nodeInfo);
+                else {
                     System.out.println(errorMsg);
                 }
             } else {
@@ -51,6 +47,7 @@ public class ALG_HW8_Task3 {
         String[] infos = infoBuffer.split(" ");
         Node nodeBuffer;
 
+        if (!validateStringFormat(infoBuffer, "(\\(\\d+,[LR]*\\) )+\\(\\)")) return Collections.emptyList();
         for (String s : infos) {
             if (s.equals("()")) break;
             if (validateStringFormat(s, "\\(\\d+,[LR]*\\)")) {
@@ -72,12 +69,13 @@ public class ALG_HW8_Task3 {
     public static boolean validateTree(List<Node> nodeInfo) {
         List<Node> nodes = new ArrayList<>(nodeInfo);
         Node root = nodes.get(0);
-        Node cur;
+        Node cur, next;
         String pathBuffer;
         int cnt = 1;
 
         if (nodeInfo.isEmpty()) return false;
         nodes.remove(0);
+        nodes.sort(Node.compare);
         for (Node n : nodes) {
             pathBuffer = n.getPath();
             cur = root;
@@ -89,8 +87,11 @@ public class ALG_HW8_Task3 {
                         cur.setRight(n);
                     }
                     ++cnt;
+                    break;
                 }
-                cur = (pathBuffer.charAt(i) == 'L') ? cur.getLeft() : cur.getRight();
+                next = (pathBuffer.charAt(i) == 'L') ? cur.getLeft() : cur.getRight();
+                if (next == null) return false;
+                else cur = next;
             }
         }
         return cnt == nodeInfo.size();

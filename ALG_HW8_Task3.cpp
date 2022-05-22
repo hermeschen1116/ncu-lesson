@@ -32,23 +32,23 @@ public:
 
 };
 
-Node *getNodeInfo(const string& nodeInfo);
+Node *getNodeInfo(const string &nodeInfo);
 
-bool findNode(const vector<Node*>& nodeList, const string& path);
+bool findNode(const vector<Node *> &nodeList, const string &path);
 
-vector<Node*> getNodeList ();
+vector<Node *> getNodeList();
 
-bool compareNode(Node* n1, Node* n2);
+bool compareNode(Node *n1, Node *n2);
 
-bool compareNodeLevel(Node* n1, Node* n2);
+bool compareNodeLevel(Node *n1, Node *n2);
 
-bool validateTree(vector<Node*> nodeList);
+bool validateTree(vector<Node *> nodeList);
 
-void treeLevelTraversal(vector<Node*> nodeList);
+void treeLevelTraversal(vector<Node *> nodeList);
 
 int main() {
     int nInput;
-    vector<Node*> nodeInfoBuffer;
+    vector<Node *> nodeInfoBuffer;
     regex inputPattern(R"((\(\d+,[LR]*\)))");
 
     cin >> nInput;
@@ -84,7 +84,7 @@ Node *Node::getRight() { return right; }
 
 void Node::setRight(Node *node) { right = node; }
 
-Node *getNodeInfo(const string& nodeInfo) {
+Node *getNodeInfo(const string &nodeInfo) {
     unsigned long splitPoint = nodeInfo.find(',');
     unsigned long length = nodeInfo.length();
     int value = stoi(nodeInfo.substr(1, splitPoint - 1));
@@ -94,15 +94,15 @@ Node *getNodeInfo(const string& nodeInfo) {
     return new Node(value, path);
 }
 
-bool findNode(const vector<Node*>& nodeList, const string& path) {
-    return any_of(nodeList.begin(), nodeList.end(), [path](Node* n){return n->getPath() == path;});
+bool findNode(const vector<Node *> &nodeList, const string &path) {
+    return any_of(nodeList.begin(), nodeList.end(), [path](Node const *n) { return n->getPath() == path; });
 }
 
-vector<Node*> getNodeList () {
+vector<Node *> getNodeList() {
     string inputBuffer;
     regex inputPattern(R"((\(\d+,[LR]*\)))");
     Node *nodeBuffer;
-    vector<Node*> nodeList;
+    vector<Node *> nodeList;
 
     while (true) {
         cin >> inputBuffer;
@@ -111,36 +111,35 @@ vector<Node*> getNodeList () {
             nodeBuffer = getNodeInfo(inputBuffer);
             if (findNode(nodeList, nodeBuffer->getPath())) return {};
             nodeList.push_back(nodeBuffer);
-        }
-        else return {};
+        } else return {};
     }
     sort(nodeList.begin(), nodeList.end(), compareNode);
 
-    if (nodeList.size() == 0) return {};
-    if (nodeList[0]->getPath() != "") return {};
+    if (nodeList.empty()) return {};
+    if (!nodeList[0]->getPath().empty()) return {};
     return nodeList;
 }
 
 bool compareNode(Node *n1, Node *n2) { return n1->getPath() < n2->getPath(); }
 
-bool compareNodeLevel(Node* n1, Node* n2) {
+bool compareNodeLevel(Node *n1, Node *n2) {
     long pathLength1 = n1->getPath().length();
     long pathLength2 = n2->getPath().length();
     if (pathLength1 == pathLength2) return compareNode(n1, n2);
     else return pathLength1 < pathLength2;
 }
 
-bool validateTree(vector<Node*> nodeList) {
-    vector<Node*> nodes;
+bool validateTree(vector<Node *> nodeList) {
+    vector<Node *> nodes;
     Node *root = nodeList[0];
-    Node *cur;
+    Node *cur, *next;
     string pathBuffer;
     int cnt = 1;
 
     if (nodeList.empty()) return false;
     for (int i = 1; i < nodeList.size(); i++) nodes.push_back(nodeList[i]);
     sort(nodes.begin(), nodes.end(), compareNode);
-    for (Node* n: nodes) {
+    for (Node *n: nodes) {
         pathBuffer = n->getPath();
         cur = root;
         for (int i = 0; i < pathBuffer.length(); i++) {
@@ -148,15 +147,19 @@ bool validateTree(vector<Node*> nodeList) {
                 if (pathBuffer[i] == 'L') cur->setLeft(n);
                 else cur->setRight(n);
                 ++cnt;
+                break;
             }
-            cur = (pathBuffer[i] == 'L') ? cur->getLeft() : cur->getRight();
+            next = (pathBuffer[i] == 'L') ? cur->getLeft() : cur->getRight();
+            if (next != nullptr) cur = next;
+            else return false;
         }
     }
     return cnt == nodeList.size();
 }
 
-void treeLevelTraversal(vector<Node*> nodeList) {
+void treeLevelTraversal(vector<Node *> nodeList) {
     sort(nodeList.begin(), nodeList.end(), compareNodeLevel);
-    for (Node const* n: nodeList) cout << n->getValue() << " ";
+    cout << nodeList[0]->getValue();
+    for (int i = 1; i < nodeList.size(); i++) cout << " " << nodeList[i]->getValue();
     cout << endl;
 }
