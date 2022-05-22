@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
@@ -25,6 +28,7 @@
       <config projectName="ncu_lesson" targetName="ALG_HW3_Task1" />
       <config projectName="ncu_lesson" targetName="ALG_HW3_Task2" />
       <config projectName="ncu_lesson" targetName="ALG_HW3_Task3" />
+      <config projectName="ncu_lesson" targetName="ALG_HW8_Task3" />
       <config projectName="ncu_lesson" targetName="ALG_HW6_Task3" />
       <config projectName="ncu_lesson" targetName="ALG_HW6_Task2" />
       <config projectName="ncu_lesson" targetName="ALG_HW6_Task1" />
@@ -45,38 +49,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87fbbceb-4932-4a96-b812-74369741eaa0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/ALG_HW3_Task1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/ALG_HW3_Task2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/ALG_HW3_Task3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/ALG_HW4_Task2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/ALG_HW5_Task1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/ALG_HW5_Task2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/ALG_HW6_Task1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/ALG_HW6_Task2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/ALG_HW6_Task3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/DS_HW1_Task1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/DS_HW1_Task2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/DS_HW2_Task1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/DS_HW2_Task2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/DS_HW3_Task1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/DS_HW3_Task2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/DS_HW4_Task1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/DS_HW4_Task2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/DS_HW4_Task2_test.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/DS_HW4_Task3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/DS_HW4_Task3_test.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/PL_HW5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/PL_HW6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/PL_HW7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/PL_HW8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/_template__of_Application.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ALG_HW8/.idea/sonarlint/issuestore/3/0/30c848c73c83017d3403c29f247efa53bfe7a576" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ALG_HW8_Task3.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ALG_HW8/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/ALG_HW8/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ALG_HW8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ALG_HW8/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ALG_HW8/out/production/ALG_HW8/ALG_HW8_Task3.class" beforeDir="false" afterPath="$PROJECT_DIR$/ALG_HW8/out/production/ALG_HW8/ALG_HW8_Task3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ALG_HW8/src/ALG_HW8_Task3.java" beforeDir="false" afterPath="$PROJECT_DIR$/ALG_HW8/src/ALG_HW8_Task3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-3f4da9aab28d4c21327f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-05-21T04-54-44-0708.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-88178e506f580be66f5b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-05-21T14-11-39-0720.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-PL_HW5-Debug-80e58627ffbe7e3ea73f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-PL_HW6-Debug-23a711f9f586a89ab555.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-PL_HW7-Debug-91b46997170230f6860e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-PL_HW8-Debug-db562ce4c6cc8bc84a6f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
     </list>
@@ -99,6 +87,10 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+    <option name="showPreview" value="true" />
   </component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
@@ -138,12 +130,45 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="CMake Application.ALG_HW8_Task3">
     <configuration name="ALG_HW5_Task3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ncu_lesson" TARGET_NAME="ALG_HW5_Task3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ncu_lesson" RUN_TARGET_NAME="ALG_HW5_Task3">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ALG_HW8_Task3" type="CMakeRunConfiguration" factoryName="Application" singleton="false" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ncu_lesson" TARGET_NAME="ALG_HW8_Task3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ncu_lesson" RUN_TARGET_NAME="ALG_HW8_Task3">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.ALG_HW3_Task1" />
+      <item itemvalue="CMake Application.ALG_HW3_Task2" />
+      <item itemvalue="CMake Application.ALG_HW3_Task3" />
+      <item itemvalue="CMake Application.ALG_HW4_Task2" />
+      <item itemvalue="CMake Application.ALG_HW5_Task1" />
+      <item itemvalue="CMake Application.ALG_HW5_Task2" />
+      <item itemvalue="CMake Application.ALG_HW5_Task3" />
+      <item itemvalue="CMake Application.ALG_HW6_Task1" />
+      <item itemvalue="CMake Application.ALG_HW6_Task2" />
+      <item itemvalue="CMake Application.ALG_HW6_Task3" />
+      <item itemvalue="CMake Application.ALG_HW8_Task3" />
+      <item itemvalue="CMake Application.DS_HW1_Task1" />
+      <item itemvalue="CMake Application.DS_HW1_Task2" />
+      <item itemvalue="CMake Application.DS_HW2_Task1" />
+      <item itemvalue="CMake Application.DS_HW2_Task2" />
+      <item itemvalue="CMake Application.DS_HW3_Task1" />
+      <item itemvalue="CMake Application.DS_HW3_Task2" />
+      <item itemvalue="CMake Application.DS_HW4_Task1" />
+      <item itemvalue="CMake Application.DS_HW4_Task2" />
+      <item itemvalue="CMake Application.DS_HW4_Task2_test" />
+      <item itemvalue="CMake Application.DS_HW4_Task3" />
+      <item itemvalue="CMake Application.DS_HW4_Task3_test" />
+      <item itemvalue="CMake Application.PL_HW5" />
+      <item itemvalue="CMake Application.PL_HW6" />
+      <item itemvalue="CMake Application.PL_HW7" />
+      <item itemvalue="CMake Application.PL_HW8" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -172,6 +197,8 @@
       <workItem from="1653144415414" duration="70000" />
       <workItem from="1653144549181" duration="131000" />
       <workItem from="1653144693035" duration="27000" />
+      <workItem from="1653219374306" duration="5995000" />
+      <workItem from="1653225511275" duration="4728000" />
     </task>
     <servers />
   </component>
