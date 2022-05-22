@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
 import java.util.Scanner;
 
 public class ALG_HW8_Task3 {
@@ -7,7 +8,7 @@ public class ALG_HW8_Task3 {
         Scanner input = new Scanner(System.in);
         int nInput;
         String buffer;
-        ArrayList<Node> nodeInfo;
+        List<Node> nodeInfo;
 
         nInput = Integer.parseInt(input.nextLine());
         input.nextLine();
@@ -25,9 +26,10 @@ public class ALG_HW8_Task3 {
         else return new Node(Integer.parseInt(info[0]), "");
     }
 
-    public static ArrayList<Node> getAllNodeInfo(String infoBuffer) {
+    public static List<Node> getAllNodeInfo(String infoBuffer) {
         ArrayList<Node> nodeInfo = new ArrayList<>();
-        String[] infos = infoBuffer.substring(0, infoBuffer.length() - 3).split(" ");
+        String tmp = infoBuffer.substring(0, infoBuffer.length() - 3);
+        String[] infos = tmp.split(" ");
 
         for (String s : infos) { nodeInfo.add(getNodeInfo(s)); }
         nodeInfo.sort(Node.compareLevel);
@@ -35,57 +37,42 @@ public class ALG_HW8_Task3 {
         return nodeInfo;
     }
 
-    public static boolean isValidTree(ArrayList<Node> nodeInfo) {
-        ArrayList<Node> nodes = new ArrayList<>(nodeInfo);
-        Node root, cur;
+    public static boolean isValidTree(List<Node> nodeInfo) {
+        List<Node> nodes = new ArrayList<>(nodeInfo);
+        Node root;
+        Node cur;
         String path;
-        boolean errorSignal = false;
         int cnt = 1;
 
         nodes.sort(Node.compare);
         root = nodes.get(0);
         nodes.remove(0);
-        if (!root.getPath().equals("")) { root = null; }
-        else {
-            for (Node n : nodes) {
-                path = n.getPath();
-                cur = root;
-                for (int i = 0; i < path.length(); i++) {
-                    if (i != path.length() - 1) {
-                        if (path.charAt(i) == 'L') {
-                            cur = cur.left;
-                        } else {
-                            cur = cur.right;
-                        }
+        if (!root.getPath().equals("")) { return false; }
+        for (Node n : nodes) {
+            path = n.getPath();
+            cur = root;
+            for (int i = 0; i < path.length(); i++) {
+                if (i == path.length() - 1)  {
+                    if (path.charAt(i) == 'L') {
+                        if (cur.getLeft() == null) {
+                            cur.setLeft(n);
+                            ++cnt;
+                        } else { return false; }
                     } else {
-                        if (path.charAt(i) == 'L') {
-                            if (cur.getLeft() == null) {
-                                cur.setLeft(n);
-                                ++cnt;
-                            } else {
-                                errorSignal = true;
-                                break;
-                            }
-                        } else {
-                            if (cur.getRight() == null) {
-                                cur.setRight(n);
-                                ++cnt;
-                            } else {
-                                errorSignal = true;
-                                break;
-                            }
-                        }
+                        if (cur.getRight() == null) {
+                            cur.setRight(n);
+                            ++cnt;
+                        } else { return false; }
                     }
                 }
-                if (errorSignal) { break; }
+                if (path.charAt(i) == 'L') { cur = cur.left; }
+                else { cur = cur.right; }
             }
-            if (cnt != nodes.size() + 1) { root = null; }
         }
-
-        return root != null;
+        return cnt == nodes.size() + 1;
     }
 
-    public static void treeLevelTraversal(ArrayList<Node> nodeInfo) {
+    public static void treeLevelTraversal(List<Node> nodeInfo) {
         nodeInfo.sort(Node.compareLevel);
         for (Node n :nodeInfo) System.out.print(n.getValue()+" ");
         System.out.println();
