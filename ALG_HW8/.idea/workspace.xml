@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0494195c-f7bb-45fd-a215-a05ea505148d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ALG_HW8/ALG_HW8_Task3$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ALG_HW8/ALG_HW8_Task3$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ALG_HW8/ALG_HW8_Task3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ALG_HW8/ALG_HW8_Task3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ALG_HW8_Task3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ALG_HW8_Task3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,7 +151,10 @@
       <workItem from="1653164174143" duration="35000" />
       <workItem from="1653164625136" duration="149000" />
       <workItem from="1653188008364" duration="667000" />
-      <workItem from="1653188820665" duration="2793000" />
+      <workItem from="1653188820665" duration="2833000" />
+      <workItem from="1653192021188" duration="92000" />
+      <workItem from="1653192124506" duration="193000" />
+      <workItem from="1653193667410" duration="3514000" />
     </task>
     <servers />
   </component>

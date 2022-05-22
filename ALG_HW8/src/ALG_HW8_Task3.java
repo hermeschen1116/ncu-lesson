@@ -14,6 +14,7 @@ public class ALG_HW8_Task3 {
         input.nextLine();
         for (int i = 0; i < nInput; i++) {
             buffer = input.nextLine();
+            System.out.println(buffer);
             nodeInfo = getAllNodeInfo(buffer);
             if (isValidTree(nodeInfo)) treeLevelTraversal(nodeInfo);
             else System.out.println("not complete");
@@ -22,16 +23,20 @@ public class ALG_HW8_Task3 {
 
     public static Node getNodeInfo(String infoBuffer) {
         String[] info = infoBuffer.substring(1, infoBuffer.length() - 1).split(",");
-        if (info.length == 2) return new Node(Integer.parseInt(info[0]), info[1]);
+        if (info.length == 0) return new Node(0, "");
+        if (!info[1].equals("")) return new Node(Integer.parseInt(info[0]), info[1]);
         else return new Node(Integer.parseInt(info[0]), "");
     }
 
     public static List<Node> getAllNodeInfo(String infoBuffer) {
         ArrayList<Node> nodeInfo = new ArrayList<>();
-        String tmp = infoBuffer.substring(0, infoBuffer.length() - 3);
-        String[] infos = tmp.split(" ");
+        String[] infos = infoBuffer.split(" ");
 
-        for (String s : infos) { nodeInfo.add(getNodeInfo(s)); }
+        if (infos.length == 1 && !infos[0].equals("()")) return nodeInfo;
+        for (String s : infos) {
+            if (s.equals("()")) break;
+            nodeInfo.add(getNodeInfo(s));
+        }
         nodeInfo.sort(Node.compareLevel);
 
         return nodeInfo;
@@ -45,28 +50,45 @@ public class ALG_HW8_Task3 {
         int cnt = 1;
 
         nodes.sort(Node.compare);
+        if (nodes.size() == 0) {
+            return false;
+        }
+        if (nodes.get(0).getValue() == 0 && nodes.get(0).getPath().equals("")) return false;
         root = nodes.get(0);
         nodes.remove(0);
-        if (!root.getPath().equals("")) { return false; }
+        if (root.getPath().equals("") && nodes.size() == 1) {
+            return true;
+        }
+        if (!root.getPath().equals("")) {
+            return false;
+        }
         for (Node n : nodes) {
             path = n.getPath();
             cur = root;
+            if (n.getValue() == 0 && path.equals("")) return false;
             for (int i = 0; i < path.length(); i++) {
-                if (i == path.length() - 1)  {
+                if (i == path.length() - 1) {
                     if (path.charAt(i) == 'L') {
                         if (cur.getLeft() == null) {
                             cur.setLeft(n);
                             ++cnt;
-                        } else { return false; }
+                        } else {
+                            return false;
+                        }
                     } else {
                         if (cur.getRight() == null) {
                             cur.setRight(n);
                             ++cnt;
-                        } else { return false; }
+                        } else {
+                            return false;
+                        }
                     }
                 }
-                if (path.charAt(i) == 'L') { cur = cur.left; }
-                else { cur = cur.right; }
+                if (path.charAt(i) == 'L') {
+                    cur = cur.left;
+                } else {
+                    cur = cur.right;
+                }
             }
         }
         return cnt == nodes.size() + 1;
@@ -74,7 +96,7 @@ public class ALG_HW8_Task3 {
 
     public static void treeLevelTraversal(List<Node> nodeInfo) {
         nodeInfo.sort(Node.compareLevel);
-        for (Node n :nodeInfo) System.out.print(n.getValue()+" ");
+        for (Node n : nodeInfo) System.out.print(n.getValue() + " ");
         System.out.println();
     }
 
