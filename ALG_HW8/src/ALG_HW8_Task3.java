@@ -1,7 +1,6 @@
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class ALG_HW8_Task3 {
     public static void main(String[] args) {
@@ -9,89 +8,92 @@ public class ALG_HW8_Task3 {
         int nInput;
         String buffer;
         List<Node> nodeInfo;
+        String errorMsg = "not complete";
 
         nInput = Integer.parseInt(input.nextLine());
         input.nextLine();
         for (int i = 0; i < nInput; i++) {
             buffer = input.nextLine();
-            System.out.println(buffer);
-            nodeInfo = getAllNodeInfo(buffer);
-            if (isValidTree(nodeInfo)) treeLevelTraversal(nodeInfo);
-            else System.out.println("not complete");
+            if (validateStringFormat(buffer, "(\\(\\d+,[LR]*\\) )+\\(\\)")) {
+                nodeInfo = getNodeList(buffer);
+                if (!nodeInfo.isEmpty()) {
+                    if (validateTree(nodeInfo)) treeLevelTraversal(nodeInfo);
+                    else {
+                        System.out.println(errorMsg);
+                    }
+                } else {
+                    System.out.println(errorMsg);
+                }
+            } else {
+                System.out.println(errorMsg);
+            }
         }
+    }
+
+    public static boolean validateStringFormat(String text, String format) {
+        Pattern pattern = Pattern.compile(format);
+        Matcher matcher = pattern.matcher(text);
+
+        return matcher.matches();
     }
 
     public static Node getNodeInfo(String infoBuffer) {
         String[] info = infoBuffer.substring(1, infoBuffer.length() - 1).split(",");
-        if (info.length == 0) return new Node(0, "");
-        if (!info[1].equals("")) return new Node(Integer.parseInt(info[0]), info[1]);
-        else return new Node(Integer.parseInt(info[0]), "");
+        if (validateStringFormat(infoBuffer, "\\(\\d+,\\)")) {
+            return new Node(Integer.parseInt(info[0]), "");
+        }
+        return new Node(Integer.parseInt(info[0]), info[1]);
     }
 
-    public static List<Node> getAllNodeInfo(String infoBuffer) {
+    public static List<Node> getNodeList(String infoBuffer) {
+        HashMap<String, Node> cache = new HashMap<>();
         ArrayList<Node> nodeInfo = new ArrayList<>();
         String[] infos = infoBuffer.split(" ");
+        Node nodeBuffer;
 
-        if (infos.length == 1 && !infos[0].equals("()")) return nodeInfo;
         for (String s : infos) {
             if (s.equals("()")) break;
-            nodeInfo.add(getNodeInfo(s));
-        }
-        nodeInfo.sort(Node.compareLevel);
-
-        return nodeInfo;
-    }
-
-    public static boolean isValidTree(List<Node> nodeInfo) {
-        List<Node> nodes = new ArrayList<>(nodeInfo);
-        Node root;
-        Node cur;
-        String path;
-        int cnt = 1;
-
-        nodes.sort(Node.compare);
-        if (nodes.size() == 0) {
-            return false;
-        }
-        if (nodes.get(0).getValue() == 0 && nodes.get(0).getPath().equals("")) return false;
-        root = nodes.get(0);
-        nodes.remove(0);
-        if (root.getPath().equals("") && nodes.size() == 1) {
-            return true;
-        }
-        if (!root.getPath().equals("")) {
-            return false;
-        }
-        for (Node n : nodes) {
-            path = n.getPath();
-            cur = root;
-            if (n.getValue() == 0 && path.equals("")) return false;
-            for (int i = 0; i < path.length(); i++) {
-                if (i == path.length() - 1) {
-                    if (path.charAt(i) == 'L') {
-                        if (cur.getLeft() == null) {
-                            cur.setLeft(n);
-                            ++cnt;
-                        } else {
-                            return false;
-                        }
-                    } else {
-                        if (cur.getRight() == null) {
-                            cur.setRight(n);
-                            ++cnt;
-                        } else {
-                            return false;
-                        }
-                    }
+            if (validateStringFormat(s, "\\(\\d+,[LR]*\\)")) {
+                nodeBuffer = getNodeInfo(s);
+                if (cache.containsKey(nodeBuffer.getPath())) {
+                    return Collections.emptyList();
                 }
-                if (path.charAt(i) == 'L') {
-                    cur = cur.left;
-                } else {
-                    cur = cur.right;
-                }
+                cache.put(nodeBuffer.getPath(), nodeBuffer);
+            } else {
+                return Collections.emptyList();
             }
         }
-        return cnt == nodes.size() + 1;
+        cache.forEach((k, v) -> nodeInfo.add(v));
+        nodeInfo.sort(Node.compare);
+
+        return nodeInfo.get(0).getPath().equals("") ? nodeInfo : Collections.emptyList();
+    }
+
+    public static boolean validateTree(List<Node> nodeInfo) {
+        List<Node> nodes = new ArrayList<>(nodeInfo);
+        Node root = nodes.get(0);
+        Node cur;
+        String pathBuffer;
+        int cnt = 1;
+
+        if (nodeInfo.isEmpty()) return false;
+        nodes.remove(0);
+        for (Node n : nodes) {
+            pathBuffer = n.getPath();
+            cur = root;
+            for (int i = 0; i < pathBuffer.length(); i++) {
+                if (i == pathBuffer.length() - 1) {
+                    if (pathBuffer.charAt(i) == 'L') {
+                        cur.setLeft(n);
+                    } else {
+                        cur.setRight(n);
+                    }
+                    ++cnt;
+                }
+                cur = (pathBuffer.charAt(i) == 'L') ? cur.getLeft() : cur.getRight();
+            }
+        }
+        return cnt == nodeInfo.size();
     }
 
     public static void treeLevelTraversal(List<Node> nodeInfo) {
