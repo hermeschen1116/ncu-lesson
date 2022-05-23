@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0494195c-f7bb-45fd-a215-a05ea505148d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/0/30c848c73c83017d3403c29f247efa53bfe7a576" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ALG_HW8_Task3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ALG_HW8_Task3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ALG_HW8_Task3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ALG_HW8_Task3.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/ALG_HW8_Task3" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/ALG_HW8_Task3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/ALG_HW8_Task3.dir/ALG_HW8_Task3.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/ALG_HW8_Task3.dir/ALG_HW8_Task3.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,6 +160,9 @@
       <workItem from="1653209927081" duration="16000" />
       <workItem from="1653219459054" duration="275000" />
       <workItem from="1653238309883" duration="1585000" />
+      <workItem from="1653240326907" duration="108000" />
+      <workItem from="1653240489110" duration="33000" />
+      <workItem from="1653240526266" duration="7000" />
     </task>
     <servers />
   </component>

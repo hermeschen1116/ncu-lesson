@@ -846,6 +846,37 @@ build PL_HW8: CXX_EXECUTABLE_LINKER__PL_HW8_Debug CMakeFiles/PL_HW8.dir/PL_HW8.c
   TARGET_FILE = PL_HW8
   TARGET_PDB = PL_HW8.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target PL_HW9
+
+
+#############################################
+# Order-only phony target for PL_HW9
+
+build cmake_object_order_depends_target_PL_HW9: phony || CMakeFiles/PL_HW9.dir
+
+build CMakeFiles/PL_HW9.dir/PL_HW9.cpp.o: CXX_COMPILER__PL_HW9_Debug /Users/sonodakazuto/Repository/ncu_lesson/PL_HW9.cpp || cmake_object_order_depends_target_PL_HW9
+  DEP_FILE = CMakeFiles/PL_HW9.dir/PL_HW9.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++2a
+  OBJECT_DIR = CMakeFiles/PL_HW9.dir
+  OBJECT_FILE_DIR = CMakeFiles/PL_HW9.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target PL_HW9
+
+
+#############################################
+# Link the executable PL_HW9
+
+build PL_HW9: CXX_EXECUTABLE_LINKER__PL_HW9_Debug CMakeFiles/PL_HW9.dir/PL_HW9.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/PL_HW9.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = PL_HW9
+  TARGET_PDB = PL_HW9.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -880,7 +911,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/sonodakazuto/Repository/ncu_lesson/cmake-build-debug
 
-build all: phony DS_HW1_Task1 DS_HW1_Task2 DS_HW2_Task1 DS_HW2_Task2 DS_HW3_Task1 DS_HW3_Task2 DS_HW4_Task1 DS_HW4_Task2_test DS_HW4_Task2 DS_HW4_Task3_test DS_HW4_Task3 ALG_HW3_Task1 ALG_HW3_Task2 ALG_HW3_Task3 ALG_HW4_Task2 ALG_HW5_Task1 ALG_HW5_Task2 ALG_HW5_Task3 ALG_HW6_Task1 ALG_HW6_Task2 ALG_HW6_Task3 ALG_HW8_Task3 PL_HW5 PL_HW6 PL_HW7 PL_HW8
+build all: phony DS_HW1_Task1 DS_HW1_Task2 DS_HW2_Task1 DS_HW2_Task2 DS_HW3_Task1 DS_HW3_Task2 DS_HW4_Task1 DS_HW4_Task2_test DS_HW4_Task2 DS_HW4_Task3_test DS_HW4_Task3 ALG_HW3_Task1 ALG_HW3_Task2 ALG_HW3_Task3 ALG_HW4_Task2 ALG_HW5_Task1 ALG_HW5_Task2 ALG_HW5_Task3 ALG_HW6_Task1 ALG_HW6_Task2 ALG_HW6_Task3 ALG_HW8_Task3 PL_HW5 PL_HW6 PL_HW7 PL_HW8 PL_HW9
 
 # =============================================================================
 # Built-in targets

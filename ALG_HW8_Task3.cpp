@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <regex>
+#include <utility>
 #include <vector>
 #include <algorithm>
 
@@ -8,15 +9,14 @@ using namespace std;
 
 class Node {
 private:
-    int value{};
+    int value;
     string path;
     Node *left{};
     Node *right{};
 
 public:
-    Node(int v, string p);
-
-    Node();
+    explicit Node(int v = 0, string  p = "", Node *n1 = nullptr, Node* n2 = nullptr):
+    value(v), path(std::move(p)), left(n1), right(n2) {};
 
     [[nodiscard]] int getValue() const;
 
@@ -63,15 +63,6 @@ int main() {
     return 0;
 }
 
-Node::Node(int v, string p) {
-    value = v;
-    path = std::move(p);
-    left = nullptr;
-    right = nullptr;
-}
-
-Node::Node() { Node(0, ""); }
-
 int Node::getValue() const { return value; }
 
 string Node::getPath() const { return path; }
@@ -90,8 +81,8 @@ Node *getNodeInfo(const string &nodeInfo) {
     int value = stoi(nodeInfo.substr(1, splitPoint - 1));
     string path = nodeInfo.substr(splitPoint + 1, length - splitPoint - 2);
 
-    if (regex nodePattern(R"(\(\d+,\))"); regex_match(nodeInfo, nodePattern)) return new Node(value, "");
-    return new Node(value, path);
+    if (regex nodePattern(R"(\(\d+,\))"); !regex_match(nodeInfo, nodePattern)) return new Node(value, path);
+    return new Node(value);
 }
 
 bool findNode(const vector<Node *> &nodeList, const string &path) {
@@ -123,8 +114,8 @@ vector<Node *> getNodeList() {
 bool compareNode(Node *n1, Node *n2) { return n1->getPath() < n2->getPath(); }
 
 bool compareNodeLevel(Node *n1, Node *n2) {
-    long pathLength1 = n1->getPath().length();
-    long pathLength2 = n2->getPath().length();
+    unsigned long pathLength1 = n1->getPath().length();
+    unsigned long pathLength2 = n2->getPath().length();
     if (pathLength1 == pathLength2) return compareNode(n1, n2);
     else return pathLength1 < pathLength2;
 }
@@ -132,7 +123,8 @@ bool compareNodeLevel(Node *n1, Node *n2) {
 bool validateTree(vector<Node *> nodeList) {
     vector<Node *> nodes;
     Node *root = nodeList[0];
-    Node *cur, *next;
+    Node *cur;
+    Node *next;
     string pathBuffer;
     int cnt = 1;
 
@@ -142,18 +134,19 @@ bool validateTree(vector<Node *> nodeList) {
     for (Node *n: nodes) {
         pathBuffer = n->getPath();
         cur = root;
-        for (int i = 0; i < pathBuffer.length(); i++) {
-            if (i == pathBuffer.length() - 1) {
-                if (pathBuffer[i] == 'L') cur->setLeft(n);
-                else cur->setRight(n);
-                ++cnt;
-                break;
-            }
+        for (int i = 0; i < pathBuffer.length() - 1; i++) {
             next = (pathBuffer[i] == 'L') ? cur->getLeft() : cur->getRight();
             if (next != nullptr) cur = next;
-            else return false;
+            else {
+                nodes.clear();
+                return false;
+            }
         }
+        if (pathBuffer[pathBuffer.length() - 1] == 'L') cur->setLeft(n);
+        else cur->setRight(n);
+        ++cnt;
     }
+    nodes.clear();
     return cnt == nodeList.size();
 }
 
