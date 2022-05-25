@@ -28,28 +28,28 @@ public :
 
 class n : public action {
 public :
-    void print() override {
+    virtual void print() {
         cout << "You get \"n\"!" << endl;
     }
 };
 
 class act : public action {
 public :
-    void print() override {
+    virtual void print() {
         cout << "You get \"act\"!" << endl;
     }
 };
 
 class c : public act, public camp {
 public :
-    void print() override {
+    virtual void print() override {
         cout << "You get \"c\"!" << endl;
     }
 };
 
 class a : public act, public apple {
 public :
-    void print() override {
+    virtual void print() override {
         cout << "You get \"a\"!" << endl;
     }
 };

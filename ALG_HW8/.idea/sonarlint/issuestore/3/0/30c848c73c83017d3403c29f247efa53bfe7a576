@@ -2,18 +2,8 @@
 g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÀûÔıÿÿÿÿ
 0
 java:S1220""Move this file to a named package.
-W
-java:S1854"<Remove this useless assignment to local variable "errorMsg".(¯â˜ßşÿÿÿÿ
-O
-java:S1854":Remove this useless assignment to local variable "buffer".(ÉË£{
-F
-java:S1481	"+Remove this unused "buffer" local variable.(Š¹åˆøÿÿÿÿ
-H
-java:S1481
-"-Remove this unused "nodeInfo" local variable.(§ïœÑüÿÿÿÿ
-H
-java:S1481"-Remove this unused "errorMsg" local variable.(¯â˜ßşÿÿÿÿ
-Q	java:S125"<This block of commented-out lines of code should be removed.(©¶ïÈ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(’½õìûÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(’½õìûÿÿÿÿ
 m
 java:S3776E"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(¸û»êüÿÿÿÿ
 =
