@@ -2,56 +2,53 @@
 
 using namespace std;
 
-class action {
+class a {
 public :
-    action () = default;
     virtual void print() {
-        cout << "You get \"action\"!" << endl;
-    };
+        cout << "You get \"a\"!" << endl;
+    }
 };
 
-class camp {
+class apple : public a {
 public :
-    camp () = default;
-    virtual void print() {
-        cout << "You get \"camp\"!" << endl;
-    };
-};
-
-class apple {
-public :
-    apple () = default;
-    virtual void print() {
+    void print() override {
         cout << "You get \"apple\"!" << endl;
     };
 };
 
-class n : public action {
+class c {
+public :
+    virtual void print() {
+        cout << "You get \"c\"!" << endl;
+    }
+};
+
+class act : public a, public c {
+public :
+    void print() override {
+        cout << "You get \"act\"!" << endl;
+    }
+};
+
+class camp : public c {
+public :
+    void print() override {
+        cout << "You get \"camp\"!" << endl;
+    };
+};
+
+class n {
 public :
     virtual void print() {
         cout << "You get \"n\"!" << endl;
     }
 };
 
-class act : public action {
+class action : public act, public n {
 public :
-    virtual void print() {
-        cout << "You get \"act\"!" << endl;
-    }
-};
-
-class c : public act, public camp {
-public :
-    virtual void print() override {
-        cout << "You get \"c\"!" << endl;
-    }
-};
-
-class a : public act, public apple {
-public :
-    virtual void print() override {
-        cout << "You get \"a\"!" << endl;
-    }
+    void print() override {
+        cout << "You get \"action\"!" << endl;
+    };
 };
 
 //////////////////////////////////////////////
