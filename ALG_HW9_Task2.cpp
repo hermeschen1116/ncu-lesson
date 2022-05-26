@@ -1,10 +1,8 @@
 #include <iostream>
 #include <vector>
-#include <cmath>
 using namespace std;
 
 bool emptyStorage (const vector<int>& storageState);
-int pickGood (const vector<int>& storageState, int restBoxSize);
 int countNeedyBox (vector<int> storageState);
 
 int main() {
@@ -25,39 +23,56 @@ bool emptyStorage (const vector<int>& storageState) {
     return true;
 }
 
-int pickGood (const vector<int>& storageState, const int restBoxSize) {
-    for (int i = 5; i >= 0; i--) {
-        if (storageState[i] != 0 && i+1 <= restBoxSize) return i;
-    }
-    return -1;
-}
-
 int countNeedyBox (vector<int> storageState) {
-    vector<int> goodArea;
-    int leftArea;
-    int leftSize;
-    int curGood;
-    int totalBox = 0;
+    int totalBox = storageState[5] + storageState[4] + storageState[3];
+    int tmp;
 
-    for (int i = 1; i < 7; i++) goodArea.push_back((int) pow(i, 2));
-    while (!emptyStorage(storageState)) {
-        leftArea = (int) pow(6, 2);
-        leftSize = 6;
-        while (leftArea > 0) {
-            curGood = pickGood(storageState, leftSize);
-            //cout << curGood+1 << ":" << leftArea << " ";
-            if (curGood == -1) break;
-            if (leftArea - goodArea[curGood] >= 0) {
-                leftArea -= goodArea[curGood];
-                --storageState[curGood];
-            } else {
-                if (leftSize - curGood + 1 >= 0) leftSize -= curGood + 1;
-                else break;
-            }
-            //cout << curGood+1 << ":" << leftArea << " ";
+    storageState[0] -= 11 * storageState[4];
+    if (storageState[0] < 0) storageState[0] = 0;
+
+    tmp = storageState[1] - 5 * storageState[3];
+    if (tmp < 0) {
+        tmp *= (-1);
+        if (storageState[0] != 0) storageState[0] -= 4 * tmp;
+        if (storageState[0] < 0) storageState[0] = 0;
+        storageState[1] = 0;
+    } else storageState[1] = tmp;
+
+    totalBox += storageState[2] / 4;
+    storageState[2] %= 4;
+    if (storageState[2] != 0) {
+        ++totalBox;
+        tmp = storageState[1];
+        if (tmp != 0) {
+            if (storageState[2] == 3) tmp -= 1;
+            else if (storageState[2] == 2) tmp -= 3;
+            else tmp -= 5;
+            storageState[1] = tmp > 0 ? tmp : 0;
+            if (tmp < 0) tmp *= (-1);
         }
-        //cout << "total:" << totalBox << endl;
-        totalBox++;
+        if (storageState[0] > 0)
+        {
+            if (storageState[2] == 3) storageState[0] -= 5;
+            else if (storageState[2] == 2) storageState[0] -= 6;
+            else storageState[0] -= 7;
+            storageState[0] -= tmp * 4;
+        }
+    }
+    storageState[2] = 0;
+
+    totalBox += storageState[1] / 9;
+    storageState[1] %= 9;
+    if (storageState[1] != 0) {
+        ++totalBox;
+        storageState[0] -= 36 - 4 * storageState[1];
+        if (storageState[0] < 0) storageState[0] = 0;
+    }
+
+    totalBox += storageState[0] / 36;
+    storageState[0] %= 36;
+    if (storageState[0] != 0) {
+        ++totalBox;
+        storageState[0] = 0;
     }
 
     return totalBox;

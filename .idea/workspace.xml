@@ -50,54 +50,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87fbbceb-4932-4a96-b812-74369741eaa0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/ALG_HW8_Task3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/ALG_HW9_Task1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/ALG_HW9_Task2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/ALG_HW9_Task3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/PL_HW9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Test.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG_HW9_Task2.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/7/1727185d272a7483f7df5719fc77b6d7126c1a05" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ALG_HW8/.idea/sonarlint/issuestore/3/0/30c848c73c83017d3403c29f247efa53bfe7a576" beforeDir="false" afterPath="$PROJECT_DIR$/ALG_HW8/.idea/sonarlint/issuestore/3/0/30c848c73c83017d3403c29f247efa53bfe7a576" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ALG_HW8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ALG_HW8/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ALG_HW8/src/ALG_HW8_Task3.java" beforeDir="false" afterPath="$PROJECT_DIR$/ALG_HW8/src/ALG_HW8_Task3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ALG_HW9/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ALG_HW9/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ALG_HW9/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ALG_HW9/.idea/sonarlint/issuestore/2/e/2ef440875da1e2c4d1b8145c24663dc0bb7a7d21" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ALG_HW9/.idea/sonarlint/issuestore/c/a/cae434f53b63fa5f14de169b036e65de1918a70b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ALG_HW9/.idea/sonarlint/issuestore/e/c/ec0bc506cb81a44008648d10d9578cf382e18039" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ALG_HW9/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ALG_HW9/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ALG_HW9/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ALG_HW9/ALG_HW9.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ALG_HW9/out/production/ALG_HW9/Task1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ALG_HW9/out/production/ALG_HW9/Task2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ALG_HW9/out/production/ALG_HW9/Task3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ALG_HW9/src/Task1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ALG_HW9/src/Task2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ALG_HW9/src/Task3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ALG_HW9_Task3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ALG_HW9_Task3.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-a4da29cc664239fd70c8.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-05-25T16-44-25-0157.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-ALG_HW9_Task3-Debug-95293d93ef88b1dc8abf.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-PL_HW5-Debug-265696f76096d28b518a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-PL_HW6-Debug-26521a7bd68c41a1191f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-PL_HW7-Debug-4d2e153b4d5e304fd25c.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-PL_HW8-Debug-860f23cd78928e16d2f5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-PL_HW9-Debug-b285d1f6fe130ddea0df.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ALG_HW9_Task2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ALG_HW9_Task2.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ALG_HW9_Task3" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ALG_HW9_Task3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ALG_HW9_Task3.dir/ALG_HW9_Task3.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ALG_HW9_Task3.dir/ALG_HW9_Task3.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ALG_HW9_Task2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ALG_HW9_Task2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ALG_HW9_Task2.dir/ALG_HW9_Task2.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ALG_HW9_Task2.dir/ALG_HW9_Task2.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +122,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.ALG_HW9_Task3">
+  <component name="RunManager" selected="CMake Application.ALG_HW9_Task2">
     <configuration name="ALG_HW5_Task3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ncu_lesson" TARGET_NAME="ALG_HW5_Task3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ncu_lesson" RUN_TARGET_NAME="ALG_HW5_Task3">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -240,7 +200,7 @@
       <workItem from="1653410264521" duration="371000" />
       <workItem from="1653493457439" duration="900000" />
       <workItem from="1653497029118" duration="5024000" />
-      <workItem from="1653502081310" duration="15947000" />
+      <workItem from="1653502081310" duration="26071000" />
     </task>
     <servers />
   </component>
