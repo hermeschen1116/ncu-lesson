@@ -1,21 +1,25 @@
 #include <iostream>
 using namespace std;
 
-int multiplyLast3Elements (int numElement);
+long long int multiplyLast3Elements (long long int numElement);
 
 int main () {
-    int numInput, numElement;
+    int numInput;
+    long long int numElement;
 
     cin >> numInput;
     for (int i = 0; i < numInput; i++) {
         cin >> numElement;
-        cout << multiplyLast3Elements(numElement) << endl;
+        if (numElement % 2 && numElement > 1 && numElement < 1000000000) {
+            cout << multiplyLast3Elements(numElement) << endl;
+        }
     }
 
     return 0;
 }
 
-int multiplyLast3Elements (int numElement) {
-    int lastElement = 1 + 2 * ((numElement + 3) * ((numElement-1) / 2) / 2);
+long long int multiplyLast3Elements (long long int numElement) {
+    long long int lineNum = (numElement+1) / 2;
+    long long int lastElement = lineNum * lineNum * 2 - 1;
     return lastElement * (lastElement - 2) * (lastElement - 4);
 }

@@ -69,7 +69,8 @@ public class ALG_HW8_Task3 {
     public static boolean validateTree(List<Node> nodeInfo) {
         List<Node> nodes = new ArrayList<>(nodeInfo);
         Node root = nodes.get(0);
-        Node cur, next;
+        Node cur;
+        Node next;
         String pathBuffer;
         int cnt = 1;
 
@@ -91,7 +92,7 @@ public class ALG_HW8_Task3 {
                 }
                 next = (pathBuffer.charAt(i) == 'L') ? cur.getLeft() : cur.getRight();
                 if (next == null) return false;
-                else cur = next;
+                cur = next;
             }
         }
         return cnt == nodeInfo.size();

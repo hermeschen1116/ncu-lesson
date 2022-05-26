@@ -5,8 +5,6 @@ java:S1220""Move this file to a named package.
 S	java:S106"9Replace this use of System.out or System.err by a logger.(’½õìûÿÿÿÿ
 S	java:S106"9Replace this use of System.out or System.err by a logger.(’½õìûÿÿÿÿ
 m
-java:S3776E"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(¸û»êüÿÿÿÿ
-=
-java:S1659H""Declare "next" on a separate line.(øñğºşÿÿÿÿ
-S	java:S106f"9Replace this use of System.out or System.err by a logger.(õï§ûÿÿÿÿ
-S	java:S106g"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+java:S3776E"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(¸û»êüÿÿÿÿ
+S	java:S106g"9Replace this use of System.out or System.err by a logger.(õï§ûÿÿÿÿ
+S	java:S106h"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ

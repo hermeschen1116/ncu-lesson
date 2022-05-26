@@ -21,6 +21,7 @@
 /Users/sonodakazuto/Repository/ncu_lesson/cmake-build-debug/CMakeFiles/ALG_HW6_Task3.dir
 /Users/sonodakazuto/Repository/ncu_lesson/cmake-build-debug/CMakeFiles/ALG_HW8_Task3.dir
 /Users/sonodakazuto/Repository/ncu_lesson/cmake-build-debug/CMakeFiles/ALG_HW9_Task1.dir
+/Users/sonodakazuto/Repository/ncu_lesson/cmake-build-debug/CMakeFiles/ALG_HW9_Task2.dir
 /Users/sonodakazuto/Repository/ncu_lesson/cmake-build-debug/CMakeFiles/ALG_HW9_Task3.dir
 /Users/sonodakazuto/Repository/ncu_lesson/cmake-build-debug/CMakeFiles/PL_HW5.dir
 /Users/sonodakazuto/Repository/ncu_lesson/cmake-build-debug/CMakeFiles/PL_HW6.dir

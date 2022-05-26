@@ -754,6 +754,37 @@ build ALG_HW9_Task1: CXX_EXECUTABLE_LINKER__ALG_HW9_Task1_Debug CMakeFiles/ALG_H
   TARGET_PDB = ALG_HW9_Task1.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target ALG_HW9_Task2
+
+
+#############################################
+# Order-only phony target for ALG_HW9_Task2
+
+build cmake_object_order_depends_target_ALG_HW9_Task2: phony || CMakeFiles/ALG_HW9_Task2.dir
+
+build CMakeFiles/ALG_HW9_Task2.dir/ALG_HW9_Task2.cpp.o: CXX_COMPILER__ALG_HW9_Task2_Debug /Users/sonodakazuto/Repository/ncu_lesson/ALG_HW9_Task2.cpp || cmake_object_order_depends_target_ALG_HW9_Task2
+  DEP_FILE = CMakeFiles/ALG_HW9_Task2.dir/ALG_HW9_Task2.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++2a
+  OBJECT_DIR = CMakeFiles/ALG_HW9_Task2.dir
+  OBJECT_FILE_DIR = CMakeFiles/ALG_HW9_Task2.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target ALG_HW9_Task2
+
+
+#############################################
+# Link the executable ALG_HW9_Task2
+
+build ALG_HW9_Task2: CXX_EXECUTABLE_LINKER__ALG_HW9_Task2_Debug CMakeFiles/ALG_HW9_Task2.dir/ALG_HW9_Task2.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/ALG_HW9_Task2.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ALG_HW9_Task2
+  TARGET_PDB = ALG_HW9_Task2.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target ALG_HW9_Task3
 
 
@@ -973,7 +1004,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/sonodakazuto/Repository/ncu_lesson/cmake-build-debug
 
-build all: phony DS_HW1_Task1 DS_HW1_Task2 DS_HW2_Task1 DS_HW2_Task2 DS_HW3_Task1 DS_HW3_Task2 DS_HW4_Task1 DS_HW4_Task2_test DS_HW4_Task2 DS_HW4_Task3_test DS_HW4_Task3 ALG_HW3_Task1 ALG_HW3_Task2 ALG_HW3_Task3 ALG_HW4_Task2 ALG_HW5_Task1 ALG_HW5_Task2 ALG_HW5_Task3 ALG_HW6_Task1 ALG_HW6_Task2 ALG_HW6_Task3 ALG_HW8_Task3 ALG_HW9_Task1 ALG_HW9_Task3 PL_HW5 PL_HW6 PL_HW7 PL_HW8 PL_HW9
+build all: phony DS_HW1_Task1 DS_HW1_Task2 DS_HW2_Task1 DS_HW2_Task2 DS_HW3_Task1 DS_HW3_Task2 DS_HW4_Task1 DS_HW4_Task2_test DS_HW4_Task2 DS_HW4_Task3_test DS_HW4_Task3 ALG_HW3_Task1 ALG_HW3_Task2 ALG_HW3_Task3 ALG_HW4_Task2 ALG_HW5_Task1 ALG_HW5_Task2 ALG_HW5_Task3 ALG_HW6_Task1 ALG_HW6_Task2 ALG_HW6_Task3 ALG_HW8_Task3 ALG_HW9_Task1 ALG_HW9_Task2 ALG_HW9_Task3 PL_HW5 PL_HW6 PL_HW7 PL_HW8 PL_HW9
 
 # =============================================================================
 # Built-in targets
