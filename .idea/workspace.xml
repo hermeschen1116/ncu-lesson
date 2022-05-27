@@ -49,16 +49,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87fbbceb-4932-4a96-b812-74369741eaa0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ALG_HW9_Task2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ALG_HW9_Task2.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ALG_HW9_Task2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ALG_HW9_Task2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ALG_HW9_Task2.dir/ALG_HW9_Task2.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ALG_HW9_Task2.dir/ALG_HW9_Task2.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-    </list>
+    <list default="true" id="87fbbceb-4932-4a96-b812-74369741eaa0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -200,7 +191,7 @@
       <workItem from="1653410264521" duration="371000" />
       <workItem from="1653493457439" duration="900000" />
       <workItem from="1653497029118" duration="5024000" />
-      <workItem from="1653502081310" duration="26071000" />
+      <workItem from="1653502081310" duration="26394000" />
     </task>
     <servers />
   </component>
