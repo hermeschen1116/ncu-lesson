@@ -22,7 +22,6 @@ classifier.add_dense_layer(128, 'relu')
 classifier.add_dropout_layer(0.25)
 classifier.add_dense_layer(10, 'softmax')
 classifier.compile_model('categorical_crossentropy', 'adam', ['accuracy'])
-# classifier.train_model_mt(32, 100, 1, 0.1, 16)
 classifier.train_model(32, 100, 1, 0.1)
 classifier.show_train_logs()
 
