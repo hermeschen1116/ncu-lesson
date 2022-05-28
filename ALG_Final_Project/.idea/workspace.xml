@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="feedadfe-0a28-404c-9e65-7633fe596ace" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DataSet/ImagePreprocessor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataSet/LabeledDataSet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataSet/Loader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataSet/Preprocessor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataSet/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/Preprocess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +113,7 @@
       <workItem from="1653735661028" duration="26000" />
       <workItem from="1653742865660" duration="103000" />
       <workItem from="1653743428700" duration="616000" />
-      <workItem from="1653754154152" duration="6795000" />
+      <workItem from="1653754154152" duration="8768000" />
     </task>
     <servers />
   </component>

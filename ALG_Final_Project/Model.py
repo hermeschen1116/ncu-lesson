@@ -1,4 +1,3 @@
-import threading
 import time
 
 from keras import Sequential
@@ -52,21 +51,6 @@ class CNN:
                                              validation_split=validation_split)
         timer_end = time.process_time()
         print('Training finished. Execution time: {:.2f} s'.format(timer_end - timer_start))
-
-    # def train_model_mt(self, batch_size, epochs, verbose, validation_split, num_threads=1):
-    #     threads = []
-    #     timer_start = time.time()
-    #     for i in range(num_threads):
-    #         threads.append(threading.Thread(target=self.train_model,
-    #                                         args=(batch_size, epochs, verbose, validation_split)))
-    #         threads[i].start()
-    #     thread = threading.Thread(target=self.train_model, args=(batch_size, epochs, verbose, validation_split))
-    #     thread.start()
-    #     thread.join()
-    #     for i in range(num_threads):
-    #         threads[i].join()
-    #     timer_end = time.time()
-    #     print('Training finished. Execution time: {:.2f} s'.format(timer_end - timer_start))
 
     def show_train_logs(self):
         plt.plot(self.__train_logs.history['loss'])
