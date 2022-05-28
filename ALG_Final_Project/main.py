@@ -6,8 +6,6 @@ data_dimensions = [28, 28, 1]
 data_category = 10
 
 train_set = Preprocess.DataSet(train_set_source_path, data_dimensions, data_category)
-# train_set.load_data_set_mt(16)
-# train_set.preprocess_mt(16)
 train_set.load_data_set()
 train_set.preprocess()
 print('Training Set Size:', train_set.get_source_size())
@@ -31,8 +29,6 @@ classifier.show_train_logs()
 test_set_source_path = "data_set/test_image/"
 
 test_set = Preprocess.DataSet(test_set_source_path, data_dimensions, data_category)
-# test_set.load_data_set_mt(16)
-# test_set.preprocess_mt(16)
 test_set.load_data_set()
 test_set.preprocess()
 print('Testing Set Size:', test_set.get_source_size())
