@@ -51,36 +51,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="643b9d95-d765-4658-8779-5896770a092e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG_Final_Project/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG_Final_Project/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG_Final_Project/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG_Final_Project/.idea/runConfigurations/main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG_Final_Project/.idea/sonarlint/issuestore/f/1/f1bdda93d9a278e358509d498e17d97764c1fb29" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG_Final_Project/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG_Final_Project/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG_HW7/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG_HW7/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG_HW7/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG_HW7/.idea/runConfigurations/ALG_HW7_Task1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG_HW7/.idea/runConfigurations/ALG_HW7_Task2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG_HW7/.idea/runConfigurations/ALG_HW7_Task3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG_HW7/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG_HW7/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG_HW8/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG_HW8/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG_HW8/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG_HW8/.idea/runConfigurations/ALG_HW8_Task1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG_HW8/.idea/runConfigurations/ALG_HW8_Task2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG_HW8/.idea/runConfigurations/ALG_HW8_Task3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG_HW8/.idea/sonarlint/issuestore/2/e/2efb3f64923804c43b2803a4b665e28179ac7a65" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG_HW8/.idea/sonarlint/issuestore/3/0/30c848c73c83017d3403c29f247efa53bfe7a576" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG_HW8/.idea/sonarlint/issuestore/8/0/806745d350e98c8321b590f6dc57df71650e4040" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG_HW8/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG_HW8/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PL_HW10.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/PL_HW10.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -344,7 +315,7 @@
       <workItem from="1653980945810" duration="108000" />
       <workItem from="1653981074001" duration="128000" />
       <workItem from="1653981205183" duration="12000" />
-      <workItem from="1653983217576" duration="1561000" />
+      <workItem from="1653983217576" duration="2395000" />
     </task>
     <servers />
   </component>
