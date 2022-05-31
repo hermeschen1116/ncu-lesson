@@ -88,7 +88,6 @@ src/**/renames.txt
 
 # CMake
 cmake-build-*/
-cmake-build-run/
 
 # Mongo Explorer plugin
 .idea/**/mongoSettings.xml
