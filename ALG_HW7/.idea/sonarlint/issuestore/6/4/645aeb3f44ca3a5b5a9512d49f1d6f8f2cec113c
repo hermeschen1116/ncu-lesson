@@ -1,0 +1,16 @@
+
+r	java:S127"XRefactor the code in order to not assign to this loop counter from within the loop body.( æƒ«ýÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÑúªÝûÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÑúªÝûÿÿÿÿ
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(æÿÛªüÿÿÿÿ
+0
+java:S1220""Move this file to a named package.
+Z
+java:S1854"?Remove this useless assignment to local variable "strModifier".(×Í­Ùþÿÿÿÿ
+K
+java:S1481"0Remove this unused "strModifier" local variable.(×Í­Ùþÿÿÿÿ
+<
+java:S1659"&Declare "cropSize" on a separate line.(ðö¹¹
+g
+java:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(»·ì„
+N	java:S106"9Replace this use of System.out or System.err by a logger.(»·ì„

@@ -1,0 +1,11 @@
+
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÝôÈí
+0
+java:S1220""Move this file to a named package.
+l
+java:S1128"QRemove this unnecessary import: java.lang classes are always implicitly imported.(Š‘…ûýÿÿÿÿ
+;
+java:S1659"%Declare "powered" on a separate line.(‘¤—º
+l
+java:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(»Í‘¡ýÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(»Í‘¡ýÿÿÿÿ

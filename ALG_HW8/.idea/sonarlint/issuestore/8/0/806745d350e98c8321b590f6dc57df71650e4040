@@ -1,0 +1,33 @@
+
+…
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ù¢Šb
+ƒ
+java:S1319"nThe type of "_multiplicand_" should be an interface such as "List" rather than the implementation "ArrayList".(ù¢Šb
+‹
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(œªªšúÿÿÿÿ
+
+java:S1319"dThe type of "_n1_" should be an interface such as "List" rather than the implementation "ArrayList".(œªªšúÿÿÿÿ
+
+java:S1319"dThe type of "_n2_" should be an interface such as "List" rather than the implementation "ArrayList".(œªªšúÿÿÿÿ
+†
+java:S1319*"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(èÚú©
+€
+java:S1319*"jThe type of "_powerSet_" should be an interface such as "List" rather than the implementation "ArrayList".(èÚú©
+e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ù¢Šb
+e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ù¢Šb
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œªªšúÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œªªšúÿÿÿÿ
+f	java:S117*"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èÚú©
+f	java:S117*"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èÚú©
+k	java:S1176"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—ˆ“ûÿÿÿÿ
+k	java:S1176"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—ˆ“ûÿÿÿÿ
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ø¸éÿÿÿÿÿ
+0
+java:S1220""Move this file to a named package.
+Y
+java:S1659"CDeclare "buffer" and all following declarations on a separate line.(ì‹Õ
+X
+java:S1659"BDeclare "carry" and all following declarations on a separate line.(ÀÙ’Ş
+Y
+java:S1659C">Declare "m" and all following declarations on a separate line.(’ØıŠüÿÿÿÿ
+S	java:S106I"9Replace this use of System.out or System.err by a logger.(†“àüÿÿÿÿ

@@ -1,0 +1,11 @@
+
+†
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(»Óù°
+‰
+java:S1319'"nThe type of "frequencyTable" should be an interface such as "List" rather than the implementation "ArrayList".(æåÔ›ûÿÿÿÿ
+€
+java:S13193"eThe type of "table" should be an interface such as "List" rather than the implementation "ArrayList".(¤ÉÛûıÿÿÿÿ
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(œÁÈÕüÿÿÿÿ
+0
+java:S1220""Move this file to a named package.
+S	java:S106G"9Replace this use of System.out or System.err by a logger.(ÿ§²«şÿÿÿÿ
