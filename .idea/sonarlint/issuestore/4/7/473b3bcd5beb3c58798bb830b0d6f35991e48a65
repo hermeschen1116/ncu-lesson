@@ -1,7 +1,0 @@
-
-W	cpp:S5945"=Use "std::array" or "std::vector" instead of a C-style array.(º¥£ßúÿÿÿÿ
-E	cpp:S1659	"0Define each identifier in a dedicated statement.(²Èƒµ
-R	cpp:S5945	"=Use "std::array" or "std::vector" instead of a C-style array.(²Èƒµ
-W	cpp:S5945"=Use "std::array" or "std::vector" instead of a C-style array.(ºÆÉ©øÿÿÿÿ
-^	cpp:S6188"DReplace these two parameters with a more generic "std::span" object.(ºÆÉ©øÿÿÿÿ
-tcpp:S995"[Make the type of this parameter a pointer-to-const. The current type of "_src_" is "int *".(ºÆÉ©øÿÿÿÿ

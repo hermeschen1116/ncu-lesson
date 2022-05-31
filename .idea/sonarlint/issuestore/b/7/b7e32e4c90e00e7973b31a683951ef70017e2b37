@@ -1,5 +1,0 @@
-
-J	cpp:S1659!"0Define each identifier in a dedicated statement.(½Öá¢şÿÿÿÿ
-W	cpp:S5945"=Use "std::array" or "std::vector" instead of a C-style array.(­ÚÏ‰øÿÿÿÿ
-W	cpp:S5945 "=Use "std::array" or "std::vector" instead of a C-style array.(áà“Üıÿÿÿÿ
-W	cpp:S5945!"=Use "std::array" or "std::vector" instead of a C-style array.(½Öá¢şÿÿÿÿ

@@ -1,3 +1,0 @@
-
-k	cpp:S5566"OReplace this range for-loop by "std::ranges::all_of" or "std::ranges::none_of".(Û¾¥ó8ôÙÏˆ0
-u	cpp:S3776"TRefactor this function to reduce its Cognitive Complexity from 32 to the 25 allowed.(ËÕé€üÿÿÿÿ8À„æŠ0

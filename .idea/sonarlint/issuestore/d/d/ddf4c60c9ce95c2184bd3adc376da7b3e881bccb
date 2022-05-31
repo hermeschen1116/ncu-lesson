@@ -1,6 +1,0 @@
-
-R	cpp:S5945"=Use "std::array" or "std::vector" instead of a C-style array.(âñ›³
-<	cpp:S5827"'Replace the redundant type with "auto".(¸Ý¡»
-f	cpp:S5025"QReplace the use of "new" with an operation that automatically manages the memory.(¸Ý¡»
-f	cpp:S5025"QReplace the use of "new" with an operation that automatically manages the memory.(êÿø”
-E	cpp:S1659"0Define each identifier in a dedicated statement.(‹‚˜
