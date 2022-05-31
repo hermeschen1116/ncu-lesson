@@ -1,0 +1,9 @@
+
+<	cpp:S5421	"!Global variables should be const.(Ž–Ê8¢Ê‘0
+=	cpp:S5421
+"!Global variables should be const.(ô–¾È8£Ê‘0
+W	cpp:S6168%"6Replace this use of "std::thread" with "std::jthread".(ó“œ þÿÿÿÿ8®Ó¥É‘0
+W	cpp:S6168&"6Replace this use of "std::thread" with "std::jthread".(‡”Œîýÿÿÿÿ8í±‚Ê‘0
+W	cpp:S6168'"6Replace this use of "std::thread" with "std::jthread".(ƒèÖòÿÿÿÿÿ8í±‚Ê‘0
+M	cpp:S59452"2Use "std::string" instead of a C-style char array.(ÕïÓ$8×¸ÂÊ‘0
+acpp:S1126"FDefine and throw a dedicated exception instead of using a generic one.(íÊ“ù8Ø¸ÂÊ‘0
