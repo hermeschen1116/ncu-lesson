@@ -49,7 +49,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87fbbceb-4932-4a96-b812-74369741eaa0" name="Changes" comment="" />
+    <list default="true" id="87fbbceb-4932-4a96-b812-74369741eaa0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,10 +64,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="true" />
+  </component>
   <component name="InvalidFacetManager">
     <ignored-facets>
       <facet id="ncu_lesson/invalid/Python facet" />
     </ignored-facets>
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="h3tewu5d" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -87,69 +95,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "cmake.loaded.for.project": "true",
-    "last_opened_file_path": "/Users/sonodakazuto/Repository/ncu_lesson",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "structure.view.defaults.are.configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cmake.loaded.for.project&quot;: &quot;true&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/sonodakazuto/Repository/ncu-lesson&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;structure.view.defaults.are.configured&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.ALG_HW9_Task2">
+  <component name="RunManager" selected="Unknown.ALG_HW3_Task11615891368">
     <configuration name="ALG_HW5_Task3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ncu_lesson" TARGET_NAME="ALG_HW5_Task3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ncu_lesson" RUN_TARGET_NAME="ALG_HW5_Task3">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="CMake Application.ALG_HW3_Task1" />
-      <item itemvalue="CMake Application.ALG_HW3_Task2" />
-      <item itemvalue="CMake Application.ALG_HW3_Task3" />
-      <item itemvalue="CMake Application.ALG_HW4_Task2" />
-      <item itemvalue="CMake Application.ALG_HW5_Task1" />
-      <item itemvalue="CMake Application.ALG_HW5_Task2" />
-      <item itemvalue="CMake Application.ALG_HW5_Task3" />
-      <item itemvalue="CMake Application.ALG_HW6_Task1" />
-      <item itemvalue="CMake Application.ALG_HW6_Task2" />
-      <item itemvalue="CMake Application.ALG_HW6_Task3" />
-      <item itemvalue="CMake Application.ALG_HW8_Task3" />
-      <item itemvalue="CMake Application.ALG_HW9_Task1" />
-      <item itemvalue="CMake Application.ALG_HW9_Task2" />
-      <item itemvalue="CMake Application.ALG_HW9_Task3" />
-      <item itemvalue="CMake Application.DS_HW1_Task1" />
-      <item itemvalue="CMake Application.DS_HW1_Task2" />
-      <item itemvalue="CMake Application.DS_HW2_Task1" />
-      <item itemvalue="CMake Application.DS_HW2_Task2" />
-      <item itemvalue="CMake Application.DS_HW3_Task1" />
-      <item itemvalue="CMake Application.DS_HW3_Task2" />
-      <item itemvalue="CMake Application.DS_HW4_Task1" />
-      <item itemvalue="CMake Application.DS_HW4_Task2" />
-      <item itemvalue="CMake Application.DS_HW4_Task2_test" />
-      <item itemvalue="CMake Application.DS_HW4_Task3" />
-      <item itemvalue="CMake Application.DS_HW4_Task3_test" />
-      <item itemvalue="CMake Application.PL_HW5" />
-      <item itemvalue="CMake Application.PL_HW6" />
-      <item itemvalue="CMake Application.PL_HW7" />
-      <item itemvalue="CMake Application.PL_HW8" />
-      <item itemvalue="CMake Application.PL_HW9" />
       <item itemvalue="Shell Script.Test" />
     </list>
   </component>
@@ -192,6 +175,10 @@
       <workItem from="1653493457439" duration="900000" />
       <workItem from="1653497029118" duration="5024000" />
       <workItem from="1653502081310" duration="26394000" />
+      <workItem from="1653966433232" duration="106000" />
+      <workItem from="1653966626310" duration="306000" />
+      <workItem from="1653967002743" duration="342000" />
+      <workItem from="1653970944461" duration="19000" />
     </task>
     <servers />
   </component>
@@ -200,6 +187,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>false</integration-enabled>
+    <settings-migrated>true</settings-migrated>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
