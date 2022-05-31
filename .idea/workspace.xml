@@ -51,7 +51,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="643b9d95-d765-4658-8779-5896770a092e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/PL_HW10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/PL_HW10.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PL_HW10.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/PL_HW10.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-run/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-run/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-run/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-run/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-run/CMakeFiles/PL_HW10.dir/PL_HW10.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-run/CMakeFiles/PL_HW10.dir/PL_HW10.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-run/PL_HW10" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-run/PL_HW10" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-run/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-run/Testing/Temporary/LastTest.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -315,7 +322,7 @@
       <workItem from="1653980945810" duration="108000" />
       <workItem from="1653981074001" duration="128000" />
       <workItem from="1653981205183" duration="12000" />
-      <workItem from="1653983217576" duration="2395000" />
+      <workItem from="1653983217576" duration="5521000" />
     </task>
     <servers />
   </component>
