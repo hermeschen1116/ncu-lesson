@@ -583,4 +583,8 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# CO_Final_Project
+CO_Final_Project/project/tools/gem5/build/
+CO_Final_Project/project/tools/NVmain/build/
+
 # End of https://www.toptal.com/developers/gitignore/api/macos,linux,windows,intellij,clion,pycharm,1c,c++,cmake,python,java.DS_Store

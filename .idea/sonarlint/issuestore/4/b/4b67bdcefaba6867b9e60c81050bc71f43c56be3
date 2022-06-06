@@ -1,0 +1,3 @@
+
+?	cpp:S1481"unused exception parameter 'e'(§„Àûÿÿÿÿÿ8âšÃ“0
+	cpp:S5350"lMake the type of this variable a reference-to-const. The current type of "e" is "class std::out_of_range &".(§„Àûÿÿÿÿÿ8ö‘šÃ“0

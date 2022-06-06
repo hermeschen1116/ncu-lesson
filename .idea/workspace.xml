@@ -42,6 +42,7 @@
       <config projectName="ncu_lesson" targetName="DS_HW4_Task3" />
       <config projectName="ncu_lesson" targetName="PL_HW10" />
       <config projectName="ncu_lesson" targetName="DS_HW4_Task2" />
+      <config projectName="ncu_lesson" targetName="PL_HW11" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -51,67 +52,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="643b9d95-d765-4658-8779-5896770a092e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/query/cache-v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/query/cmakeFiles-v1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/query/codemodel-v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/query/toolchains-v1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/cache-v2-2e658fd785df83d16922.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/cmakeFiles-v1-2a845474c4f682ffab61.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/codemodel-v2-a0468751ebe3c82be9a1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/index-2022-05-31T09-30-25-0320.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/target-ALG_HW3_Task1-Debug-a1ef6e9ee06487413160.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/target-ALG_HW3_Task2-Debug-33acb88259a7af161624.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/target-ALG_HW3_Task3-Debug-60b3f243cf1a6ecd6835.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/target-ALG_HW4_Task2-Debug-1f7c01e79c7b34afe9bf.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/target-ALG_HW5_Task1-Debug-49ca77b256264f43b4ff.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/target-ALG_HW5_Task2-Debug-fd1253505f4417b78016.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/target-ALG_HW5_Task3-Debug-91a80ec049f6b365db03.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/target-ALG_HW6_Task1-Debug-fbe29e9e486a4433b8c7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/target-ALG_HW6_Task2-Debug-231241093560abdd5f4b.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/target-ALG_HW6_Task3-Debug-bb2ecdfd6804d7a0893d.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/target-ALG_HW8_Task3-Debug-33cc1bd427bd48c3046a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/target-ALG_HW9_Task1-Debug-069fcab8fb8db0b152fa.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/target-ALG_HW9_Task2-Debug-11f913936e10c192aefa.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/target-ALG_HW9_Task3-Debug-32f83afe247249b217b1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/target-DS_HW1_Task1-Debug-f667321be83648086dff.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/target-DS_HW1_Task2-Debug-4d9492a80bcc1c849141.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/target-DS_HW2_Task1-Debug-45d980b46f9406163d03.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/target-DS_HW2_Task2-Debug-d135140c9bcc22f82d81.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/target-DS_HW3_Task1-Debug-fdd9bd1feb516be0baa6.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/target-DS_HW3_Task2-Debug-c3f1d9da35fe2ff5afdc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/target-DS_HW4_Task1-Debug-74ce2c31d00d865eb4fb.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/target-DS_HW4_Task2-Debug-888a5461c1eec08b8d64.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/target-DS_HW4_Task2_test-Debug-a5152b7e81c673068855.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/target-DS_HW4_Task3-Debug-e73eb2621017c7ea4171.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/target-DS_HW4_Task3_test-Debug-a79896f306272500d452.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/target-PL_HW10-Debug-b59373b40a8f1ccd006f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/target-PL_HW5-Debug-3adeb71966147ca9f941.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/target-PL_HW6-Debug-3148625a6704b59b3f97.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/target-PL_HW7-Debug-00ec2e82b7b1e45924cd.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/target-PL_HW8-Debug-da1dbd676676d1742f35.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/target-PL_HW9-Debug-c5326008dc34cdeaba01.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/.cmake/api/v1/reply/toolchains-v1-9002b9f304a9a6bc85b8.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/CMakeFiles/3.22.3/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/CMakeFiles/3.22.3/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/CMakeFiles/3.22.3/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/CMakeFiles/3.22.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/CMakeFiles/3.22.3/CompilerIdC/CMakeCCompilerId.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/CMakeFiles/3.22.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/CMakeFiles/3.22.3/CompilerIdCXX/CMakeCXXCompilerId.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/CMakeFiles/CMakeError.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/CMakeFiles/clion-environment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/CMakeFiles/clion-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/CMakeFiles/rules.ninja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/Testing/Temporary/LastTest.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/build.ninja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-run/cmake_install.cmake" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/CO_Final_Project/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CO_Final_Project/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CO_Final_Project/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CO_Final_Project/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CO_Final_Project/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PL_HW11.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ALG_Final_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ALG_Final_Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ALG_HW10/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/ALG_HW10/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ALG_HW10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ALG_HW10/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ALG_HW10/src/ALG_HW10_Task1.py" beforeDir="false" afterPath="$PROJECT_DIR$/ALG_HW10/src/ALG_HW10_Task1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +88,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
     <option name="majorVersion" value="2022" />
@@ -147,37 +104,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "go.import.settings.migrated": "true",
-    "last_opened_file_path": "/Users/sonodakazuto/Repository/ncu-lesson",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/sonodakazuto/Repository/ncu-lesson&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;structure.view.defaults.are.configured&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="CMake Application.PL_HW10">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.ALG_HW1_Task1">
     <configuration name="ALG_HW3_Task1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ncu_lesson" TARGET_NAME="ALG_HW3_Task1" CONFIG_NAME="Run" RUN_TARGET_PROJECT_NAME="ncu_lesson" RUN_TARGET_NAME="ALG_HW3_Task1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -303,6 +262,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PL_HW11" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ncu_lesson" TARGET_NAME="PL_HW11" CONFIG_NAME="Run" RUN_TARGET_PROJECT_NAME="ncu_lesson" RUN_TARGET_NAME="PL_HW11">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PL_HW5" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ncu_lesson" TARGET_NAME="PL_HW5" CONFIG_NAME="Run" RUN_TARGET_PROJECT_NAME="ncu_lesson" RUN_TARGET_NAME="PL_HW5">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -329,37 +293,6 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="CMake Application.ALG_HW3_Task1" />
-      <item itemvalue="CMake Application.ALG_HW3_Task2" />
-      <item itemvalue="CMake Application.ALG_HW3_Task3" />
-      <item itemvalue="CMake Application.ALG_HW4_Task2" />
-      <item itemvalue="CMake Application.ALG_HW5_Task1" />
-      <item itemvalue="CMake Application.ALG_HW5_Task2" />
-      <item itemvalue="CMake Application.ALG_HW5_Task3" />
-      <item itemvalue="CMake Application.ALG_HW6_Task1" />
-      <item itemvalue="CMake Application.ALG_HW6_Task2" />
-      <item itemvalue="CMake Application.ALG_HW6_Task3" />
-      <item itemvalue="CMake Application.ALG_HW8_Task3" />
-      <item itemvalue="CMake Application.ALG_HW9_Task1" />
-      <item itemvalue="CMake Application.ALG_HW9_Task2" />
-      <item itemvalue="CMake Application.ALG_HW9_Task3" />
-      <item itemvalue="CMake Application.DS_HW1_Task1" />
-      <item itemvalue="CMake Application.DS_HW1_Task2" />
-      <item itemvalue="CMake Application.DS_HW2_Task1" />
-      <item itemvalue="CMake Application.DS_HW2_Task2" />
-      <item itemvalue="CMake Application.DS_HW3_Task1" />
-      <item itemvalue="CMake Application.DS_HW3_Task2" />
-      <item itemvalue="CMake Application.DS_HW4_Task1" />
-      <item itemvalue="CMake Application.DS_HW4_Task2" />
-      <item itemvalue="CMake Application.DS_HW4_Task2_test" />
-      <item itemvalue="CMake Application.DS_HW4_Task3" />
-      <item itemvalue="CMake Application.DS_HW4_Task3_test" />
-      <item itemvalue="CMake Application.PL_HW10" />
-      <item itemvalue="CMake Application.PL_HW5" />
-      <item itemvalue="CMake Application.PL_HW6" />
-      <item itemvalue="CMake Application.PL_HW7" />
-      <item itemvalue="CMake Application.PL_HW8" />
-      <item itemvalue="CMake Application.PL_HW9" />
       <item itemvalue="Python.ALG_HW1_Task1" />
     </list>
   </component>
@@ -376,6 +309,15 @@
       <workItem from="1653981074001" duration="128000" />
       <workItem from="1653981205183" duration="12000" />
       <workItem from="1653983217576" duration="6942000" />
+      <workItem from="1654065588458" duration="113000" />
+      <workItem from="1654506616443" duration="7000" />
+      <workItem from="1654506668836" duration="2036000" />
+      <workItem from="1654513535084" duration="28000" />
+      <workItem from="1654513701250" duration="50000" />
+      <workItem from="1654513754957" duration="262000" />
+      <workItem from="1654514037103" duration="177000" />
+      <workItem from="1654514260989" duration="12000" />
+      <workItem from="1654514891807" duration="2000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,14 @@
+
+Hc:S1659"0Define each identifier in a dedicated statement.(¥ÉÙ¤ıÿÿÿÿ
+Bc:S1659#"0Define each identifier in a dedicated statement.(¤ßÏ
+sc:S995X"\Make the type of this parameter a pointer-to-const. The current type of "status" is "int *".(ÎŞîÿÿÿÿÿ
+_c:S134j"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(”ƒ³
+_c:S134o"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(ì¼®Æ
+_c:S134s"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(Ÿµ™¶
+Hc:S1659b"0Define each identifier in a dedicated statement.(Øø°†ùÿÿÿÿ
+Cc:S1066i"1Merge this "if" statement with the enclosing one.(ÒÏõ
+
+ˆc:S836k"qThe left expression of the compound assignment is an uninitialized value. The computed value will also be garbage(ƒåÌöşÿÿÿÿ
+ˆc:S836p"qThe left expression of the compound assignment is an uninitialized value. The computed value will also be garbage(ƒåÌöşÿÿÿÿ
+ˆc:S836t"qThe left expression of the compound assignment is an uninitialized value. The computed value will also be garbage(ƒåÌöşÿÿÿÿ
+Dc:S836{"-Undefined or garbage value returned to caller(É¸ŠÊıÿÿÿÿ

@@ -1,17 +1,15 @@
 def least_num_bill(bill_list, target_change_prams):
-    bill_list.sort()
-    bill_list.reverse()
-    num_bill = []
-    for b in range(len(bill_list)):
-        num_bill.append(0)
-        cur_change = target_change_prams
-        for j in range(b, len(bill_list)):
-            if cur_change > 0:
-                num_bill[b] += cur_change // bill_list[j]
-                cur_change %= bill_list[j]
-            else:
-                break
-    return min(num_bill)
+    if len(bill_list) != 0 and target_change_prams != 0:
+        bill_list.sort(reverse=True)
+        num_bill = [0]
+        for dollar in range(target_change_prams):
+            num_bill.append(float('inf'))
+        for dollar in range(1, target_change_prams+1):
+            for bill in bill_list:
+                if dollar >= bill:
+                    num_bill[dollar] = min([num_bill[dollar - bill] + 1, num_bill[dollar]])
+
+        return num_bill[target_change_prams]
 
 
 for i in range(int(input())):
