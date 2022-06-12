@@ -1,0 +1,7 @@
+
+E
+src/ALG_HW10_Task2.py,f/c/fc0857e08f0eddb708c17a22bba4b42f65de3940
+E
+src/ALG_HW10_Task3.py,1/9/19ff8d5315612641efd5f7fa720415af584e88da
+E
+src/ALG_HW10_Task1.py,f/d/fd8995666061a1ac308d9381f768c3f150c179cc

@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62715307-ba06-4892-8a40-a4f561326f5e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../CO_Final_Project/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CO_Final_Project/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CO_Final_Project/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CO_Final_Project/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CO_Final_Project/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PL_HW11.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ALG_Final_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ALG_Final_Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ALG_HW10_Task1.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ALG_HW10_Task1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../CMakeLists.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +83,9 @@
       <workItem from="1654414733373" duration="74000" />
       <workItem from="1654514276341" duration="28000" />
       <workItem from="1654514896050" duration="114000" />
-      <workItem from="1654523310587" duration="1145000" />
+      <workItem from="1654523310587" duration="1307000" />
+      <workItem from="1654565149420" duration="23000" />
+      <workItem from="1654577121406" duration="41000" />
     </task>
     <servers />
   </component>
@@ -108,6 +99,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ALG_HW10$ALG_HW10_Task2.coverage" NAME="ALG_HW10_Task2 Coverage Results" MODIFIED="1654011432919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/ALG_HW10$ALG_HW10_Task3.coverage" NAME="ALG_HW10_Task3 Coverage Results" MODIFIED="1654063988486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/ALG_HW10$ALG_HW10_Task1.coverage" NAME="ALG_HW10_Task1 Coverage Results" MODIFIED="1654524445365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/ALG_HW10$ALG_HW10_Task1.coverage" NAME="ALG_HW10_Task1 Coverage Results" MODIFIED="1654524470972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
 </project>

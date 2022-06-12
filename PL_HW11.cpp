@@ -18,7 +18,7 @@ void SumSquare () {
         while (cin >> input) {
             if (input >= -128 && input <= 128) {
                 sum += (short) pow(input, 2);
-            } else throw invalid_argument("Overflow");
+            } else throw "Overflow";
         }
     } catch (out_of_range &e) {
         cout << "Out of Range" << endl;
