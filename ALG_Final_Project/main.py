@@ -1,5 +1,5 @@
-import Model
-import Preprocess
+import Model  # Import model
+import Preprocess  # Import preprocess
 
 train_set_source_path = "data_set/train_image/"  # train_set_source_path
 data_dimensions = [28, 28, 1]  # data_dimensions

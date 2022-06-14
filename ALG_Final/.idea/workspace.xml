@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9faae491-19c6-4422-a8b2-5ada8d6ed5bf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG_Final_Task1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG_Final_Task2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG_Final_Task3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ALG_Final_Task3.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ALG_HW11/.idea/sonarlint/issuestore/1/a/1ab035e8fd98f2b6fda41284610df312b67159a7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ALG_HW11/.idea/sonarlint/issuestore/3/7/3784e3a363364447498d3cfff7b425c88aa1c2cf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ALG_HW11/.idea/sonarlint/issuestore/b/4/b4660a2ad6708b240408b26494ca30c245c15b83" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ALG_HW11/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../ALG_HW11/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ALG_HW11/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ALG_HW11/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-run/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-run/Testing/Temporary/LastTest.log" afterDir="false" />
-    </list>
+    <list default="true" id="9faae491-19c6-4422-a8b2-5ada8d6ed5bf" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -135,7 +118,7 @@
       <option name="presentableId" value="Default" />
       <updated>1655187431865</updated>
       <workItem from="1655187433861" duration="1893000" />
-      <workItem from="1655189401922" duration="4489000" />
+      <workItem from="1655189401922" duration="4795000" />
     </task>
     <servers />
   </component>

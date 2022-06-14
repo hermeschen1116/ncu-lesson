@@ -7,20 +7,20 @@ from keras.utils import np_utils
 
 
 class ImagePreprocessor:
-    def __init__(self, image_path, data_dimensions, color_range):
+    def __init__(self, image_path, data_dimensions, color_range):  # init
         self.__image_path = image_path  # [path, filename]
         self.__data_dimensions = data_dimensions  # [width, height, channels, ...]
         self.__color_mode = color_range  # how many color
 
     def get_label(self):  # get label
-        return int(self.__image_path[0].split('/')[-1])
+        return int(self.__image_path[0].split('/')[-1])  # get label
 
     def get_image_data(self):  # get processed image data
-        full_path = os.path.join(self.__image_path[0], self.__image_path[1])
-        image_data = Image.open(full_path)
+        full_path = os.path.join(self.__image_path[0], self.__image_path[1])  # get full path
+        image_data = Image.open(full_path)  # open image
 
         return (np.array(image_data) / self.__color_mode) \
-            .reshape(self.__data_dimensions[2], self.__data_dimensions[0], self.__data_dimensions[1])
+            .reshape(self.__data_dimensions[2], self.__data_dimensions[0], self.__data_dimensions[1])  # reshape
 
 
 class DataSet:
@@ -59,28 +59,28 @@ class DataSet:
         return self.__data_category
 
     def load_data_set(self):  # load the data set
-        timer_start = time.process_time()
-        for root, dirs, files in os.walk(self.__source_path):
-            for file in files:
-                if file == '.DS_Store' or file == 'desktop.ini':
+        timer_start = time.process_time()  # start timer
+        for root, dirs, files in os.walk(self.__source_path):  # walk through the data set
+            for file in files:  # get the file path
+                if file == '.DS_Store' or file == 'desktop.ini':  # skip the .DS_Store and the desktop.ini file
                     continue
-                self.__file_path.append([root, file])
-                self.__source_size += 1
-        timer_end = time.process_time()
-        print('Data set loaded. Execution time: {:.2f} s'.format(timer_end - timer_start))
+                self.__file_path.append([root, file])  # add the file path to the list
+                self.__source_size += 1  # increase the number of images
+        timer_end = time.process_time()  # end timer
+        print('Data set loaded. Execution time: {:.2f} s'.format(timer_end - timer_start))  # print execution time
 
     def preprocess(self):  # preprocess the data set
-        timer_start = time.process_time()
-        for path in self.__file_path:
-            processor = ImagePreprocessor(path, self.__data_dimension, 225)
-            self.__label_set.append(processor.get_label())
-            self.__data_set = np.vstack((self.__data_set, processor.get_image_data()))
-        self.__data_set = np.delete(self.__data_set, [0], 0)
+        timer_start = time.process_time()  # start timer
+        for path in self.__file_path:  # walk through the data set
+            processor = ImagePreprocessor(path, self.__data_dimension, 225)  # create image processor
+            self.__label_set.append(processor.get_label())  # add the label to the list
+            self.__data_set = np.vstack((self.__data_set, processor.get_image_data()))  # add the image data to the list
+        self.__data_set = np.delete(self.__data_set, [0], 0)  # delete the first row
         self.__data_set = self.__data_set.reshape(self.__source_size, self.__data_dimension[0],
-                                                  self.__data_dimension[1], self.__data_dimension[2])
-        self.__label_set = np_utils.to_categorical(self.__label_set, self.__data_category)
-        timer_end = time.process_time()
-        print('Data set preprocessed. Execution time: {:.2f} s'.format(timer_end - timer_start))
+                                                  self.__data_dimension[1], self.__data_dimension[2])  # reshape
+        self.__label_set = np_utils.to_categorical(self.__label_set, self.__data_category)  # convert to categorical
+        timer_end = time.process_time()  # end timer
+        print('Data set preprocessed. Execution time: {:.2f} s'.format(timer_end - timer_start))  # print execution time
 
     def get_label_set(self):  # get the processed label set
         return self.__label_set
