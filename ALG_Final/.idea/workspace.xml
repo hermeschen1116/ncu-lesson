@@ -4,7 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9faae491-19c6-4422-a8b2-5ada8d6ed5bf" name="Changes" comment="" />
+    <list default="true" id="bf6e8f9a-9b23-4852-813c-6a0fbb2829c2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ALG_Final.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/033e67f052792c55e51beb0d38fc2eea5d2d8854" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/7/97674da0749195846aac74fd81f3c54c04db08cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/8/d8df4ec8abf1727d3b2de6f26091e77bf37d1380" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ALG_Final.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ALG_Final.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ALG_Final_Task1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ALG_Final_Task2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ALG_Final_Task3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ALG_Final_Project/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../ALG_Final_Project/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ALG_Final_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ALG_Final_Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CO_Final_Project/.idea/sonarlint/issuestore/f/e/fe7cc908f12614c32e39c1b64e5b37e53d5b3a1a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CO_Final_Project/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../CO_Final_Project/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CO_Final_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CO_Final_Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CO_Final_Project/image/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CO_Final_Project/image/build-image.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CO_Final_Project/image/hybrid-build/Options.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CO_Final_Project/image/hybrid-build/SConscript" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CO_Final_Project/image/nvmain-solo-build/SConscript" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CO_Final_Project/image/scripts/install-ohmyzsh.sh" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +37,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Class" />
         <option value="Python Script" />
       </list>
     </option>
@@ -21,19 +46,16 @@
     <option name="indexEntireGoPath" value="true" />
   </component>
   <component name="MacroExpansionManager">
-    <option name="directoryName" value="c5t2lyvw" />
+    <option name="directoryName" value="ctfhffz9" />
   </component>
-  <component name="ProjectId" id="2AYXKoJ2viVGaCsUCtksRCmUEVo" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2AfTkgMzVWkpFbgDBJVeqL9tJpd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
@@ -41,84 +63,29 @@
     &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/sonodakazuto/Repository/ncu-lesson/ALG_Final&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Python.ALG_Final_Task3">
-    <configuration name="ALG_Final_Task2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="ALG_Final" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ALG_Final_Task2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ALG_Final_Task3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="ALG_Final" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ALG_Final_Task3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.ALG_Final_Task3" />
-        <item itemvalue="Python.ALG_Final_Task2" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9faae491-19c6-4422-a8b2-5ada8d6ed5bf" name="Changes" comment="" />
-      <created>1655187431865</created>
+      <changelist id="bf6e8f9a-9b23-4852-813c-6a0fbb2829c2" name="Changes" comment="" />
+      <created>1655399784939</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1655187431865</updated>
-      <workItem from="1655187433861" duration="1893000" />
-      <workItem from="1655189401922" duration="4795000" />
+      <updated>1655399784939</updated>
+      <workItem from="1655399785991" duration="3691000" />
+      <workItem from="1655440761972" duration="2280000" />
     </task>
     <servers />
   </component>
@@ -128,9 +95,5 @@
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
     <settings-migrated>true</settings-migrated>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ALG_Final$ALG_Final_Task3.coverage" NAME="ALG_Final_Task3 Coverage Results" MODIFIED="1655192637003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ALG_Final$ALG_Final_Task2.coverage" NAME="ALG_Final_Task2 Coverage Results" MODIFIED="1655189651656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -5,14 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3e5690c-c331-4c73-85cd-5e77a448861b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ALG_HW10/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../ALG_HW10/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ALG_HW10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ALG_HW10/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ALG_Final/ALG_Final.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-start.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/2-way-test.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/full-way-test.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/hybrid-build-test.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/l3-cache-test.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ALG_Final/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ALG_Final/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ALG_Final/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ALG_Final/.idea/sonarlint/issuestore/0/3/033e67f052792c55e51beb0d38fc2eea5d2d8854" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ALG_Final/.idea/sonarlint/issuestore/9/7/97674da0749195846aac74fd81f3c54c04db08cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ALG_Final/.idea/sonarlint/issuestore/d/8/d8df4ec8abf1727d3b2de6f26091e77bf37d1380" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ALG_Final/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../ALG_Final/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ALG_Final/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ALG_Final/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ALG_Final/ALG_Final.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ALG_Final/ALG_Final.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ALG_Final/ALG_Final_Task1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ALG_Final/ALG_Final_Task2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ALG_Final/ALG_Final_Task3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ALG_Final_Project/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../ALG_Final_Project/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ALG_Final_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ALG_Final_Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/0/40c052bc60675cc018de3e76bb14d0b3c19bcdfc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/e/fe7cc908f12614c32e39c1b64e5b37e53d5b3a1a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/build-image.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/hybrid-build/Options.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/hybrid-build/SConscript" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/nvmain-solo-build/SConscript" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/scripts/install-ohmyzsh.sh" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +67,7 @@
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/sonodakazuto/Repository/ncu-lesson/CO_Final_Project",
+    "last_opened_file_path": "/Users/sonodakazuto/Repository/ncu-lesson/CO_Final_Project/scripts",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -58,30 +79,15 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scripts" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/modified files" />
       <recent name="$PROJECT_DIR$/image/scripts" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
-      <module name="CO_Final_Project" />
-      <working_directory value="$PROJECT_DIR$" />
-      <go_parameters value="-i" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
-      <module name="CO_Final_Project" />
-      <working_directory value="$PROJECT_DIR$" />
-      <go_parameters value="-i" />
-      <kind value="DIRECTORY" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <method v="2" />
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -92,6 +98,8 @@
       <option name="presentableId" value="Default" />
       <updated>1654019998549</updated>
       <workItem from="1654019999773" duration="9497000" />
+      <workItem from="1655452402209" duration="168000" />
+      <workItem from="1655459628184" duration="1339000" />
     </task>
     <servers />
   </component>
