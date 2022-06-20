@@ -71,6 +71,6 @@ for i in range(int(input())):
     weight_list = []
     for j in range(24):
         weight_list.append(int(input()))
-    graph = dict(zip(edge_list, weight_list))
+    graph = dict(zip(edge_list, weight_list))  # create the graph
     target_stage = int(input())
     print(a_star(graph, target_stage))  # print the result
