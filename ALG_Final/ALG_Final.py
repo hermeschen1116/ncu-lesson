@@ -1,24 +1,26 @@
-def get_edge_weight(weight_list_pram, start_node_pram, end_node_pram):
-    return weight_list_pram[start_node_pram + end_node_pram]
+def get_edge_weight(graph_pram, start_node_pram, end_node_pram):
+    return graph_pram[start_node_pram + end_node_pram]
 
 
-def get_children(start_node_pram, weight_list_pram):
-    node_list = ['S', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']
+def get_children(start_node_pram, graph_pram):
+    node_list = ['S', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'T']
 
     children = []
     for node in node_list:
-        if start_node_pram + node not in weight_list_pram.keys():
+        if start_node_pram + node not in graph_pram.keys():
             continue
         children.append(node)
     return children
 
 
-def get_min_child(node_pram, weight_list_pram, closed_queue_pram):
+def get_min_child(node_pram, graph_pram, closed_queue_pram):
     min_child = []
-    for child in get_children(node_pram, weight_list_pram):
+    for child in get_children(node_pram, graph_pram):
         if child in closed_queue_pram.keys():
             continue
-        min_child.append(get_edge_weight(weight_list_pram, node_pram, child))
+        min_child.append(get_edge_weight(graph_pram, node_pram, child))
+    if len(min_child) == 0:
+        return 0
     return min(min_child)
 
 
@@ -41,21 +43,25 @@ def move_node(node_pram, open_queue_pram, closed_queue_pram):
     return node_pram
 
 
-def a_star(weight_list_pram, target_stage_pram):
-    node_list = ['S', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']
-    open_queue = {'S': [0, 0]}
+def a_star(graph_pram, target_stage_pram):
+    node_list = ['S', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'T']
+    open_queue = {'S': [0, get_min_child('S', graph_pram, {})]}
     closed_queue = {}
 
-    open_queue['S'][1] = get_min_child('S', weight_list_pram, closed_queue)
+    if target_stage_pram < 1 or target_stage_pram > 5:
+        return None
+    if target_stage_pram == 1:
+        return sum(open_queue['S'])
     while len(open_queue):
         best_node = min(open_queue, key=lambda x: sum(open_queue[x]))
         node_list.remove(move_node(best_node, open_queue, closed_queue))
         if get_stage(best_node) == target_stage_pram:
             return sum(closed_queue[best_node])
-        for child in get_children(best_node, weight_list_pram):
+        for child in get_children(best_node, graph_pram):
             if child in closed_queue.keys():
                 continue
-            evaluation = [sum(closed_queue[best_node]), get_min_child(child, weight_list_pram, closed_queue)]
+            evaluation = [closed_queue[best_node][0] + get_edge_weight(graph_pram, best_node, child),
+                          get_min_child(child, graph_pram, closed_queue)]
             if child in open_queue.keys() and evaluation[0] > open_queue[child][0]:
                 continue
             open_queue[child] = evaluation
