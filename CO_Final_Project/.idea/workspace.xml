@@ -4,37 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3e5690c-c331-4c73-85cd-5e77a448861b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../ALG_Final/ALG_Final.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-start.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/2-way-test.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/full-way-test.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/hybrid-build-test.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/l3-cache-test.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ALG_Final/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ALG_Final/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ALG_Final/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ALG_Final/.idea/sonarlint/issuestore/0/3/033e67f052792c55e51beb0d38fc2eea5d2d8854" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ALG_Final/.idea/sonarlint/issuestore/9/7/97674da0749195846aac74fd81f3c54c04db08cd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ALG_Final/.idea/sonarlint/issuestore/d/8/d8df4ec8abf1727d3b2de6f26091e77bf37d1380" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ALG_Final/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../ALG_Final/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ALG_Final/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ALG_Final/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ALG_Final/ALG_Final.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ALG_Final/ALG_Final.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ALG_Final/ALG_Final_Task1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ALG_Final/ALG_Final_Task2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ALG_Final/ALG_Final_Task3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ALG_Final_Project/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../ALG_Final_Project/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ALG_Final_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ALG_Final_Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/0/40c052bc60675cc018de3e76bb14d0b3c19bcdfc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/e/fe7cc908f12614c32e39c1b64e5b37e53d5b3a1a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/build-image.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/hybrid-build/Options.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/hybrid-build/SConscript" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/nvmain-solo-build/SConscript" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/scripts/install-ohmyzsh.sh" beforeDir="false" />
-    </list>
+    <list default="true" id="f3e5690c-c331-4c73-85cd-5e77a448861b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,29 +25,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "go.import.settings.migrated": "true",
-    "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/sonodakazuto/Repository/ncu-lesson/CO_Final_Project/scripts",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "yarn",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/sonodakazuto/Repository/ncu-lesson/CO_Final_Project/scripts&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/scripts" />
@@ -100,6 +70,7 @@
       <workItem from="1654019999773" duration="9497000" />
       <workItem from="1655452402209" duration="168000" />
       <workItem from="1655459628184" duration="1339000" />
+      <workItem from="1655476311646" duration="8000" />
     </task>
     <servers />
   </component>
