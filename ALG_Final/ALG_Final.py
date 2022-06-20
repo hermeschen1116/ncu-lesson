@@ -1,4 +1,6 @@
 def get_edge_weight(graph_pram, start_node_pram, end_node_pram):  # get the weight of the edge
+    if start_node_pram + end_node_pram not in graph_pram.keys():  # if the edge doesn't exist
+        return float('inf')  # return infinity
     return graph_pram[start_node_pram + end_node_pram]
 
 
