@@ -35,8 +35,10 @@ def get_stage(node_pram):  # get the stage of the node
         return 3
     elif 'G' <= node_pram <= 'I':
         return 4
-    else:
+    elif node_pram == 'T':
         return 5
+    else:
+        return None  # if the node is not in the node list
 
 
 def move_node(node_pram, open_queue_pram, closed_queue_pram):  # move the node from open to closed
