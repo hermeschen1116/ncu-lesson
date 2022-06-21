@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf6e8f9a-9b23-4852-813c-6a0fbb2829c2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/ALG_Final.py" beforeDir="false" afterPath="$PROJECT_DIR$/ALG_Final.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +105,8 @@
       <workItem from="1655746135803" duration="4764000" />
       <workItem from="1655752109040" duration="25000" />
       <workItem from="1655752442789" duration="219000" />
+      <workItem from="1655752858112" duration="109000" />
+      <workItem from="1655822284740" duration="273000" />
     </task>
     <servers />
   </component>

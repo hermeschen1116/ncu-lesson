@@ -48,7 +48,6 @@ def move_node(node_pram, open_queue_pram, closed_queue_pram):  # move the node f
 
 
 def a_star(graph_pram, target_stage_pram):  # A* algorithm
-    node_list = ['S', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'T']
     open_queue = {'S': [0, get_min_child('S', graph_pram, {})]}  # initialize the open queue
     closed_queue = {}  # initialize the closed queue
 
@@ -56,7 +55,7 @@ def a_star(graph_pram, target_stage_pram):  # A* algorithm
         return None
     while len(open_queue):
         best_node = min(open_queue, key=lambda x: sum(open_queue[x]))  # get the best node
-        node_list.remove(move_node(best_node, open_queue, closed_queue))  # move the node from open to closed
+        move_node(best_node, open_queue, closed_queue)  # move the node from open to closed
         if get_stage(best_node) == target_stage_pram:  # if the node is the target stage
             return sum(closed_queue[best_node])
         for child in get_children(best_node, graph_pram):  # get the children of the node
