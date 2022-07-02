@@ -1,4 +1,0 @@
-"/Users/sonodakazuto/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.2964.48/CLion 2022.2 EAP.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=/Users/sonodakazuto/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.2964.48/CLion 2022.2 EAP.app/Contents/bin/ninja/mac/ninja" -G Ninja -S /Users/sonodakazuto/Repository/ncu-lesson -B /Users/sonodakazuto/Repository/ncu-lesson/cmake-build-run
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/sonodakazuto/Repository/ncu-lesson/cmake-build-run
